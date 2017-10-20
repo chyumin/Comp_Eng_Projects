@@ -1,0 +1,24 @@
+-------------- Problema --------------
+
+
+Existem 10 cartas (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+Separar em 2 pilhas de 5
+
+
+
+Soma da pilha 1 = 36
+
+Multiplicação da pilha 2 = 360
+
+-------------- Modelagem GA --------------
+
+Tamanho da População: 30
+
+Função Fitness:
+
+Método de Seleção: Torneio
+
+Cruzamento:
+
+Mutação:
