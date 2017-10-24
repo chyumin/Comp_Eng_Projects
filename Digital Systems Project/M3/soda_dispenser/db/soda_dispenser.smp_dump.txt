@@ -1,0 +1,7 @@
+
+State Machine - |soda_dispenser|sd_control:u_0|state
+Name state.s_disp state.s_add state.s_wait state.s_init 
+state.s_init 0 0 0 0 
+state.s_wait 0 0 1 1 
+state.s_add 0 1 0 1 
+state.s_disp 1 0 0 1 

@@ -1,0 +1,11 @@
+LIBRARY ieee;
+USE ieee.std_logic.ALL;
+
+ENTITY prime_control IS
+	PORT();
+END prime_control;
+
+ARCHITECTURE arch OF prime_control IS
+
+
+END arch;

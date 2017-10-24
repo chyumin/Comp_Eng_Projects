@@ -1,0 +1,260 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 184 576)
+	(text "decoder5x32" (rect 5 0 55 12)(font "Arial" ))
+	(text "inst" (rect 8 544 20 556)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "addr[4..0]" (rect 0 0 38 12)(font "Arial" ))
+		(text "addr[4..0]" (rect 21 27 59 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 168 32)
+		(output)
+		(text "sel_00" (rect 0 0 25 12)(font "Arial" ))
+		(text "sel_00" (rect 122 27 147 39)(font "Arial" ))
+		(line (pt 168 32)(pt 152 32)(line_width 1))
+	)
+	(port
+		(pt 168 48)
+		(output)
+		(text "sel_01" (rect 0 0 24 12)(font "Arial" ))
+		(text "sel_01" (rect 123 43 147 55)(font "Arial" ))
+		(line (pt 168 48)(pt 152 48)(line_width 1))
+	)
+	(port
+		(pt 168 64)
+		(output)
+		(text "sel_02" (rect 0 0 25 12)(font "Arial" ))
+		(text "sel_02" (rect 122 59 147 71)(font "Arial" ))
+		(line (pt 168 64)(pt 152 64)(line_width 1))
+	)
+	(port
+		(pt 168 80)
+		(output)
+		(text "sel_03" (rect 0 0 25 12)(font "Arial" ))
+		(text "sel_03" (rect 122 75 147 87)(font "Arial" ))
+		(line (pt 168 80)(pt 152 80)(line_width 1))
+	)
+	(port
+		(pt 168 96)
+		(output)
+		(text "sel_04" (rect 0 0 27 12)(font "Arial" ))
+		(text "sel_04" (rect 120 91 147 103)(font "Arial" ))
+		(line (pt 168 96)(pt 152 96)(line_width 1))
+	)
+	(port
+		(pt 168 112)
+		(output)
+		(text "sel_05" (rect 0 0 25 12)(font "Arial" ))
+		(text "sel_05" (rect 122 107 147 119)(font "Arial" ))
+		(line (pt 168 112)(pt 152 112)(line_width 1))
+	)
+	(port
+		(pt 168 128)
+		(output)
+		(text "sel_06" (rect 0 0 25 12)(font "Arial" ))
+		(text "sel_06" (rect 122 123 147 135)(font "Arial" ))
+		(line (pt 168 128)(pt 152 128)(line_width 1))
+	)
+	(port
+		(pt 168 144)
+		(output)
+		(text "sel_07" (rect 0 0 25 12)(font "Arial" ))
+		(text "sel_07" (rect 122 139 147 151)(font "Arial" ))
+		(line (pt 168 144)(pt 152 144)(line_width 1))
+	)
+	(port
+		(pt 168 160)
+		(output)
+		(text "sel_08" (rect 0 0 25 12)(font "Arial" ))
+		(text "sel_08" (rect 122 155 147 167)(font "Arial" ))
+		(line (pt 168 160)(pt 152 160)(line_width 1))
+	)
+	(port
+		(pt 168 176)
+		(output)
+		(text "sel_09" (rect 0 0 25 12)(font "Arial" ))
+		(text "sel_09" (rect 122 171 147 183)(font "Arial" ))
+		(line (pt 168 176)(pt 152 176)(line_width 1))
+	)
+	(port
+		(pt 168 192)
+		(output)
+		(text "sel_10" (rect 0 0 24 12)(font "Arial" ))
+		(text "sel_10" (rect 123 187 147 199)(font "Arial" ))
+		(line (pt 168 192)(pt 152 192)(line_width 1))
+	)
+	(port
+		(pt 168 208)
+		(output)
+		(text "sel_11" (rect 0 0 23 12)(font "Arial" ))
+		(text "sel_11" (rect 124 203 147 215)(font "Arial" ))
+		(line (pt 168 208)(pt 152 208)(line_width 1))
+	)
+	(port
+		(pt 168 224)
+		(output)
+		(text "sel_12" (rect 0 0 24 12)(font "Arial" ))
+		(text "sel_12" (rect 123 219 147 231)(font "Arial" ))
+		(line (pt 168 224)(pt 152 224)(line_width 1))
+	)
+	(port
+		(pt 168 240)
+		(output)
+		(text "sel_13" (rect 0 0 24 12)(font "Arial" ))
+		(text "sel_13" (rect 123 235 147 247)(font "Arial" ))
+		(line (pt 168 240)(pt 152 240)(line_width 1))
+	)
+	(port
+		(pt 168 256)
+		(output)
+		(text "sel_14" (rect 0 0 25 12)(font "Arial" ))
+		(text "sel_14" (rect 122 251 147 263)(font "Arial" ))
+		(line (pt 168 256)(pt 152 256)(line_width 1))
+	)
+	(port
+		(pt 168 272)
+		(output)
+		(text "sel_15" (rect 0 0 24 12)(font "Arial" ))
+		(text "sel_15" (rect 123 267 147 279)(font "Arial" ))
+		(line (pt 168 272)(pt 152 272)(line_width 1))
+	)
+	(port
+		(pt 168 288)
+		(output)
+		(text "sel_16" (rect 0 0 24 12)(font "Arial" ))
+		(text "sel_16" (rect 123 283 147 295)(font "Arial" ))
+		(line (pt 168 288)(pt 152 288)(line_width 1))
+	)
+	(port
+		(pt 168 304)
+		(output)
+		(text "sel_17" (rect 0 0 24 12)(font "Arial" ))
+		(text "sel_17" (rect 123 299 147 311)(font "Arial" ))
+		(line (pt 168 304)(pt 152 304)(line_width 1))
+	)
+	(port
+		(pt 168 320)
+		(output)
+		(text "sel_18" (rect 0 0 24 12)(font "Arial" ))
+		(text "sel_18" (rect 123 315 147 327)(font "Arial" ))
+		(line (pt 168 320)(pt 152 320)(line_width 1))
+	)
+	(port
+		(pt 168 336)
+		(output)
+		(text "sel_19" (rect 0 0 24 12)(font "Arial" ))
+		(text "sel_19" (rect 123 331 147 343)(font "Arial" ))
+		(line (pt 168 336)(pt 152 336)(line_width 1))
+	)
+	(port
+		(pt 168 352)
+		(output)
+		(text "sel_20" (rect 0 0 25 12)(font "Arial" ))
+		(text "sel_20" (rect 122 347 147 359)(font "Arial" ))
+		(line (pt 168 352)(pt 152 352)(line_width 1))
+	)
+	(port
+		(pt 168 368)
+		(output)
+		(text "sel_21" (rect 0 0 24 12)(font "Arial" ))
+		(text "sel_21" (rect 123 363 147 375)(font "Arial" ))
+		(line (pt 168 368)(pt 152 368)(line_width 1))
+	)
+	(port
+		(pt 168 384)
+		(output)
+		(text "sel_22" (rect 0 0 25 12)(font "Arial" ))
+		(text "sel_22" (rect 122 379 147 391)(font "Arial" ))
+		(line (pt 168 384)(pt 152 384)(line_width 1))
+	)
+	(port
+		(pt 168 400)
+		(output)
+		(text "sel_23" (rect 0 0 25 12)(font "Arial" ))
+		(text "sel_23" (rect 122 395 147 407)(font "Arial" ))
+		(line (pt 168 400)(pt 152 400)(line_width 1))
+	)
+	(port
+		(pt 168 416)
+		(output)
+		(text "sel_24" (rect 0 0 27 12)(font "Arial" ))
+		(text "sel_24" (rect 120 411 147 423)(font "Arial" ))
+		(line (pt 168 416)(pt 152 416)(line_width 1))
+	)
+	(port
+		(pt 168 432)
+		(output)
+		(text "sel_25" (rect 0 0 25 12)(font "Arial" ))
+		(text "sel_25" (rect 122 427 147 439)(font "Arial" ))
+		(line (pt 168 432)(pt 152 432)(line_width 1))
+	)
+	(port
+		(pt 168 448)
+		(output)
+		(text "sel_26" (rect 0 0 25 12)(font "Arial" ))
+		(text "sel_26" (rect 122 443 147 455)(font "Arial" ))
+		(line (pt 168 448)(pt 152 448)(line_width 1))
+	)
+	(port
+		(pt 168 464)
+		(output)
+		(text "sel_27" (rect 0 0 25 12)(font "Arial" ))
+		(text "sel_27" (rect 122 459 147 471)(font "Arial" ))
+		(line (pt 168 464)(pt 152 464)(line_width 1))
+	)
+	(port
+		(pt 168 480)
+		(output)
+		(text "sel_28" (rect 0 0 25 12)(font "Arial" ))
+		(text "sel_28" (rect 122 475 147 487)(font "Arial" ))
+		(line (pt 168 480)(pt 152 480)(line_width 1))
+	)
+	(port
+		(pt 168 496)
+		(output)
+		(text "sel_29" (rect 0 0 25 12)(font "Arial" ))
+		(text "sel_29" (rect 122 491 147 503)(font "Arial" ))
+		(line (pt 168 496)(pt 152 496)(line_width 1))
+	)
+	(port
+		(pt 168 512)
+		(output)
+		(text "sel_30" (rect 0 0 25 12)(font "Arial" ))
+		(text "sel_30" (rect 122 507 147 519)(font "Arial" ))
+		(line (pt 168 512)(pt 152 512)(line_width 1))
+	)
+	(port
+		(pt 168 528)
+		(output)
+		(text "sel_31" (rect 0 0 24 12)(font "Arial" ))
+		(text "sel_31" (rect 123 523 147 535)(font "Arial" ))
+		(line (pt 168 528)(pt 152 528)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 152 544)(line_width 1))
+	)
+)

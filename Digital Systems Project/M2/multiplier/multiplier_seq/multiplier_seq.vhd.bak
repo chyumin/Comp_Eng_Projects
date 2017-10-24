@@ -1,0 +1,13 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+ENTITY multiplier_seq IS
+	PORT(
+	
+	);
+END multiplier_seq;
+
+ARCHITECTURE arch OF multiplier_seq IS
+
+
+END arch;

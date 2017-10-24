@@ -1,0 +1,18 @@
+LIBRARY ieee;
+USE ieee.std_logic.ALL;
+
+ENTITY prime_8bits IS
+	PORT(	i_clk    : IN  std_logic;
+			i_startn : IN  std_logic;
+			i_data   : IN  std_logic_vector(7 DOWNTO 0);
+			o_data   : OUT std_logic;
+			o_rdy    : OUT std_logic;
+	);
+END prime_8bits;
+
+ARCHITECTURE arch OF prime_8bits IS
+
+BEGIN
+
+
+END arch;

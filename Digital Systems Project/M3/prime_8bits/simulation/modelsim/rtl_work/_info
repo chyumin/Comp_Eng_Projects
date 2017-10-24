@@ -1,0 +1,636 @@
+m255
+K3
+13
+cModel Technology
+Z0 dZ:\Projeto de Sistemas Digitais\M3\prime_8bits\simulation\modelsim
+Eadder
+Z1 w1465263987
+Z2 DPx4 ieee 16 std_logic_signed 0 22 E>OLoMaBGQ?hbGgOoNXM^1
+Z3 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z6 dZ:\Projeto de Sistemas Digitais\M3\prime_8bits\simulation\modelsim
+Z7 8Z:/Projeto de Sistemas Digitais/M3/prime_8bits/adder.vhd
+Z8 FZ:/Projeto de Sistemas Digitais/M3/prime_8bits/adder.vhd
+l0
+L6
+V26F_UKI`XW`BAY5H`64hO3
+Z9 OV;C;10.1d;51
+31
+Z10 !s108 1468544048.233000
+Z11 !s90 -reportprogress|300|-93|-work|work|Z:/Projeto de Sistemas Digitais/M3/prime_8bits/adder.vhd|
+Z12 !s107 Z:/Projeto de Sistemas Digitais/M3/prime_8bits/adder.vhd|
+Z13 o-93 -work work -O0
+Z14 tExplicit 1
+!s100 NXUGDBaDRG@1E98I`UJ_52
+!i10b 1
+Aarch
+R2
+R3
+R4
+R5
+DEx4 work 5 adder 0 22 26F_UKI`XW`BAY5H`64hO3
+l37
+L16
+V=mPil=T8HOgDTLa=k?<z92
+R9
+31
+R10
+R11
+R12
+R13
+R14
+!s100 hzY[dYL@ULMfn2LAQT0Vo3
+!i10b 1
+Ebigger_than
+Z15 w1468410854
+R3
+Z16 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+R4
+R5
+R6
+Z17 8Z:/Projeto de Sistemas Digitais/M3/prime_8bits/bigger_than.vhd
+Z18 FZ:/Projeto de Sistemas Digitais/M3/prime_8bits/bigger_than.vhd
+l0
+L5
+VLhBMjdM;P0O[a<UnlaQoW0
+R9
+31
+Z19 !s108 1468544051.797000
+Z20 !s90 -reportprogress|300|-93|-work|work|Z:/Projeto de Sistemas Digitais/M3/prime_8bits/bigger_than.vhd|
+Z21 !s107 Z:/Projeto de Sistemas Digitais/M3/prime_8bits/bigger_than.vhd|
+R13
+R14
+!s100 KgcN`b81^h[gZNlhK:YSo3
+!i10b 1
+Aarch
+R3
+R16
+R4
+R5
+DEx4 work 11 bigger_than 0 22 LhBMjdM;P0O[a<UnlaQoW0
+l12
+L11
+VbBeYnJlKTF^>MUjKQ^0AH3
+R9
+31
+R19
+R20
+R21
+R13
+R14
+!s100 7f;IT5c5AFe68ZNk83j3H3
+!i10b 1
+Ecounter_wbits
+Z22 w1467561358
+R3
+R16
+R4
+R5
+R6
+Z23 8Z:/Projeto de Sistemas Digitais/M3/prime_8bits/counter_Wbits.vhd
+Z24 FZ:/Projeto de Sistemas Digitais/M3/prime_8bits/counter_Wbits.vhd
+l0
+L5
+V;C;zhAfIR0z6NBSXQDUMK1
+R9
+31
+Z25 !s108 1468544047.405000
+Z26 !s90 -reportprogress|300|-93|-work|work|Z:/Projeto de Sistemas Digitais/M3/prime_8bits/counter_Wbits.vhd|
+Z27 !s107 Z:/Projeto de Sistemas Digitais/M3/prime_8bits/counter_Wbits.vhd|
+R13
+R14
+!s100 ffPce<?BIjZzZII`UJboe2
+!i10b 1
+Aarch_1
+R3
+R16
+R4
+R5
+DEx4 work 13 counter_wbits 0 22 ;C;zhAfIR0z6NBSXQDUMK1
+l14
+L13
+V[Ffn4`h=;2KB5KKBVQS2H0
+R9
+31
+R25
+R26
+R27
+R13
+R14
+!s100 H4MkEDMj[W[RHGLATSWBn1
+!i10b 1
+Ecounter_wbitsr1
+Z28 w1468409364
+R3
+R16
+R4
+R5
+R6
+Z29 8Z:/Projeto de Sistemas Digitais/M3/prime_8bits/counter_WbitsR1.vhd
+Z30 FZ:/Projeto de Sistemas Digitais/M3/prime_8bits/counter_WbitsR1.vhd
+l0
+L5
+VlLZX0=;VfE_0AYSFfVBf:2
+R9
+31
+Z31 !s108 1468544037.607000
+Z32 !s90 -reportprogress|300|-93|-work|work|Z:/Projeto de Sistemas Digitais/M3/prime_8bits/counter_WbitsR1.vhd|
+Z33 !s107 Z:/Projeto de Sistemas Digitais/M3/prime_8bits/counter_WbitsR1.vhd|
+R13
+R14
+!s100 T<A1K06T_bT^]oTV5bNlZ0
+!i10b 1
+Aarch_1
+R3
+R16
+R4
+R5
+DEx4 work 15 counter_wbitsr1 0 22 lLZX0=;VfE_0AYSFfVBf:2
+l14
+L13
+V@Fe[R9jcLD>L=M7koe_]B1
+R9
+31
+R31
+R32
+R33
+R13
+R14
+!s100 Pim[a<:d0P;a^YZBaC[1Z0
+!i10b 1
+Eequal
+Z34 w1468410839
+R3
+R16
+R4
+R5
+R6
+Z35 8Z:/Projeto de Sistemas Digitais/M3/prime_8bits/equal.vhd
+Z36 FZ:/Projeto de Sistemas Digitais/M3/prime_8bits/equal.vhd
+l0
+L5
+VkAQH9e[Aa<Rfo4<7<R7UK2
+!s100 IdHk>5jO3NCE8]EhB3TfG0
+R9
+31
+!i10b 1
+Z37 !s108 1468544053.094000
+Z38 !s90 -reportprogress|300|-93|-work|work|Z:/Projeto de Sistemas Digitais/M3/prime_8bits/equal.vhd|
+Z39 !s107 Z:/Projeto de Sistemas Digitais/M3/prime_8bits/equal.vhd|
+R13
+R14
+Aarch
+R3
+R16
+R4
+R5
+DEx4 work 5 equal 0 22 kAQH9e[Aa<Rfo4<7<R7UK2
+l12
+L11
+VDTTaeZh0G<`2?]KON0hMB3
+!s100 ]ZXjXEj6E<iIC``@32=X<3
+R9
+31
+!i10b 1
+R37
+R38
+R39
+R13
+R14
+Efulladder
+Z40 w1459448202
+R4
+R5
+R6
+Z41 8Z:/Projeto de Sistemas Digitais/M3/prime_8bits/fulladder.vhd
+Z42 FZ:/Projeto de Sistemas Digitais/M3/prime_8bits/fulladder.vhd
+l0
+L4
+V;DLZL5eJcZ43GD6g_CXJW0
+R9
+31
+Z43 !s108 1468544046.499000
+Z44 !s90 -reportprogress|300|-93|-work|work|Z:/Projeto de Sistemas Digitais/M3/prime_8bits/fulladder.vhd|
+Z45 !s107 Z:/Projeto de Sistemas Digitais/M3/prime_8bits/fulladder.vhd|
+R13
+R14
+!s100 SVgC7AXXXh^:5gM_V8bXn3
+!i10b 1
+Aarch
+R4
+R5
+DEx4 work 9 fulladder 0 22 ;DLZL5eJcZ43GD6g_CXJW0
+l15
+L13
+V]86nbH9:Nl4f[8Fz_;XF:2
+R9
+31
+R43
+R44
+R45
+R13
+R14
+!s100 KhjSCBF0OYD?X`c_8zcDU0
+!i10b 1
+Ehalfadder
+Z46 w1460604576
+R4
+R5
+R6
+Z47 8Z:/Projeto de Sistemas Digitais/M3/prime_8bits/halfadder.vhd
+Z48 FZ:/Projeto de Sistemas Digitais/M3/prime_8bits/halfadder.vhd
+l0
+L4
+V;^T]F=;MDWLFje9X2TY=33
+R9
+31
+Z49 !s108 1468544045.686000
+Z50 !s90 -reportprogress|300|-93|-work|work|Z:/Projeto de Sistemas Digitais/M3/prime_8bits/halfadder.vhd|
+Z51 !s107 Z:/Projeto de Sistemas Digitais/M3/prime_8bits/halfadder.vhd|
+R13
+R14
+!s100 9bzUQES_l`lD5GL8_jb780
+!i10b 1
+Aarch
+R4
+R5
+DEx4 work 9 halfadder 0 22 ;^T]F=;MDWLFje9X2TY=33
+l12
+L11
+VfFE]RGTaj01^I3<:mJMmb1
+R9
+31
+R49
+R50
+R51
+R13
+R14
+!s100 BUmlRRe;LN_;zNdJjRLlc1
+!i10b 1
+Eless_than
+Z52 w1467817083
+R3
+R16
+R4
+R5
+R6
+Z53 8Z:/Projeto de Sistemas Digitais/M3/prime_8bits/less_than.vhd
+Z54 FZ:/Projeto de Sistemas Digitais/M3/prime_8bits/less_than.vhd
+l0
+L5
+VO]^N@ah4DY2H;=:8>T_nc2
+R9
+31
+Z55 !s108 1468544044.811000
+Z56 !s90 -reportprogress|300|-93|-work|work|Z:/Projeto de Sistemas Digitais/M3/prime_8bits/less_than.vhd|
+Z57 !s107 Z:/Projeto de Sistemas Digitais/M3/prime_8bits/less_than.vhd|
+R13
+R14
+!s100 6iQJJh08[G60A=B[iVV452
+!i10b 1
+Aarch
+R3
+R16
+R4
+R5
+DEx4 work 9 less_than 0 22 O]^N@ah4DY2H;=:8>T_nc2
+l12
+L11
+Vj@T_C3>lALZ4?A4DIlHCE2
+R9
+31
+R55
+R56
+R57
+R13
+R14
+!s100 5R?JUnRYR1Df>ObB_Q[Fb1
+!i10b 1
+Emodule_8bits
+Z58 w1468382962
+R4
+R5
+R6
+Z59 8Z:/Projeto de Sistemas Digitais/M3/prime_8bits/module_8bits.vhd
+Z60 FZ:/Projeto de Sistemas Digitais/M3/prime_8bits/module_8bits.vhd
+l0
+L4
+VSTThk83:5bndEhJbadj6D0
+R9
+31
+Z61 !s108 1468544043.983000
+Z62 !s90 -reportprogress|300|-93|-work|work|Z:/Projeto de Sistemas Digitais/M3/prime_8bits/module_8bits.vhd|
+Z63 !s107 Z:/Projeto de Sistemas Digitais/M3/prime_8bits/module_8bits.vhd|
+R13
+R14
+!s100 S9k4RSZm_Sb>z9D:HeiAJ3
+!i10b 1
+Aarch
+R4
+R5
+DEx4 work 12 module_8bits 0 22 STThk83:5bndEhJbadj6D0
+l54
+L16
+Vj6l=f1AJ]KT31ennR5:]10
+R9
+31
+R61
+R62
+R63
+R13
+R14
+!s100 `DkoN_cY1ZMdjb]]^YW]C0
+!i10b 1
+Emodule_control
+Z64 w1468382843
+R4
+R5
+R6
+Z65 8Z:/Projeto de Sistemas Digitais/M3/prime_8bits/module_control.vhd
+Z66 FZ:/Projeto de Sistemas Digitais/M3/prime_8bits/module_control.vhd
+l0
+L4
+VBFNl2nVdYjSR?V9e8X:R@1
+R9
+31
+Z67 !s108 1468544042.983000
+Z68 !s90 -reportprogress|300|-93|-work|work|Z:/Projeto de Sistemas Digitais/M3/prime_8bits/module_control.vhd|
+Z69 !s107 Z:/Projeto de Sistemas Digitais/M3/prime_8bits/module_control.vhd|
+R13
+R14
+!s100 6N1VzLJ=T1z2LLHRP9^j60
+!i10b 1
+Aarch
+R4
+R5
+DEx4 work 14 module_control 0 22 BFNl2nVdYjSR?V9e8X:R@1
+l23
+L16
+V>=nho`G2>@a1^FIgo5fAT0
+R9
+31
+R67
+R68
+R69
+R13
+R14
+!s100 VbY55J1NI:?k3KaSidBI?1
+!i10b 1
+Emodule_datapath
+Z70 w1468383145
+R16
+R3
+R4
+R5
+R6
+Z71 8Z:/Projeto de Sistemas Digitais/M3/prime_8bits/module_datapath.vhd
+Z72 FZ:/Projeto de Sistemas Digitais/M3/prime_8bits/module_datapath.vhd
+l0
+L6
+VFPWVMFGQlc^2f`6zS>7>Y2
+R9
+31
+Z73 !s108 1468544041.624000
+Z74 !s90 -reportprogress|300|-93|-work|work|Z:/Projeto de Sistemas Digitais/M3/prime_8bits/module_datapath.vhd|
+Z75 !s107 Z:/Projeto de Sistemas Digitais/M3/prime_8bits/module_datapath.vhd|
+R13
+R14
+!s100 Rb0Wi]CA^GKH=8?O:Y^UE2
+!i10b 1
+Aarch
+R16
+R3
+R4
+R5
+DEx4 work 15 module_datapath 0 22 FPWVMFGQlc^2f`6zS>7>Y2
+l77
+L20
+V;EJE^eP=iWdEK]?<BAQPz2
+R9
+31
+R73
+R74
+R75
+R13
+R14
+!s100 dU>Zcfj7az^H^oB058T1e3
+!i10b 1
+Emultiplier_as
+Z76 w1466084761
+R4
+R5
+R6
+Z77 8Z:/Projeto de Sistemas Digitais/M3/prime_8bits/multiplier_as.vhd
+Z78 FZ:/Projeto de Sistemas Digitais/M3/prime_8bits/multiplier_as.vhd
+l0
+L4
+V;BYAn=h;kYAi^XgaF>aC72
+R9
+31
+Z79 !s108 1468544040.624000
+Z80 !s90 -reportprogress|300|-93|-work|work|Z:/Projeto de Sistemas Digitais/M3/prime_8bits/multiplier_as.vhd|
+Z81 !s107 Z:/Projeto de Sistemas Digitais/M3/prime_8bits/multiplier_as.vhd|
+R13
+R14
+!s100 TiYhfcQBheh04;O?lCCB:3
+!i10b 1
+Aarch
+R4
+R5
+DEx4 work 13 multiplier_as 0 22 ;BYAn=h;kYAi^XgaF>aC72
+l51
+L12
+VO2d951C4<_U;]1mK`V]:I2
+R9
+31
+R79
+R80
+R81
+R13
+R14
+!s100 mU[^f6zo@U0P8W>QTf0V@3
+!i10b 1
+Eprime_8bits
+Z82 w1468501498
+R4
+R5
+R6
+Z83 8Z:/Projeto de Sistemas Digitais/M3/prime_8bits/prime_8bits.vhd
+Z84 FZ:/Projeto de Sistemas Digitais/M3/prime_8bits/prime_8bits.vhd
+l0
+L4
+VL5b1c9Dn`@_eN5h``]=QW0
+R9
+31
+Z85 !s108 1468544050.828000
+Z86 !s90 -reportprogress|300|-93|-work|work|Z:/Projeto de Sistemas Digitais/M3/prime_8bits/prime_8bits.vhd|
+Z87 !s107 Z:/Projeto de Sistemas Digitais/M3/prime_8bits/prime_8bits.vhd|
+R13
+R14
+!s100 ^KGCmFPQYWIz]MC8W:W=j3
+!i10b 1
+Aarch
+R4
+R5
+DEx4 work 11 prime_8bits 0 22 L5b1c9Dn`@_eN5h``]=QW0
+l59
+L13
+VdZmmfg_=MfhH^H@9KzI8c0
+R9
+31
+R85
+R86
+R87
+R13
+R14
+!s100 ACk6W25V6I[P?ST^h2h@A0
+!i10b 1
+Eprime_control
+Z88 w1468543964
+R4
+R5
+R6
+Z89 8Z:/Projeto de Sistemas Digitais/M3/prime_8bits/prime_control.vhd
+Z90 FZ:/Projeto de Sistemas Digitais/M3/prime_8bits/prime_control.vhd
+l0
+L4
+VHK^?2h=lUU30Gbm;0?^kO3
+R9
+31
+Z91 !s108 1468544049.937000
+Z92 !s90 -reportprogress|300|-93|-work|work|Z:/Projeto de Sistemas Digitais/M3/prime_8bits/prime_control.vhd|
+Z93 !s107 Z:/Projeto de Sistemas Digitais/M3/prime_8bits/prime_control.vhd|
+R13
+R14
+!s100 FfF5L:JWic:H?a;5kzChd0
+!i10b 1
+Aarch
+R4
+R5
+DEx4 work 13 prime_control 0 22 HK^?2h=lUU30Gbm;0?^kO3
+l26
+L19
+V4?D61h<P=`7m1Lff8RIzN1
+R9
+31
+R91
+R92
+R93
+R13
+R14
+!s100 PacVP:Rgk1DKhBgEBY31X2
+!i10b 1
+Eprime_datapath
+Z94 w1468452758
+R4
+R5
+R6
+Z95 8Z:/Projeto de Sistemas Digitais/M3/prime_8bits/prime_datapath.vhd
+Z96 FZ:/Projeto de Sistemas Digitais/M3/prime_8bits/prime_datapath.vhd
+l0
+L4
+VFHF3FA6nFl@@oVNeJ@k7`0
+R9
+31
+Z97 !s108 1468544049.031000
+Z98 !s90 -reportprogress|300|-93|-work|work|Z:/Projeto de Sistemas Digitais/M3/prime_8bits/prime_datapath.vhd|
+Z99 !s107 Z:/Projeto de Sistemas Digitais/M3/prime_8bits/prime_datapath.vhd|
+R13
+R14
+!s100 Sbk_V4_cAc74R^GW3K;Fj0
+!i10b 1
+Aarch
+R4
+R5
+DEx4 work 14 prime_datapath 0 22 FHF3FA6nFl@@oVNeJ@k7`0
+l89
+L20
+VjR7J6bW<6[=XK==l;gm8V0
+R9
+31
+R97
+R98
+R99
+R13
+R14
+!s100 6]S?IU8@c[CES9hzF8lR`1
+!i10b 1
+Ereg_pp_wbits
+Z100 w1465931244
+R2
+R3
+R4
+R5
+R6
+Z101 8Z:/Projeto de Sistemas Digitais/M3/prime_8bits/reg_pp_Wbits.vhd
+Z102 FZ:/Projeto de Sistemas Digitais/M3/prime_8bits/reg_pp_Wbits.vhd
+l0
+L7
+V48R@<CJ?5VMVkiY^5@FXl1
+R9
+31
+Z103 !s108 1468544039.624000
+Z104 !s90 -reportprogress|300|-93|-work|work|Z:/Projeto de Sistemas Digitais/M3/prime_8bits/reg_pp_Wbits.vhd|
+Z105 !s107 Z:/Projeto de Sistemas Digitais/M3/prime_8bits/reg_pp_Wbits.vhd|
+R13
+R14
+!s100 mK]bLh`Zn^V_;j<1_55iS2
+!i10b 1
+Aarch_1
+R2
+R3
+R4
+R5
+DEx4 work 12 reg_pp_wbits 0 22 48R@<CJ?5VMVkiY^5@FXl1
+l16
+L15
+VDP?5cNakoZ0HeR;DJ5C=A1
+R9
+31
+R103
+R104
+R105
+R13
+R14
+!s100 1ZAnd;l]9jNUX6N[;?7PM1
+!i10b 1
+Esub_wbits
+Z106 w1467564837
+R16
+R3
+R4
+R5
+R6
+Z107 8Z:/Projeto de Sistemas Digitais/M3/prime_8bits/sub_Wbits.vhd
+Z108 FZ:/Projeto de Sistemas Digitais/M3/prime_8bits/sub_Wbits.vhd
+l0
+L6
+V40=O1BCDcliCXaRb^fFOE2
+R9
+31
+Z109 !s108 1468544038.654000
+Z110 !s90 -reportprogress|300|-93|-work|work|Z:/Projeto de Sistemas Digitais/M3/prime_8bits/sub_Wbits.vhd|
+Z111 !s107 Z:/Projeto de Sistemas Digitais/M3/prime_8bits/sub_Wbits.vhd|
+R13
+R14
+!s100 6ZeeHmBUE>0n6KDiXmjLE1
+!i10b 1
+Aarch
+R16
+R3
+R4
+R5
+DEx4 work 9 sub_wbits 0 22 40=O1BCDcliCXaRb^fFOE2
+l19
+L14
+V?32BRBWLMcg^AQ4Q@:fUb3
+R9
+31
+R109
+R110
+R111
+R13
+R14
+!s100 OORaI>HQMJ6V@?Wj>h8Ml1
+!i10b 1

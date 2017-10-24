@@ -1,0 +1,397 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do prime_8bits_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {Z:/Projeto de Sistemas Digitais/M3/prime_8bits/counter_WbitsR1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity counter_WbitsR1
+# -- Compiling architecture arch_1 of counter_WbitsR1
+# vcom -93 -work work {Z:/Projeto de Sistemas Digitais/M3/prime_8bits/sub_Wbits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity sub_Wbits
+# -- Compiling architecture arch of sub_Wbits
+# vcom -93 -work work {Z:/Projeto de Sistemas Digitais/M3/prime_8bits/reg_pp_Wbits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity reg_pp_Wbits
+# -- Compiling architecture arch_1 of reg_pp_Wbits
+# vcom -93 -work work {Z:/Projeto de Sistemas Digitais/M3/prime_8bits/multiplier_as.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity multiplier_as
+# -- Compiling architecture arch of multiplier_as
+# vcom -93 -work work {Z:/Projeto de Sistemas Digitais/M3/prime_8bits/module_datapath.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity module_datapath
+# -- Compiling architecture arch of module_datapath
+# vcom -93 -work work {Z:/Projeto de Sistemas Digitais/M3/prime_8bits/module_control.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity module_control
+# -- Compiling architecture arch of module_control
+# vcom -93 -work work {Z:/Projeto de Sistemas Digitais/M3/prime_8bits/module_8bits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity module_8bits
+# -- Compiling architecture arch of module_8bits
+# vcom -93 -work work {Z:/Projeto de Sistemas Digitais/M3/prime_8bits/less_than.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity less_than
+# -- Compiling architecture arch of less_than
+# vcom -93 -work work {Z:/Projeto de Sistemas Digitais/M3/prime_8bits/halfadder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity halfadder
+# -- Compiling architecture arch of halfadder
+# vcom -93 -work work {Z:/Projeto de Sistemas Digitais/M3/prime_8bits/fulladder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fulladder
+# -- Compiling architecture arch of fulladder
+# vcom -93 -work work {Z:/Projeto de Sistemas Digitais/M3/prime_8bits/counter_Wbits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity counter_Wbits
+# -- Compiling architecture arch_1 of counter_Wbits
+# vcom -93 -work work {Z:/Projeto de Sistemas Digitais/M3/prime_8bits/adder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity adder
+# -- Compiling architecture arch of adder
+# vcom -93 -work work {Z:/Projeto de Sistemas Digitais/M3/prime_8bits/prime_datapath.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity prime_datapath
+# -- Compiling architecture arch of prime_datapath
+# vcom -93 -work work {Z:/Projeto de Sistemas Digitais/M3/prime_8bits/prime_control.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity prime_control
+# -- Compiling architecture arch of prime_control
+# vcom -93 -work work {Z:/Projeto de Sistemas Digitais/M3/prime_8bits/prime_8bits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity prime_8bits
+# -- Compiling architecture arch of prime_8bits
+# vcom -93 -work work {Z:/Projeto de Sistemas Digitais/M3/prime_8bits/bigger_than.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity bigger_than
+# -- Compiling architecture arch of bigger_than
+# vcom -93 -work work {Z:/Projeto de Sistemas Digitais/M3/prime_8bits/equal.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity equal
+# -- Compiling architecture arch of equal
+# 
+vsim -voptargs=+acc work.prime_8bits
+# vsim -voptargs=+acc work.prime_8bits 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.prime_8bits(arch)
+# Loading work.prime_control(arch)
+# Loading work.prime_datapath(arch)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.reg_pp_wbits(arch_1)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.counter_wbitsr1(arch_1)
+# Loading work.module_8bits(arch)
+# Loading work.module_control(arch)
+# Loading work.module_datapath(arch)
+# Loading work.counter_wbits(arch_1)
+# Loading work.multiplier_as(arch)
+# Loading work.adder(arch)
+# Loading work.halfadder(arch)
+# Loading work.fulladder(arch)
+# Loading work.sub_wbits(arch)
+# Loading work.less_than(arch)
+# Loading work.equal(arch)
+# Loading work.bigger_than(arch)
+add wave -position insertpoint  \
+sim:/prime_8bits/i_clk \
+sim:/prime_8bits/i_clrn \
+sim:/prime_8bits/i_data \
+sim:/prime_8bits/i_startn \
+sim:/prime_8bits/o_rdy \
+sim:/prime_8bits/o_res
+force -freeze sim:/prime_8bits/i_clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/prime_8bits/i_clrn 1 0
+force -freeze sim:/prime_8bits/i_data 00000100 0
+force -freeze sim:/prime_8bits/i_startn 1 0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /prime_8bits/u_datapath/u_eual2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /prime_8bits/u_datapath/u_eual2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /prime_8bits/u_datapath/u_biggerthan
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /prime_8bits/u_datapath/u_biggerthan
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /prime_8bits/u_datapath/u_equal
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /prime_8bits/u_datapath/u_equal
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /prime_8bits/u_datapath/u_module/u_datapath/u_less_than
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /prime_8bits/u_datapath/u_module/u_datapath/u_less_than
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /prime_8bits/u_datapath/u_module/u_datapath/u_AsubMultRes
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /prime_8bits/u_datapath/u_module/u_datapath/u_AsubMultRes
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /prime_8bits/u_datapath/u_eual2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /prime_8bits/u_datapath/u_equal
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /prime_8bits/u_datapath/u_module/u_datapath/u_AsubMultRes
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /prime_8bits/u_datapath/u_module/u_datapath/u_AsubMultRes
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /prime_8bits/u_datapath/u_module/u_datapath/u_less_than
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 2  Instance: /prime_8bits/u_datapath/u_module/u_datapath/u_less_than
+force -freeze sim:/prime_8bits/o_rdy 0 0
+noforce sim:/prime_8bits/o_rdy
+force -freeze sim:/prime_8bits/i_startn 0 0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 200 ps  Iteration: 1  Instance: /prime_8bits/u_datapath/u_biggerthan
+force -freeze sim:/prime_8bits/i_startn 1 0
+run
+run
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 500 ps  Iteration: 1  Instance: /prime_8bits/u_datapath/u_module/u_datapath/u_less_than
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 500 ps  Iteration: 3  Instance: /prime_8bits/u_datapath/u_module/u_datapath/u_AsubMultRes
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 500 ps  Iteration: 13  Instance: /prime_8bits/u_datapath/u_module/u_datapath/u_AsubMultRes
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 500 ps  Iteration: 14  Instance: /prime_8bits/u_datapath/u_module/u_datapath/u_AsubMultRes
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 500 ps  Iteration: 15  Instance: /prime_8bits/u_datapath/u_module/u_datapath/u_AsubMultRes
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/prime_8bits/i_data 00000111 0
+force -freeze sim:/prime_8bits/i_startn 0 0
+force -freeze sim:/prime_8bits/i_startn 1 0
+run
+run
+force -freeze sim:/prime_8bits/i_startn 0 0
+run
+force -freeze sim:/prime_8bits/i_startn 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run

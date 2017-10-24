@@ -1,0 +1,15 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL
+
+ENTITY multiplier_as IS
+
+
+
+END multiplier_as;
+
+ARCHITECTURE arch OF multiplier_as IS
+
+
+
+
+END arch;

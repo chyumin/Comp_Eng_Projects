@@ -1,0 +1,9 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {Z:/Projeto de Sistemas Digitais/M3/module_8bits/counter_Wbits.vhd}
+

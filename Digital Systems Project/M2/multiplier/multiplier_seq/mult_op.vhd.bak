@@ -1,0 +1,14 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+ENTITY mult_op IS
+	PORT(
+	
+	);
+END mult_op;
+
+ARCHITECTURE arch OF mult_op IS
+
+BEGIN
+
+END arch;

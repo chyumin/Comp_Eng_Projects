@@ -1,0 +1,1419 @@
+TimeQuest Timing Analyzer report for multiplier_seq
+Thu Jun 16 10:38:21 2016
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Setup: 'i_CLK'
+ 12. Slow Model Hold: 'i_CLK'
+ 13. Slow Model Recovery: 'i_CLK'
+ 14. Slow Model Removal: 'i_CLK'
+ 15. Slow Model Minimum Pulse Width: 'i_CLK'
+ 16. Setup Times
+ 17. Hold Times
+ 18. Clock to Output Times
+ 19. Minimum Clock to Output Times
+ 20. Fast Model Setup Summary
+ 21. Fast Model Hold Summary
+ 22. Fast Model Recovery Summary
+ 23. Fast Model Removal Summary
+ 24. Fast Model Minimum Pulse Width Summary
+ 25. Fast Model Setup: 'i_CLK'
+ 26. Fast Model Hold: 'i_CLK'
+ 27. Fast Model Recovery: 'i_CLK'
+ 28. Fast Model Removal: 'i_CLK'
+ 29. Fast Model Minimum Pulse Width: 'i_CLK'
+ 30. Setup Times
+ 31. Hold Times
+ 32. Clock to Output Times
+ 33. Minimum Clock to Output Times
+ 34. Multicorner Timing Analysis Summary
+ 35. Setup Times
+ 36. Hold Times
+ 37. Clock to Output Times
+ 38. Minimum Clock to Output Times
+ 39. Setup Transfers
+ 40. Hold Transfers
+ 41. Recovery Transfers
+ 42. Removal Transfers
+ 43. Report TCCS
+ 44. Report RSKM
+ 45. Unconstrained Paths
+ 46. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                                      ;
++--------------------+-------------------------------------------------------------------+
+; Quartus II Version ; Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition ;
+; Revision Name      ; multiplier_seq                                                    ;
+; Device Family      ; Cyclone II                                                        ;
+; Device Name        ; EP2C35F672C6                                                      ;
+; Timing Models      ; Final                                                             ;
+; Delay Model        ; Combined                                                          ;
+; Rise/Fall Delays   ; Unavailable                                                       ;
++--------------------+-------------------------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 2      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                            ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
+; Clock Name ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets   ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
+; i_CLK      ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { i_CLK } ;
++------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-----------+
+
+
++--------------------------------------------------+
+; Slow Model Fmax Summary                          ;
++------------+-----------------+------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
++------------+-----------------+------------+------+
+; 272.11 MHz ; 272.11 MHz      ; i_CLK      ;      ;
++------------+-----------------+------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++--------------------------------+
+; Slow Model Setup Summary       ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; i_CLK ; -2.675 ; -51.441       ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Slow Model Hold Summary       ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; i_CLK ; 0.391 ; 0.000         ;
++-------+-------+---------------+
+
+
++--------------------------------+
+; Slow Model Recovery Summary    ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; i_CLK ; -0.837 ; -12.861       ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Slow Model Removal Summary    ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; i_CLK ; 1.454 ; 0.000         ;
++-------+-------+---------------+
+
+
++----------------------------------------+
+; Slow Model Minimum Pulse Width Summary ;
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; i_CLK ; -1.380 ; -55.380               ;
++-------+--------+-----------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'i_CLK'                                                                                                                                          ;
++--------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                ; To Node                                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; -2.675 ; mult_op:u_op|running_sum:rm_0|w_data[9]  ; mult_op:u_op|running_sum:rm_0|w_data[16] ; i_CLK        ; i_CLK       ; 1.000        ; -0.001     ; 3.710      ;
+; -2.602 ; mult_op:u_op|running_sum:rm_0|w_data[9]  ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 3.638      ;
+; -2.593 ; register_pp:reg_A|q[3]                   ; mult_op:u_op|running_sum:rm_0|w_data[16] ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 3.629      ;
+; -2.520 ; register_pp:reg_A|q[3]                   ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 1.000        ; 0.001      ; 3.557      ;
+; -2.506 ; register_pp:reg_A|q[0]                   ; mult_op:u_op|running_sum:rm_0|w_data[16] ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 3.542      ;
+; -2.477 ; mult_op:u_op|running_sum:rm_0|w_data[11] ; mult_op:u_op|running_sum:rm_0|w_data[16] ; i_CLK        ; i_CLK       ; 1.000        ; -0.001     ; 3.512      ;
+; -2.433 ; register_pp:reg_A|q[0]                   ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 1.000        ; 0.001      ; 3.470      ;
+; -2.404 ; mult_op:u_op|running_sum:rm_0|w_data[11] ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 3.440      ;
+; -2.378 ; mult_op:u_op|running_sum:rm_0|w_data[8]  ; mult_op:u_op|running_sum:rm_0|w_data[16] ; i_CLK        ; i_CLK       ; 1.000        ; -0.001     ; 3.413      ;
+; -2.329 ; register_pp:reg_A|q[1]                   ; mult_op:u_op|running_sum:rm_0|w_data[16] ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 3.365      ;
+; -2.305 ; mult_op:u_op|running_sum:rm_0|w_data[8]  ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 3.341      ;
+; -2.295 ; mult_op:u_op|running_sum:rm_0|w_data[10] ; mult_op:u_op|running_sum:rm_0|w_data[16] ; i_CLK        ; i_CLK       ; 1.000        ; -0.001     ; 3.330      ;
+; -2.256 ; register_pp:reg_A|q[1]                   ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 1.000        ; 0.001      ; 3.293      ;
+; -2.222 ; mult_op:u_op|running_sum:rm_0|w_data[10] ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 3.258      ;
+; -2.211 ; mult_control:u_control|state.s2          ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.250      ;
+; -2.211 ; mult_control:u_control|state.s2          ; mult_op:u_op|running_sum:rm_0|w_data[14] ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.250      ;
+; -2.211 ; mult_control:u_control|state.s2          ; mult_op:u_op|running_sum:rm_0|w_data[13] ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.250      ;
+; -2.211 ; mult_control:u_control|state.s2          ; mult_op:u_op|running_sum:rm_0|w_data[12] ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.250      ;
+; -2.211 ; mult_control:u_control|state.s2          ; mult_op:u_op|running_sum:rm_0|w_data[11] ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.250      ;
+; -2.211 ; mult_control:u_control|state.s2          ; mult_op:u_op|running_sum:rm_0|w_data[10] ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.250      ;
+; -2.211 ; mult_control:u_control|state.s2          ; mult_op:u_op|running_sum:rm_0|w_data[9]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.250      ;
+; -2.211 ; mult_control:u_control|state.s2          ; mult_op:u_op|running_sum:rm_0|w_data[8]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.250      ;
+; -2.202 ; mult_op:u_op|running_sum:rm_0|w_data[9]  ; mult_op:u_op|running_sum:rm_0|w_data[14] ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 3.238      ;
+; -2.180 ; mult_control:u_control|state.s6          ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.219      ;
+; -2.180 ; mult_control:u_control|state.s6          ; mult_op:u_op|running_sum:rm_0|w_data[14] ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.219      ;
+; -2.180 ; mult_control:u_control|state.s6          ; mult_op:u_op|running_sum:rm_0|w_data[13] ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.219      ;
+; -2.180 ; mult_control:u_control|state.s6          ; mult_op:u_op|running_sum:rm_0|w_data[12] ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.219      ;
+; -2.180 ; mult_control:u_control|state.s6          ; mult_op:u_op|running_sum:rm_0|w_data[11] ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.219      ;
+; -2.180 ; mult_control:u_control|state.s6          ; mult_op:u_op|running_sum:rm_0|w_data[10] ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.219      ;
+; -2.180 ; mult_control:u_control|state.s6          ; mult_op:u_op|running_sum:rm_0|w_data[9]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.219      ;
+; -2.180 ; mult_control:u_control|state.s6          ; mult_op:u_op|running_sum:rm_0|w_data[8]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.219      ;
+; -2.135 ; mult_control:u_control|state.s15         ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.173      ;
+; -2.135 ; mult_control:u_control|state.s15         ; mult_op:u_op|running_sum:rm_0|w_data[14] ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.173      ;
+; -2.135 ; mult_control:u_control|state.s15         ; mult_op:u_op|running_sum:rm_0|w_data[13] ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.173      ;
+; -2.135 ; mult_control:u_control|state.s15         ; mult_op:u_op|running_sum:rm_0|w_data[12] ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.173      ;
+; -2.135 ; mult_control:u_control|state.s15         ; mult_op:u_op|running_sum:rm_0|w_data[11] ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.173      ;
+; -2.135 ; mult_control:u_control|state.s15         ; mult_op:u_op|running_sum:rm_0|w_data[10] ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.173      ;
+; -2.135 ; mult_control:u_control|state.s15         ; mult_op:u_op|running_sum:rm_0|w_data[9]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.173      ;
+; -2.135 ; mult_control:u_control|state.s15         ; mult_op:u_op|running_sum:rm_0|w_data[8]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.173      ;
+; -2.130 ; mult_control:u_control|state.s2          ; mult_op:u_op|running_sum:rm_0|w_data[7]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.169      ;
+; -2.130 ; mult_control:u_control|state.s2          ; mult_op:u_op|running_sum:rm_0|w_data[6]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.169      ;
+; -2.130 ; mult_control:u_control|state.s2          ; mult_op:u_op|running_sum:rm_0|w_data[5]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.169      ;
+; -2.130 ; mult_control:u_control|state.s2          ; mult_op:u_op|running_sum:rm_0|w_data[4]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.169      ;
+; -2.130 ; mult_control:u_control|state.s2          ; mult_op:u_op|running_sum:rm_0|w_data[3]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.169      ;
+; -2.130 ; mult_control:u_control|state.s2          ; mult_op:u_op|running_sum:rm_0|w_data[2]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.169      ;
+; -2.130 ; mult_control:u_control|state.s2          ; mult_op:u_op|running_sum:rm_0|w_data[1]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.169      ;
+; -2.130 ; mult_control:u_control|state.s2          ; mult_op:u_op|running_sum:rm_0|w_data[0]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.169      ;
+; -2.120 ; register_pp:reg_A|q[3]                   ; mult_op:u_op|running_sum:rm_0|w_data[14] ; i_CLK        ; i_CLK       ; 1.000        ; 0.001      ; 3.157      ;
+; -2.099 ; mult_control:u_control|state.s6          ; mult_op:u_op|running_sum:rm_0|w_data[7]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.138      ;
+; -2.099 ; mult_control:u_control|state.s6          ; mult_op:u_op|running_sum:rm_0|w_data[6]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.138      ;
+; -2.099 ; mult_control:u_control|state.s6          ; mult_op:u_op|running_sum:rm_0|w_data[5]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.138      ;
+; -2.099 ; mult_control:u_control|state.s6          ; mult_op:u_op|running_sum:rm_0|w_data[4]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.138      ;
+; -2.099 ; mult_control:u_control|state.s6          ; mult_op:u_op|running_sum:rm_0|w_data[3]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.138      ;
+; -2.099 ; mult_control:u_control|state.s6          ; mult_op:u_op|running_sum:rm_0|w_data[2]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.138      ;
+; -2.099 ; mult_control:u_control|state.s6          ; mult_op:u_op|running_sum:rm_0|w_data[1]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.138      ;
+; -2.099 ; mult_control:u_control|state.s6          ; mult_op:u_op|running_sum:rm_0|w_data[0]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.138      ;
+; -2.085 ; mult_control:u_control|state.s9          ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.123      ;
+; -2.085 ; mult_control:u_control|state.s9          ; mult_op:u_op|running_sum:rm_0|w_data[14] ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.123      ;
+; -2.085 ; mult_control:u_control|state.s9          ; mult_op:u_op|running_sum:rm_0|w_data[13] ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.123      ;
+; -2.085 ; mult_control:u_control|state.s9          ; mult_op:u_op|running_sum:rm_0|w_data[12] ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.123      ;
+; -2.085 ; mult_control:u_control|state.s9          ; mult_op:u_op|running_sum:rm_0|w_data[11] ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.123      ;
+; -2.085 ; mult_control:u_control|state.s9          ; mult_op:u_op|running_sum:rm_0|w_data[10] ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.123      ;
+; -2.085 ; mult_control:u_control|state.s9          ; mult_op:u_op|running_sum:rm_0|w_data[9]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.123      ;
+; -2.085 ; mult_control:u_control|state.s9          ; mult_op:u_op|running_sum:rm_0|w_data[8]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.123      ;
+; -2.062 ; register_pp:reg_A|q[2]                   ; mult_op:u_op|running_sum:rm_0|w_data[16] ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 3.098      ;
+; -2.033 ; register_pp:reg_A|q[0]                   ; mult_op:u_op|running_sum:rm_0|w_data[14] ; i_CLK        ; i_CLK       ; 1.000        ; 0.001      ; 3.070      ;
+; -2.015 ; mult_control:u_control|state.s4          ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.054      ;
+; -2.015 ; mult_control:u_control|state.s4          ; mult_op:u_op|running_sum:rm_0|w_data[14] ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.054      ;
+; -2.015 ; mult_control:u_control|state.s4          ; mult_op:u_op|running_sum:rm_0|w_data[13] ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.054      ;
+; -2.015 ; mult_control:u_control|state.s4          ; mult_op:u_op|running_sum:rm_0|w_data[12] ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.054      ;
+; -2.015 ; mult_control:u_control|state.s4          ; mult_op:u_op|running_sum:rm_0|w_data[11] ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.054      ;
+; -2.015 ; mult_control:u_control|state.s4          ; mult_op:u_op|running_sum:rm_0|w_data[10] ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.054      ;
+; -2.015 ; mult_control:u_control|state.s4          ; mult_op:u_op|running_sum:rm_0|w_data[9]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.054      ;
+; -2.015 ; mult_control:u_control|state.s4          ; mult_op:u_op|running_sum:rm_0|w_data[8]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 3.054      ;
+; -2.004 ; mult_op:u_op|running_sum:rm_0|w_data[11] ; mult_op:u_op|running_sum:rm_0|w_data[14] ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 3.040      ;
+; -1.999 ; mult_control:u_control|state.s11         ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.037      ;
+; -1.999 ; mult_control:u_control|state.s11         ; mult_op:u_op|running_sum:rm_0|w_data[14] ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.037      ;
+; -1.999 ; mult_control:u_control|state.s11         ; mult_op:u_op|running_sum:rm_0|w_data[13] ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.037      ;
+; -1.999 ; mult_control:u_control|state.s11         ; mult_op:u_op|running_sum:rm_0|w_data[12] ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.037      ;
+; -1.999 ; mult_control:u_control|state.s11         ; mult_op:u_op|running_sum:rm_0|w_data[11] ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.037      ;
+; -1.999 ; mult_control:u_control|state.s11         ; mult_op:u_op|running_sum:rm_0|w_data[10] ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.037      ;
+; -1.999 ; mult_control:u_control|state.s11         ; mult_op:u_op|running_sum:rm_0|w_data[9]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.037      ;
+; -1.999 ; mult_control:u_control|state.s11         ; mult_op:u_op|running_sum:rm_0|w_data[8]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.037      ;
+; -1.993 ; mult_control:u_control|state.s14         ; mult_op:u_op|running_sum:rm_0|w_data[7]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.031      ;
+; -1.993 ; mult_control:u_control|state.s14         ; mult_op:u_op|running_sum:rm_0|w_data[6]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.031      ;
+; -1.993 ; mult_control:u_control|state.s14         ; mult_op:u_op|running_sum:rm_0|w_data[5]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.031      ;
+; -1.993 ; mult_control:u_control|state.s14         ; mult_op:u_op|running_sum:rm_0|w_data[4]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.031      ;
+; -1.993 ; mult_control:u_control|state.s14         ; mult_op:u_op|running_sum:rm_0|w_data[3]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.031      ;
+; -1.993 ; mult_control:u_control|state.s14         ; mult_op:u_op|running_sum:rm_0|w_data[2]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.031      ;
+; -1.993 ; mult_control:u_control|state.s14         ; mult_op:u_op|running_sum:rm_0|w_data[1]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.031      ;
+; -1.993 ; mult_control:u_control|state.s14         ; mult_op:u_op|running_sum:rm_0|w_data[0]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.031      ;
+; -1.989 ; register_pp:reg_A|q[2]                   ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 1.000        ; 0.001      ; 3.026      ;
+; -1.987 ; mult_control:u_control|state.s14         ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.025      ;
+; -1.987 ; mult_control:u_control|state.s14         ; mult_op:u_op|running_sum:rm_0|w_data[14] ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.025      ;
+; -1.987 ; mult_control:u_control|state.s14         ; mult_op:u_op|running_sum:rm_0|w_data[13] ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.025      ;
+; -1.987 ; mult_control:u_control|state.s14         ; mult_op:u_op|running_sum:rm_0|w_data[12] ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.025      ;
+; -1.987 ; mult_control:u_control|state.s14         ; mult_op:u_op|running_sum:rm_0|w_data[11] ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.025      ;
+; -1.987 ; mult_control:u_control|state.s14         ; mult_op:u_op|running_sum:rm_0|w_data[10] ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.025      ;
+; -1.987 ; mult_control:u_control|state.s14         ; mult_op:u_op|running_sum:rm_0|w_data[9]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.025      ;
+; -1.987 ; mult_control:u_control|state.s14         ; mult_op:u_op|running_sum:rm_0|w_data[8]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.002      ; 3.025      ;
++--------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'i_CLK'                                                                                                                                          ;
++-------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                ; To Node                                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.391 ; mult_control:u_control|state.idle        ; mult_control:u_control|state.idle        ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; mult_op:u_op|running_sum:rm_0|w_data[16] ; mult_op:u_op|running_sum:rm_0|w_data[16] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; mult_op:u_op|running_sum:rm_0|w_data[11] ; mult_op:u_op|running_sum:rm_0|w_data[11] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; mult_op:u_op|running_sum:rm_0|w_data[8]  ; mult_op:u_op|running_sum:rm_0|w_data[8]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.657      ;
+; 0.519 ; mult_op:u_op|running_sum:rm_0|w_data[2]  ; mult_op:u_op|running_sum:rm_0|w_data[1]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.785      ;
+; 0.525 ; mult_op:u_op|running_sum:rm_0|w_data[1]  ; mult_op:u_op|running_sum:rm_0|w_data[0]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.791      ;
+; 0.526 ; mult_op:u_op|running_sum:rm_0|w_data[7]  ; mult_op:u_op|running_sum:rm_0|w_data[6]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.792      ;
+; 0.526 ; mult_op:u_op|running_sum:rm_0|w_data[5]  ; mult_op:u_op|running_sum:rm_0|w_data[4]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.792      ;
+; 0.526 ; mult_op:u_op|running_sum:rm_0|w_data[4]  ; mult_op:u_op|running_sum:rm_0|w_data[3]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.792      ;
+; 0.527 ; register_pp:reg_B|q[1]                   ; mult_control:u_control|state.s3          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.793      ;
+; 0.527 ; mult_op:u_op|running_sum:rm_0|w_data[6]  ; mult_op:u_op|running_sum:rm_0|w_data[5]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.793      ;
+; 0.528 ; register_pp:reg_B|q[1]                   ; mult_control:u_control|state.s4          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.794      ;
+; 0.528 ; mult_op:u_op|running_sum:rm_0|w_data[3]  ; mult_op:u_op|running_sum:rm_0|w_data[2]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.794      ;
+; 0.531 ; mult_control:u_control|state.s13         ; mult_control:u_control|state.s14         ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.797      ;
+; 0.532 ; register_pp:reg_B|q[7]                   ; mult_control:u_control|state.s15         ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.798      ;
+; 0.532 ; mult_control:u_control|state.s7          ; mult_control:u_control|state.s8          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.798      ;
+; 0.534 ; mult_control:u_control|state.s9          ; mult_control:u_control|state.s10         ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.800      ;
+; 0.534 ; register_pp:reg_B|q[0]                   ; mult_control:u_control|state.s2          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.800      ;
+; 0.534 ; register_pp:reg_B|q[2]                   ; mult_control:u_control|state.s5          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.800      ;
+; 0.534 ; mult_control:u_control|state.s5          ; mult_control:u_control|state.s6          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.800      ;
+; 0.537 ; button:u_button|state.s2                 ; button:u_button|state.s1                 ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.803      ;
+; 0.539 ; button:u_button|state.s1                 ; button:u_button|state.s2                 ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.805      ;
+; 0.539 ; register_pp:reg_B|q[0]                   ; mult_control:u_control|state.s1          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.805      ;
+; 0.542 ; mult_control:u_control|state.s14         ; mult_control:u_control|state.s16         ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.808      ;
+; 0.542 ; button:u_button|state.s2                 ; mult_control:u_control|state.idle        ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.808      ;
+; 0.543 ; mult_control:u_control|state.s10         ; mult_control:u_control|state.s11         ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.809      ;
+; 0.546 ; mult_control:u_control|state.s12         ; mult_control:u_control|state.s13         ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.812      ;
+; 0.652 ; mult_op:u_op|running_sum:rm_0|w_data[10] ; mult_op:u_op|running_sum:rm_0|w_data[9]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.918      ;
+; 0.664 ; register_pp:reg_B|q[3]                   ; mult_control:u_control|state.s8          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.930      ;
+; 0.666 ; register_pp:reg_B|q[4]                   ; mult_control:u_control|state.s9          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.932      ;
+; 0.670 ; mult_control:u_control|state.s2          ; mult_control:u_control|state.s3          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.936      ;
+; 0.670 ; mult_control:u_control|state.s0          ; mult_control:u_control|state.s1          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.936      ;
+; 0.671 ; register_pp:reg_B|q[3]                   ; mult_control:u_control|state.s7          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.937      ;
+; 0.673 ; mult_control:u_control|state.s2          ; mult_control:u_control|state.s4          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.939      ;
+; 0.673 ; register_pp:reg_B|q[4]                   ; mult_control:u_control|state.s10         ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.939      ;
+; 0.676 ; mult_control:u_control|state.s4          ; mult_control:u_control|state.s5          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.942      ;
+; 0.676 ; mult_control:u_control|state.s4          ; mult_control:u_control|state.s6          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.942      ;
+; 0.679 ; mult_control:u_control|state.s0          ; mult_control:u_control|state.s2          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.945      ;
+; 0.733 ; mult_control:u_control|state.s8          ; mult_control:u_control|state.s9          ; i_CLK        ; i_CLK       ; 0.000        ; 0.001      ; 1.000      ;
+; 0.780 ; register_pp:reg_B|q[6]                   ; mult_control:u_control|state.s14         ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.046      ;
+; 0.780 ; register_pp:reg_B|q[6]                   ; mult_control:u_control|state.s13         ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.046      ;
+; 0.794 ; register_pp:reg_B|q[5]                   ; mult_control:u_control|state.s11         ; i_CLK        ; i_CLK       ; 0.000        ; 0.001      ; 1.061      ;
+; 0.799 ; register_pp:reg_B|q[5]                   ; mult_control:u_control|state.s12         ; i_CLK        ; i_CLK       ; 0.000        ; 0.001      ; 1.066      ;
+; 0.808 ; register_pp:reg_B|q[7]                   ; mult_control:u_control|state.s16         ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.074      ;
+; 0.813 ; mult_control:u_control|state.s10         ; mult_control:u_control|state.s12         ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.079      ;
+; 0.814 ; mult_control:u_control|state.s6          ; mult_control:u_control|state.s8          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.080      ;
+; 0.814 ; mult_control:u_control|state.s1          ; mult_control:u_control|state.s2          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.080      ;
+; 0.814 ; mult_control:u_control|state.s6          ; mult_control:u_control|state.s7          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.080      ;
+; 0.816 ; register_pp:reg_B|q[2]                   ; mult_control:u_control|state.s6          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.082      ;
+; 0.818 ; mult_control:u_control|state.s3          ; mult_control:u_control|state.s4          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.084      ;
+; 0.819 ; mult_op:u_op|running_sum:rm_0|w_data[11] ; mult_op:u_op|running_sum:rm_0|w_data[10] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.085      ;
+; 0.820 ; mult_op:u_op|running_sum:rm_0|w_data[14] ; mult_op:u_op|running_sum:rm_0|w_data[13] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.086      ;
+; 0.821 ; mult_op:u_op|running_sum:rm_0|w_data[9]  ; mult_op:u_op|running_sum:rm_0|w_data[8]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.087      ;
+; 0.827 ; mult_control:u_control|state.s14         ; mult_control:u_control|state.s15         ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.093      ;
+; 0.849 ; mult_control:u_control|state.s15         ; mult_control:u_control|state.s16         ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.115      ;
+; 0.850 ; mult_control:u_control|state.s12         ; mult_control:u_control|state.s14         ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.116      ;
+; 0.850 ; mult_control:u_control|state.s11         ; mult_control:u_control|state.s12         ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.116      ;
+; 0.853 ; mult_op:u_op|running_sum:rm_0|w_data[8]  ; mult_op:u_op|running_sum:rm_0|w_data[7]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.119      ;
+; 0.955 ; mult_op:u_op|running_sum:rm_0|w_data[12] ; mult_op:u_op|running_sum:rm_0|w_data[11] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.221      ;
+; 0.971 ; mult_op:u_op|running_sum:rm_0|w_data[16] ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 0.000        ; 0.001      ; 1.238      ;
+; 0.971 ; register_pp:reg_A|q[4]                   ; mult_op:u_op|running_sum:rm_0|w_data[12] ; i_CLK        ; i_CLK       ; 0.000        ; 0.001      ; 1.238      ;
+; 0.995 ; mult_op:u_op|running_sum:rm_0|w_data[15] ; mult_op:u_op|running_sum:rm_0|w_data[14] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.261      ;
+; 1.011 ; mult_control:u_control|state.s8          ; mult_control:u_control|state.s10         ; i_CLK        ; i_CLK       ; 0.000        ; 0.001      ; 1.278      ;
+; 1.034 ; mult_op:u_op|running_sum:rm_0|w_data[13] ; mult_op:u_op|running_sum:rm_0|w_data[12] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.300      ;
+; 1.075 ; register_pp:reg_A|q[7]                   ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 0.000        ; 0.001      ; 1.342      ;
+; 1.079 ; mult_op:u_op|running_sum:rm_0|w_data[14] ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.345      ;
+; 1.186 ; mult_control:u_control|state.start       ; mult_control:u_control|state.s0          ; i_CLK        ; i_CLK       ; 0.000        ; -0.003     ; 1.449      ;
+; 1.199 ; mult_control:u_control|state.s16         ; mult_control:u_control|state.idle        ; i_CLK        ; i_CLK       ; 0.000        ; 0.002      ; 1.467      ;
+; 1.202 ; register_pp:reg_A|q[0]                   ; mult_op:u_op|running_sum:rm_0|w_data[9]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.001      ; 1.469      ;
+; 1.216 ; mult_op:u_op|running_sum:rm_0|w_data[13] ; mult_op:u_op|running_sum:rm_0|w_data[14] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.482      ;
+; 1.249 ; register_pp:reg_A|q[0]                   ; mult_op:u_op|running_sum:rm_0|w_data[8]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.001      ; 1.516      ;
+; 1.253 ; register_pp:reg_A|q[2]                   ; mult_op:u_op|running_sum:rm_0|w_data[11] ; i_CLK        ; i_CLK       ; 0.000        ; 0.001      ; 1.520      ;
+; 1.258 ; mult_op:u_op|running_sum:rm_0|w_data[15] ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.524      ;
+; 1.267 ; mult_op:u_op|running_sum:rm_0|w_data[15] ; mult_op:u_op|running_sum:rm_0|w_data[16] ; i_CLK        ; i_CLK       ; 0.000        ; -0.001     ; 1.532      ;
+; 1.354 ; mult_control:u_control|state.start       ; register_pp:reg_A|q[0]                   ; i_CLK        ; i_CLK       ; 0.000        ; -0.001     ; 1.619      ;
+; 1.354 ; mult_control:u_control|state.start       ; register_pp:reg_A|q[1]                   ; i_CLK        ; i_CLK       ; 0.000        ; -0.001     ; 1.619      ;
+; 1.354 ; mult_control:u_control|state.start       ; register_pp:reg_A|q[3]                   ; i_CLK        ; i_CLK       ; 0.000        ; -0.001     ; 1.619      ;
+; 1.354 ; mult_control:u_control|state.start       ; register_pp:reg_A|q[2]                   ; i_CLK        ; i_CLK       ; 0.000        ; -0.001     ; 1.619      ;
+; 1.354 ; mult_control:u_control|state.start       ; register_pp:reg_A|q[4]                   ; i_CLK        ; i_CLK       ; 0.000        ; -0.001     ; 1.619      ;
+; 1.354 ; mult_control:u_control|state.start       ; register_pp:reg_A|q[5]                   ; i_CLK        ; i_CLK       ; 0.000        ; -0.001     ; 1.619      ;
+; 1.354 ; mult_control:u_control|state.start       ; register_pp:reg_A|q[6]                   ; i_CLK        ; i_CLK       ; 0.000        ; -0.001     ; 1.619      ;
+; 1.354 ; mult_control:u_control|state.start       ; register_pp:reg_A|q[7]                   ; i_CLK        ; i_CLK       ; 0.000        ; -0.001     ; 1.619      ;
+; 1.387 ; register_pp:reg_A|q[4]                   ; mult_op:u_op|running_sum:rm_0|w_data[13] ; i_CLK        ; i_CLK       ; 0.000        ; 0.001      ; 1.654      ;
+; 1.391 ; register_pp:reg_A|q[7]                   ; mult_op:u_op|running_sum:rm_0|w_data[16] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.657      ;
+; 1.426 ; register_pp:reg_A|q[5]                   ; mult_op:u_op|running_sum:rm_0|w_data[14] ; i_CLK        ; i_CLK       ; 0.000        ; 0.001      ; 1.693      ;
+; 1.438 ; button:u_button|state.s2                 ; mult_control:u_control|state.start       ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.704      ;
+; 1.492 ; mult_control:u_control|state.s12         ; mult_op:u_op|running_sum:rm_0|w_data[10] ; i_CLK        ; i_CLK       ; 0.000        ; 0.002      ; 1.760      ;
+; 1.492 ; mult_control:u_control|state.s12         ; mult_op:u_op|running_sum:rm_0|w_data[12] ; i_CLK        ; i_CLK       ; 0.000        ; 0.002      ; 1.760      ;
+; 1.562 ; mult_control:u_control|state.idle        ; mult_control:u_control|state.start       ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.828      ;
+; 1.574 ; mult_control:u_control|state.s16         ; mult_op:u_op|running_sum:rm_0|w_data[10] ; i_CLK        ; i_CLK       ; 0.000        ; 0.002      ; 1.842      ;
+; 1.574 ; mult_control:u_control|state.s16         ; mult_op:u_op|running_sum:rm_0|w_data[12] ; i_CLK        ; i_CLK       ; 0.000        ; 0.002      ; 1.842      ;
+; 1.577 ; mult_control:u_control|state.start       ; register_pp:reg_B|q[4]                   ; i_CLK        ; i_CLK       ; 0.000        ; -0.002     ; 1.841      ;
+; 1.577 ; mult_control:u_control|state.start       ; register_pp:reg_B|q[6]                   ; i_CLK        ; i_CLK       ; 0.000        ; -0.002     ; 1.841      ;
+; 1.577 ; mult_control:u_control|state.start       ; register_pp:reg_B|q[7]                   ; i_CLK        ; i_CLK       ; 0.000        ; -0.002     ; 1.841      ;
+; 1.593 ; mult_control:u_control|state.s8          ; mult_op:u_op|running_sum:rm_0|w_data[10] ; i_CLK        ; i_CLK       ; 0.000        ; 0.003      ; 1.862      ;
+; 1.594 ; mult_control:u_control|state.start       ; register_pp:reg_B|q[5]                   ; i_CLK        ; i_CLK       ; 0.000        ; -0.003     ; 1.857      ;
+; 1.594 ; mult_control:u_control|state.start       ; register_pp:reg_B|q[3]                   ; i_CLK        ; i_CLK       ; 0.000        ; -0.003     ; 1.857      ;
+; 1.594 ; mult_control:u_control|state.start       ; register_pp:reg_B|q[2]                   ; i_CLK        ; i_CLK       ; 0.000        ; -0.003     ; 1.857      ;
+; 1.594 ; mult_control:u_control|state.start       ; register_pp:reg_B|q[1]                   ; i_CLK        ; i_CLK       ; 0.000        ; -0.003     ; 1.857      ;
+; 1.594 ; mult_control:u_control|state.start       ; register_pp:reg_B|q[0]                   ; i_CLK        ; i_CLK       ; 0.000        ; -0.003     ; 1.857      ;
++-------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Recovery: 'i_CLK'                                                                                                                                 ;
++--------+------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                          ; To Node                                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.837 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[16] ; i_CLK        ; i_CLK       ; 1.000        ; -0.001     ; 1.872      ;
+; -0.819 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[7]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 1.855      ;
+; -0.819 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[6]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 1.855      ;
+; -0.819 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[5]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 1.855      ;
+; -0.819 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[4]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 1.855      ;
+; -0.819 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[3]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 1.855      ;
+; -0.819 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[2]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 1.855      ;
+; -0.819 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[1]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 1.855      ;
+; -0.819 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[0]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 1.855      ;
+; -0.684 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 1.720      ;
+; -0.684 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[14] ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 1.720      ;
+; -0.684 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[13] ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 1.720      ;
+; -0.684 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[12] ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 1.720      ;
+; -0.684 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[11] ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 1.720      ;
+; -0.684 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[10] ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 1.720      ;
+; -0.684 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[9]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 1.720      ;
+; -0.684 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[8]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 1.720      ;
++--------+------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Removal: 'i_CLK'                                                                                                                                 ;
++-------+------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                          ; To Node                                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 1.454 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.720      ;
+; 1.454 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[14] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.720      ;
+; 1.454 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[13] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.720      ;
+; 1.454 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[12] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.720      ;
+; 1.454 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[11] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.720      ;
+; 1.454 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[10] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.720      ;
+; 1.454 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[9]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.720      ;
+; 1.454 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[8]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.720      ;
+; 1.589 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[7]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.855      ;
+; 1.589 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[6]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.855      ;
+; 1.589 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[5]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.855      ;
+; 1.589 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[4]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.855      ;
+; 1.589 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[3]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.855      ;
+; 1.589 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[2]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.855      ;
+; 1.589 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[1]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.855      ;
+; 1.589 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[0]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 1.855      ;
+; 1.607 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[16] ; i_CLK        ; i_CLK       ; 0.000        ; -0.001     ; 1.872      ;
++-------+------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'i_CLK'                                                                                   ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                                   ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; i_CLK ; Rise       ; i_CLK                                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; button:u_button|state.s1                 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; button:u_button|state.s1                 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; button:u_button|state.s2                 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; button:u_button|state.s2                 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.idle        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.idle        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.s0          ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.s0          ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.s1          ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.s1          ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.s10         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.s10         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.s11         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.s11         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.s12         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.s12         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.s13         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.s13         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.s14         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.s14         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.s15         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.s15         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.s16         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.s16         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.s2          ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.s2          ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.s3          ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.s3          ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.s4          ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.s4          ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.s5          ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.s5          ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.s6          ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.s6          ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.s7          ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.s7          ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.s8          ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.s8          ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.s9          ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.s9          ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.start       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.start       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[0]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[0]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[10] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[10] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[11] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[11] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[12] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[12] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[13] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[13] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[14] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[14] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[15] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[15] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[16] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[16] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[1]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[1]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[2]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[2]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[3]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[3]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[4]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[4]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[5]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[5]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[6]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[6]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[7]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[7]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[8]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[8]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[9]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[9]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; register_pp:reg_A|q[0]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; register_pp:reg_A|q[0]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; register_pp:reg_A|q[1]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; register_pp:reg_A|q[1]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; register_pp:reg_A|q[2]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; register_pp:reg_A|q[2]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; register_pp:reg_A|q[3]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; register_pp:reg_A|q[3]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; register_pp:reg_A|q[4]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; register_pp:reg_A|q[4]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; register_pp:reg_A|q[5]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; register_pp:reg_A|q[5]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; register_pp:reg_A|q[6]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; register_pp:reg_A|q[6]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; register_pp:reg_A|q[7]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; register_pp:reg_A|q[7]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; register_pp:reg_B|q[0]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; register_pp:reg_B|q[0]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; register_pp:reg_B|q[1]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; register_pp:reg_B|q[1]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; register_pp:reg_B|q[2]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; register_pp:reg_B|q[2]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; register_pp:reg_B|q[3]                   ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Setup Times                                                            ;
++------------+------------+-------+-------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------+------------+-------+-------+------------+-----------------+
+; i_DINa[*]  ; i_CLK      ; 1.087 ; 1.087 ; Rise       ; i_CLK           ;
+;  i_DINa[0] ; i_CLK      ; 0.353 ; 0.353 ; Rise       ; i_CLK           ;
+;  i_DINa[1] ; i_CLK      ; 0.106 ; 0.106 ; Rise       ; i_CLK           ;
+;  i_DINa[2] ; i_CLK      ; 0.121 ; 0.121 ; Rise       ; i_CLK           ;
+;  i_DINa[3] ; i_CLK      ; 0.352 ; 0.352 ; Rise       ; i_CLK           ;
+;  i_DINa[4] ; i_CLK      ; 0.413 ; 0.413 ; Rise       ; i_CLK           ;
+;  i_DINa[5] ; i_CLK      ; 0.340 ; 0.340 ; Rise       ; i_CLK           ;
+;  i_DINa[6] ; i_CLK      ; 0.253 ; 0.253 ; Rise       ; i_CLK           ;
+;  i_DINa[7] ; i_CLK      ; 1.087 ; 1.087 ; Rise       ; i_CLK           ;
+; i_DINb[*]  ; i_CLK      ; 5.023 ; 5.023 ; Rise       ; i_CLK           ;
+;  i_DINb[0] ; i_CLK      ; 1.098 ; 1.098 ; Rise       ; i_CLK           ;
+;  i_DINb[1] ; i_CLK      ; 0.949 ; 0.949 ; Rise       ; i_CLK           ;
+;  i_DINb[2] ; i_CLK      ; 0.938 ; 0.938 ; Rise       ; i_CLK           ;
+;  i_DINb[3] ; i_CLK      ; 4.761 ; 4.761 ; Rise       ; i_CLK           ;
+;  i_DINb[4] ; i_CLK      ; 5.023 ; 5.023 ; Rise       ; i_CLK           ;
+;  i_DINb[5] ; i_CLK      ; 4.845 ; 4.845 ; Rise       ; i_CLK           ;
+;  i_DINb[6] ; i_CLK      ; 4.851 ; 4.851 ; Rise       ; i_CLK           ;
+;  i_DINb[7] ; i_CLK      ; 4.855 ; 4.855 ; Rise       ; i_CLK           ;
+; i_start    ; i_CLK      ; 3.819 ; 3.819 ; Rise       ; i_CLK           ;
++------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Hold Times                                                               ;
++------------+------------+--------+--------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++------------+------------+--------+--------+------------+-----------------+
+; i_DINa[*]  ; i_CLK      ; 0.124  ; 0.124  ; Rise       ; i_CLK           ;
+;  i_DINa[0] ; i_CLK      ; -0.123 ; -0.123 ; Rise       ; i_CLK           ;
+;  i_DINa[1] ; i_CLK      ; 0.124  ; 0.124  ; Rise       ; i_CLK           ;
+;  i_DINa[2] ; i_CLK      ; 0.109  ; 0.109  ; Rise       ; i_CLK           ;
+;  i_DINa[3] ; i_CLK      ; -0.122 ; -0.122 ; Rise       ; i_CLK           ;
+;  i_DINa[4] ; i_CLK      ; -0.183 ; -0.183 ; Rise       ; i_CLK           ;
+;  i_DINa[5] ; i_CLK      ; -0.110 ; -0.110 ; Rise       ; i_CLK           ;
+;  i_DINa[6] ; i_CLK      ; -0.023 ; -0.023 ; Rise       ; i_CLK           ;
+;  i_DINa[7] ; i_CLK      ; -0.857 ; -0.857 ; Rise       ; i_CLK           ;
+; i_DINb[*]  ; i_CLK      ; -0.708 ; -0.708 ; Rise       ; i_CLK           ;
+;  i_DINb[0] ; i_CLK      ; -0.868 ; -0.868 ; Rise       ; i_CLK           ;
+;  i_DINb[1] ; i_CLK      ; -0.719 ; -0.719 ; Rise       ; i_CLK           ;
+;  i_DINb[2] ; i_CLK      ; -0.708 ; -0.708 ; Rise       ; i_CLK           ;
+;  i_DINb[3] ; i_CLK      ; -4.531 ; -4.531 ; Rise       ; i_CLK           ;
+;  i_DINb[4] ; i_CLK      ; -4.793 ; -4.793 ; Rise       ; i_CLK           ;
+;  i_DINb[5] ; i_CLK      ; -4.615 ; -4.615 ; Rise       ; i_CLK           ;
+;  i_DINb[6] ; i_CLK      ; -4.621 ; -4.621 ; Rise       ; i_CLK           ;
+;  i_DINb[7] ; i_CLK      ; -4.625 ; -4.625 ; Rise       ; i_CLK           ;
+; i_start    ; i_CLK      ; -3.584 ; -3.584 ; Rise       ; i_CLK           ;
++------------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; o_DOUT[*]   ; i_CLK      ; 8.366 ; 8.366 ; Rise       ; i_CLK           ;
+;  o_DOUT[0]  ; i_CLK      ; 6.671 ; 6.671 ; Rise       ; i_CLK           ;
+;  o_DOUT[1]  ; i_CLK      ; 6.660 ; 6.660 ; Rise       ; i_CLK           ;
+;  o_DOUT[2]  ; i_CLK      ; 6.644 ; 6.644 ; Rise       ; i_CLK           ;
+;  o_DOUT[3]  ; i_CLK      ; 6.660 ; 6.660 ; Rise       ; i_CLK           ;
+;  o_DOUT[4]  ; i_CLK      ; 6.439 ; 6.439 ; Rise       ; i_CLK           ;
+;  o_DOUT[5]  ; i_CLK      ; 6.443 ; 6.443 ; Rise       ; i_CLK           ;
+;  o_DOUT[6]  ; i_CLK      ; 6.430 ; 6.430 ; Rise       ; i_CLK           ;
+;  o_DOUT[7]  ; i_CLK      ; 6.428 ; 6.428 ; Rise       ; i_CLK           ;
+;  o_DOUT[8]  ; i_CLK      ; 7.781 ; 7.781 ; Rise       ; i_CLK           ;
+;  o_DOUT[9]  ; i_CLK      ; 7.821 ; 7.821 ; Rise       ; i_CLK           ;
+;  o_DOUT[10] ; i_CLK      ; 7.774 ; 7.774 ; Rise       ; i_CLK           ;
+;  o_DOUT[11] ; i_CLK      ; 7.632 ; 7.632 ; Rise       ; i_CLK           ;
+;  o_DOUT[12] ; i_CLK      ; 7.820 ; 7.820 ; Rise       ; i_CLK           ;
+;  o_DOUT[13] ; i_CLK      ; 7.841 ; 7.841 ; Rise       ; i_CLK           ;
+;  o_DOUT[14] ; i_CLK      ; 7.386 ; 7.386 ; Rise       ; i_CLK           ;
+;  o_DOUT[15] ; i_CLK      ; 8.366 ; 8.366 ; Rise       ; i_CLK           ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; o_DOUT[*]   ; i_CLK      ; 6.428 ; 6.428 ; Rise       ; i_CLK           ;
+;  o_DOUT[0]  ; i_CLK      ; 6.671 ; 6.671 ; Rise       ; i_CLK           ;
+;  o_DOUT[1]  ; i_CLK      ; 6.660 ; 6.660 ; Rise       ; i_CLK           ;
+;  o_DOUT[2]  ; i_CLK      ; 6.644 ; 6.644 ; Rise       ; i_CLK           ;
+;  o_DOUT[3]  ; i_CLK      ; 6.660 ; 6.660 ; Rise       ; i_CLK           ;
+;  o_DOUT[4]  ; i_CLK      ; 6.439 ; 6.439 ; Rise       ; i_CLK           ;
+;  o_DOUT[5]  ; i_CLK      ; 6.443 ; 6.443 ; Rise       ; i_CLK           ;
+;  o_DOUT[6]  ; i_CLK      ; 6.430 ; 6.430 ; Rise       ; i_CLK           ;
+;  o_DOUT[7]  ; i_CLK      ; 6.428 ; 6.428 ; Rise       ; i_CLK           ;
+;  o_DOUT[8]  ; i_CLK      ; 7.781 ; 7.781 ; Rise       ; i_CLK           ;
+;  o_DOUT[9]  ; i_CLK      ; 7.821 ; 7.821 ; Rise       ; i_CLK           ;
+;  o_DOUT[10] ; i_CLK      ; 7.774 ; 7.774 ; Rise       ; i_CLK           ;
+;  o_DOUT[11] ; i_CLK      ; 7.632 ; 7.632 ; Rise       ; i_CLK           ;
+;  o_DOUT[12] ; i_CLK      ; 7.820 ; 7.820 ; Rise       ; i_CLK           ;
+;  o_DOUT[13] ; i_CLK      ; 7.841 ; 7.841 ; Rise       ; i_CLK           ;
+;  o_DOUT[14] ; i_CLK      ; 7.386 ; 7.386 ; Rise       ; i_CLK           ;
+;  o_DOUT[15] ; i_CLK      ; 8.366 ; 8.366 ; Rise       ; i_CLK           ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------+
+; Fast Model Setup Summary       ;
++-------+--------+---------------+
+; Clock ; Slack  ; End Point TNS ;
++-------+--------+---------------+
+; i_CLK ; -0.602 ; -8.501        ;
++-------+--------+---------------+
+
+
++-------------------------------+
+; Fast Model Hold Summary       ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; i_CLK ; 0.215 ; 0.000         ;
++-------+-------+---------------+
+
+
++-------------------------------+
+; Fast Model Recovery Summary   ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; i_CLK ; 0.048 ; 0.000         ;
++-------+-------+---------------+
+
+
++-------------------------------+
+; Fast Model Removal Summary    ;
++-------+-------+---------------+
+; Clock ; Slack ; End Point TNS ;
++-------+-------+---------------+
+; i_CLK ; 0.760 ; 0.000         ;
++-------+-------+---------------+
+
+
++----------------------------------------+
+; Fast Model Minimum Pulse Width Summary ;
++-------+--------+-----------------------+
+; Clock ; Slack  ; End Point TNS         ;
++-------+--------+-----------------------+
+; i_CLK ; -1.380 ; -55.380               ;
++-------+--------+-----------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'i_CLK'                                                                                                                                          ;
++--------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack  ; From Node                                ; To Node                                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; -0.602 ; mult_op:u_op|running_sum:rm_0|w_data[9]  ; mult_op:u_op|running_sum:rm_0|w_data[16] ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 1.634      ;
+; -0.578 ; register_pp:reg_A|q[3]                   ; mult_op:u_op|running_sum:rm_0|w_data[16] ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 1.610      ;
+; -0.572 ; mult_op:u_op|running_sum:rm_0|w_data[9]  ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 1.604      ;
+; -0.548 ; register_pp:reg_A|q[3]                   ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 1.580      ;
+; -0.538 ; mult_op:u_op|running_sum:rm_0|w_data[11] ; mult_op:u_op|running_sum:rm_0|w_data[16] ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 1.570      ;
+; -0.520 ; register_pp:reg_A|q[0]                   ; mult_op:u_op|running_sum:rm_0|w_data[16] ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 1.552      ;
+; -0.508 ; mult_op:u_op|running_sum:rm_0|w_data[11] ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 1.540      ;
+; -0.505 ; mult_control:u_control|state.s2          ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.541      ;
+; -0.505 ; mult_control:u_control|state.s2          ; mult_op:u_op|running_sum:rm_0|w_data[14] ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.541      ;
+; -0.505 ; mult_control:u_control|state.s2          ; mult_op:u_op|running_sum:rm_0|w_data[13] ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.541      ;
+; -0.505 ; mult_control:u_control|state.s2          ; mult_op:u_op|running_sum:rm_0|w_data[12] ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.541      ;
+; -0.505 ; mult_control:u_control|state.s2          ; mult_op:u_op|running_sum:rm_0|w_data[11] ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.541      ;
+; -0.505 ; mult_control:u_control|state.s2          ; mult_op:u_op|running_sum:rm_0|w_data[10] ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.541      ;
+; -0.505 ; mult_control:u_control|state.s2          ; mult_op:u_op|running_sum:rm_0|w_data[9]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.541      ;
+; -0.505 ; mult_control:u_control|state.s2          ; mult_op:u_op|running_sum:rm_0|w_data[8]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.541      ;
+; -0.495 ; mult_control:u_control|state.s15         ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 1.530      ;
+; -0.495 ; mult_control:u_control|state.s15         ; mult_op:u_op|running_sum:rm_0|w_data[14] ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 1.530      ;
+; -0.495 ; mult_control:u_control|state.s15         ; mult_op:u_op|running_sum:rm_0|w_data[13] ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 1.530      ;
+; -0.495 ; mult_control:u_control|state.s15         ; mult_op:u_op|running_sum:rm_0|w_data[12] ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 1.530      ;
+; -0.495 ; mult_control:u_control|state.s15         ; mult_op:u_op|running_sum:rm_0|w_data[11] ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 1.530      ;
+; -0.495 ; mult_control:u_control|state.s15         ; mult_op:u_op|running_sum:rm_0|w_data[10] ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 1.530      ;
+; -0.495 ; mult_control:u_control|state.s15         ; mult_op:u_op|running_sum:rm_0|w_data[9]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 1.530      ;
+; -0.495 ; mult_control:u_control|state.s15         ; mult_op:u_op|running_sum:rm_0|w_data[8]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 1.530      ;
+; -0.494 ; mult_control:u_control|state.s6          ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.530      ;
+; -0.494 ; mult_control:u_control|state.s6          ; mult_op:u_op|running_sum:rm_0|w_data[14] ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.530      ;
+; -0.494 ; mult_control:u_control|state.s6          ; mult_op:u_op|running_sum:rm_0|w_data[13] ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.530      ;
+; -0.494 ; mult_control:u_control|state.s6          ; mult_op:u_op|running_sum:rm_0|w_data[12] ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.530      ;
+; -0.494 ; mult_control:u_control|state.s6          ; mult_op:u_op|running_sum:rm_0|w_data[11] ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.530      ;
+; -0.494 ; mult_control:u_control|state.s6          ; mult_op:u_op|running_sum:rm_0|w_data[10] ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.530      ;
+; -0.494 ; mult_control:u_control|state.s6          ; mult_op:u_op|running_sum:rm_0|w_data[9]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.530      ;
+; -0.494 ; mult_control:u_control|state.s6          ; mult_op:u_op|running_sum:rm_0|w_data[8]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.530      ;
+; -0.490 ; register_pp:reg_A|q[0]                   ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 1.522      ;
+; -0.477 ; mult_control:u_control|state.s9          ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 1.512      ;
+; -0.477 ; mult_control:u_control|state.s9          ; mult_op:u_op|running_sum:rm_0|w_data[14] ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 1.512      ;
+; -0.477 ; mult_control:u_control|state.s9          ; mult_op:u_op|running_sum:rm_0|w_data[13] ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 1.512      ;
+; -0.477 ; mult_control:u_control|state.s9          ; mult_op:u_op|running_sum:rm_0|w_data[12] ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 1.512      ;
+; -0.477 ; mult_control:u_control|state.s9          ; mult_op:u_op|running_sum:rm_0|w_data[11] ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 1.512      ;
+; -0.477 ; mult_control:u_control|state.s9          ; mult_op:u_op|running_sum:rm_0|w_data[10] ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 1.512      ;
+; -0.477 ; mult_control:u_control|state.s9          ; mult_op:u_op|running_sum:rm_0|w_data[9]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 1.512      ;
+; -0.477 ; mult_control:u_control|state.s9          ; mult_op:u_op|running_sum:rm_0|w_data[8]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 1.512      ;
+; -0.474 ; mult_control:u_control|state.s2          ; mult_op:u_op|running_sum:rm_0|w_data[7]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.005      ; 1.511      ;
+; -0.474 ; mult_control:u_control|state.s2          ; mult_op:u_op|running_sum:rm_0|w_data[6]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.005      ; 1.511      ;
+; -0.474 ; mult_control:u_control|state.s2          ; mult_op:u_op|running_sum:rm_0|w_data[5]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.005      ; 1.511      ;
+; -0.474 ; mult_control:u_control|state.s2          ; mult_op:u_op|running_sum:rm_0|w_data[4]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.005      ; 1.511      ;
+; -0.474 ; mult_control:u_control|state.s2          ; mult_op:u_op|running_sum:rm_0|w_data[3]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.005      ; 1.511      ;
+; -0.474 ; mult_control:u_control|state.s2          ; mult_op:u_op|running_sum:rm_0|w_data[2]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.005      ; 1.511      ;
+; -0.474 ; mult_control:u_control|state.s2          ; mult_op:u_op|running_sum:rm_0|w_data[1]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.005      ; 1.511      ;
+; -0.474 ; mult_control:u_control|state.s2          ; mult_op:u_op|running_sum:rm_0|w_data[0]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.005      ; 1.511      ;
+; -0.469 ; mult_op:u_op|running_sum:rm_0|w_data[8]  ; mult_op:u_op|running_sum:rm_0|w_data[16] ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 1.501      ;
+; -0.463 ; mult_control:u_control|state.s6          ; mult_op:u_op|running_sum:rm_0|w_data[7]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.005      ; 1.500      ;
+; -0.463 ; mult_control:u_control|state.s6          ; mult_op:u_op|running_sum:rm_0|w_data[6]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.005      ; 1.500      ;
+; -0.463 ; mult_control:u_control|state.s6          ; mult_op:u_op|running_sum:rm_0|w_data[5]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.005      ; 1.500      ;
+; -0.463 ; mult_control:u_control|state.s6          ; mult_op:u_op|running_sum:rm_0|w_data[4]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.005      ; 1.500      ;
+; -0.463 ; mult_control:u_control|state.s6          ; mult_op:u_op|running_sum:rm_0|w_data[3]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.005      ; 1.500      ;
+; -0.463 ; mult_control:u_control|state.s6          ; mult_op:u_op|running_sum:rm_0|w_data[2]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.005      ; 1.500      ;
+; -0.463 ; mult_control:u_control|state.s6          ; mult_op:u_op|running_sum:rm_0|w_data[1]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.005      ; 1.500      ;
+; -0.463 ; mult_control:u_control|state.s6          ; mult_op:u_op|running_sum:rm_0|w_data[0]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.005      ; 1.500      ;
+; -0.441 ; register_pp:reg_A|q[1]                   ; mult_op:u_op|running_sum:rm_0|w_data[16] ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 1.473      ;
+; -0.439 ; mult_op:u_op|running_sum:rm_0|w_data[8]  ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 1.471      ;
+; -0.436 ; mult_op:u_op|running_sum:rm_0|w_data[10] ; mult_op:u_op|running_sum:rm_0|w_data[16] ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 1.468      ;
+; -0.435 ; mult_control:u_control|state.s4          ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.471      ;
+; -0.435 ; mult_control:u_control|state.s4          ; mult_op:u_op|running_sum:rm_0|w_data[14] ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.471      ;
+; -0.435 ; mult_control:u_control|state.s4          ; mult_op:u_op|running_sum:rm_0|w_data[13] ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.471      ;
+; -0.435 ; mult_control:u_control|state.s4          ; mult_op:u_op|running_sum:rm_0|w_data[12] ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.471      ;
+; -0.435 ; mult_control:u_control|state.s4          ; mult_op:u_op|running_sum:rm_0|w_data[11] ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.471      ;
+; -0.435 ; mult_control:u_control|state.s4          ; mult_op:u_op|running_sum:rm_0|w_data[10] ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.471      ;
+; -0.435 ; mult_control:u_control|state.s4          ; mult_op:u_op|running_sum:rm_0|w_data[9]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.471      ;
+; -0.435 ; mult_control:u_control|state.s4          ; mult_op:u_op|running_sum:rm_0|w_data[8]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.471      ;
+; -0.433 ; mult_control:u_control|state.s14         ; mult_op:u_op|running_sum:rm_0|w_data[7]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.469      ;
+; -0.433 ; mult_control:u_control|state.s14         ; mult_op:u_op|running_sum:rm_0|w_data[6]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.469      ;
+; -0.433 ; mult_control:u_control|state.s14         ; mult_op:u_op|running_sum:rm_0|w_data[5]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.469      ;
+; -0.433 ; mult_control:u_control|state.s14         ; mult_op:u_op|running_sum:rm_0|w_data[4]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.469      ;
+; -0.433 ; mult_control:u_control|state.s14         ; mult_op:u_op|running_sum:rm_0|w_data[3]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.469      ;
+; -0.433 ; mult_control:u_control|state.s14         ; mult_op:u_op|running_sum:rm_0|w_data[2]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.469      ;
+; -0.433 ; mult_control:u_control|state.s14         ; mult_op:u_op|running_sum:rm_0|w_data[1]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.469      ;
+; -0.433 ; mult_control:u_control|state.s14         ; mult_op:u_op|running_sum:rm_0|w_data[0]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.469      ;
+; -0.425 ; mult_control:u_control|state.s14         ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 1.460      ;
+; -0.425 ; mult_control:u_control|state.s14         ; mult_op:u_op|running_sum:rm_0|w_data[14] ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 1.460      ;
+; -0.425 ; mult_control:u_control|state.s14         ; mult_op:u_op|running_sum:rm_0|w_data[13] ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 1.460      ;
+; -0.425 ; mult_control:u_control|state.s14         ; mult_op:u_op|running_sum:rm_0|w_data[12] ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 1.460      ;
+; -0.425 ; mult_control:u_control|state.s14         ; mult_op:u_op|running_sum:rm_0|w_data[11] ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 1.460      ;
+; -0.425 ; mult_control:u_control|state.s14         ; mult_op:u_op|running_sum:rm_0|w_data[10] ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 1.460      ;
+; -0.425 ; mult_control:u_control|state.s14         ; mult_op:u_op|running_sum:rm_0|w_data[9]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 1.460      ;
+; -0.425 ; mult_control:u_control|state.s14         ; mult_op:u_op|running_sum:rm_0|w_data[8]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.003      ; 1.460      ;
+; -0.420 ; mult_control:u_control|state.s7          ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.456      ;
+; -0.420 ; mult_control:u_control|state.s7          ; mult_op:u_op|running_sum:rm_0|w_data[14] ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.456      ;
+; -0.420 ; mult_control:u_control|state.s7          ; mult_op:u_op|running_sum:rm_0|w_data[13] ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.456      ;
+; -0.420 ; mult_control:u_control|state.s7          ; mult_op:u_op|running_sum:rm_0|w_data[12] ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.456      ;
+; -0.420 ; mult_control:u_control|state.s7          ; mult_op:u_op|running_sum:rm_0|w_data[11] ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.456      ;
+; -0.420 ; mult_control:u_control|state.s7          ; mult_op:u_op|running_sum:rm_0|w_data[10] ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.456      ;
+; -0.420 ; mult_control:u_control|state.s7          ; mult_op:u_op|running_sum:rm_0|w_data[9]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.456      ;
+; -0.420 ; mult_control:u_control|state.s7          ; mult_op:u_op|running_sum:rm_0|w_data[8]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.456      ;
+; -0.420 ; mult_control:u_control|state.s10         ; mult_op:u_op|running_sum:rm_0|w_data[7]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.456      ;
+; -0.420 ; mult_control:u_control|state.s10         ; mult_op:u_op|running_sum:rm_0|w_data[6]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.456      ;
+; -0.420 ; mult_control:u_control|state.s10         ; mult_op:u_op|running_sum:rm_0|w_data[5]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.456      ;
+; -0.420 ; mult_control:u_control|state.s10         ; mult_op:u_op|running_sum:rm_0|w_data[4]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.456      ;
+; -0.420 ; mult_control:u_control|state.s10         ; mult_op:u_op|running_sum:rm_0|w_data[3]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.456      ;
+; -0.420 ; mult_control:u_control|state.s10         ; mult_op:u_op|running_sum:rm_0|w_data[2]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.456      ;
+; -0.420 ; mult_control:u_control|state.s10         ; mult_op:u_op|running_sum:rm_0|w_data[1]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.456      ;
+; -0.420 ; mult_control:u_control|state.s10         ; mult_op:u_op|running_sum:rm_0|w_data[0]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.004      ; 1.456      ;
++--------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'i_CLK'                                                                                                                                          ;
++-------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                                ; To Node                                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.215 ; mult_control:u_control|state.idle        ; mult_control:u_control|state.idle        ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; mult_op:u_op|running_sum:rm_0|w_data[16] ; mult_op:u_op|running_sum:rm_0|w_data[16] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; mult_op:u_op|running_sum:rm_0|w_data[11] ; mult_op:u_op|running_sum:rm_0|w_data[11] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; mult_op:u_op|running_sum:rm_0|w_data[8]  ; mult_op:u_op|running_sum:rm_0|w_data[8]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.367      ;
+; 0.237 ; mult_op:u_op|running_sum:rm_0|w_data[2]  ; mult_op:u_op|running_sum:rm_0|w_data[1]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.389      ;
+; 0.240 ; mult_op:u_op|running_sum:rm_0|w_data[1]  ; mult_op:u_op|running_sum:rm_0|w_data[0]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.392      ;
+; 0.241 ; mult_op:u_op|running_sum:rm_0|w_data[7]  ; mult_op:u_op|running_sum:rm_0|w_data[6]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.393      ;
+; 0.241 ; mult_op:u_op|running_sum:rm_0|w_data[5]  ; mult_op:u_op|running_sum:rm_0|w_data[4]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.393      ;
+; 0.242 ; mult_op:u_op|running_sum:rm_0|w_data[6]  ; mult_op:u_op|running_sum:rm_0|w_data[5]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.394      ;
+; 0.242 ; mult_op:u_op|running_sum:rm_0|w_data[4]  ; mult_op:u_op|running_sum:rm_0|w_data[3]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.394      ;
+; 0.243 ; mult_op:u_op|running_sum:rm_0|w_data[3]  ; mult_op:u_op|running_sum:rm_0|w_data[2]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.395      ;
+; 0.244 ; register_pp:reg_B|q[1]                   ; mult_control:u_control|state.s3          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.396      ;
+; 0.245 ; register_pp:reg_B|q[1]                   ; mult_control:u_control|state.s4          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.397      ;
+; 0.246 ; register_pp:reg_B|q[7]                   ; mult_control:u_control|state.s15         ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.398      ;
+; 0.247 ; button:u_button|state.s2                 ; button:u_button|state.s1                 ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.399      ;
+; 0.247 ; mult_control:u_control|state.s13         ; mult_control:u_control|state.s14         ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.399      ;
+; 0.247 ; mult_control:u_control|state.s5          ; mult_control:u_control|state.s6          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.399      ;
+; 0.247 ; mult_control:u_control|state.s7          ; mult_control:u_control|state.s8          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.399      ;
+; 0.248 ; register_pp:reg_B|q[0]                   ; mult_control:u_control|state.s2          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.400      ;
+; 0.248 ; register_pp:reg_B|q[2]                   ; mult_control:u_control|state.s5          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.400      ;
+; 0.249 ; mult_control:u_control|state.s9          ; mult_control:u_control|state.s10         ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.401      ;
+; 0.250 ; button:u_button|state.s1                 ; button:u_button|state.s2                 ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.402      ;
+; 0.252 ; mult_control:u_control|state.s14         ; mult_control:u_control|state.s16         ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.404      ;
+; 0.252 ; register_pp:reg_B|q[0]                   ; mult_control:u_control|state.s1          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.404      ;
+; 0.252 ; button:u_button|state.s2                 ; mult_control:u_control|state.idle        ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.404      ;
+; 0.254 ; mult_control:u_control|state.s10         ; mult_control:u_control|state.s11         ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.406      ;
+; 0.256 ; mult_control:u_control|state.s12         ; mult_control:u_control|state.s13         ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.408      ;
+; 0.289 ; mult_op:u_op|running_sum:rm_0|w_data[10] ; mult_op:u_op|running_sum:rm_0|w_data[9]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.441      ;
+; 0.299 ; register_pp:reg_B|q[3]                   ; mult_control:u_control|state.s8          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.451      ;
+; 0.303 ; mult_control:u_control|state.s2          ; mult_control:u_control|state.s4          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.455      ;
+; 0.306 ; register_pp:reg_B|q[4]                   ; mult_control:u_control|state.s10         ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.458      ;
+; 0.307 ; mult_control:u_control|state.s0          ; mult_control:u_control|state.s2          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.459      ;
+; 0.308 ; mult_control:u_control|state.s4          ; mult_control:u_control|state.s6          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.460      ;
+; 0.325 ; register_pp:reg_B|q[4]                   ; mult_control:u_control|state.s9          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.477      ;
+; 0.327 ; mult_control:u_control|state.s0          ; mult_control:u_control|state.s1          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.479      ;
+; 0.328 ; register_pp:reg_B|q[3]                   ; mult_control:u_control|state.s7          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.480      ;
+; 0.329 ; mult_control:u_control|state.s2          ; mult_control:u_control|state.s3          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.481      ;
+; 0.334 ; mult_control:u_control|state.s4          ; mult_control:u_control|state.s5          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.486      ;
+; 0.334 ; mult_control:u_control|state.s8          ; mult_control:u_control|state.s9          ; i_CLK        ; i_CLK       ; 0.000        ; 0.001      ; 0.487      ;
+; 0.363 ; register_pp:reg_B|q[6]                   ; mult_control:u_control|state.s14         ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.515      ;
+; 0.364 ; register_pp:reg_B|q[5]                   ; mult_control:u_control|state.s12         ; i_CLK        ; i_CLK       ; 0.000        ; 0.001      ; 0.517      ;
+; 0.364 ; register_pp:reg_B|q[7]                   ; mult_control:u_control|state.s16         ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.516      ;
+; 0.367 ; mult_control:u_control|state.s6          ; mult_control:u_control|state.s8          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.519      ;
+; 0.369 ; register_pp:reg_B|q[6]                   ; mult_control:u_control|state.s13         ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.521      ;
+; 0.370 ; mult_control:u_control|state.s10         ; mult_control:u_control|state.s12         ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.522      ;
+; 0.372 ; mult_op:u_op|running_sum:rm_0|w_data[11] ; mult_op:u_op|running_sum:rm_0|w_data[10] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.524      ;
+; 0.373 ; mult_control:u_control|state.s6          ; mult_control:u_control|state.s7          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.525      ;
+; 0.374 ; mult_op:u_op|running_sum:rm_0|w_data[9]  ; mult_op:u_op|running_sum:rm_0|w_data[8]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.526      ;
+; 0.375 ; mult_control:u_control|state.s1          ; mult_control:u_control|state.s2          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.527      ;
+; 0.376 ; mult_op:u_op|running_sum:rm_0|w_data[14] ; mult_op:u_op|running_sum:rm_0|w_data[13] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.528      ;
+; 0.377 ; mult_control:u_control|state.s3          ; mult_control:u_control|state.s4          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.529      ;
+; 0.377 ; register_pp:reg_B|q[2]                   ; mult_control:u_control|state.s6          ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.529      ;
+; 0.382 ; mult_control:u_control|state.s12         ; mult_control:u_control|state.s14         ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.534      ;
+; 0.383 ; mult_control:u_control|state.s15         ; mult_control:u_control|state.s16         ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.535      ;
+; 0.384 ; mult_control:u_control|state.s11         ; mult_control:u_control|state.s12         ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.536      ;
+; 0.389 ; register_pp:reg_B|q[5]                   ; mult_control:u_control|state.s11         ; i_CLK        ; i_CLK       ; 0.000        ; 0.001      ; 0.542      ;
+; 0.390 ; mult_control:u_control|state.s14         ; mult_control:u_control|state.s15         ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.542      ;
+; 0.410 ; mult_op:u_op|running_sum:rm_0|w_data[8]  ; mult_op:u_op|running_sum:rm_0|w_data[7]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.001      ; 0.563      ;
+; 0.432 ; mult_op:u_op|running_sum:rm_0|w_data[12] ; mult_op:u_op|running_sum:rm_0|w_data[11] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.584      ;
+; 0.436 ; mult_op:u_op|running_sum:rm_0|w_data[16] ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.588      ;
+; 0.447 ; mult_op:u_op|running_sum:rm_0|w_data[15] ; mult_op:u_op|running_sum:rm_0|w_data[14] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.599      ;
+; 0.456 ; mult_control:u_control|state.s8          ; mult_control:u_control|state.s10         ; i_CLK        ; i_CLK       ; 0.000        ; 0.001      ; 0.609      ;
+; 0.461 ; mult_op:u_op|running_sum:rm_0|w_data[13] ; mult_op:u_op|running_sum:rm_0|w_data[12] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.613      ;
+; 0.462 ; register_pp:reg_A|q[4]                   ; mult_op:u_op|running_sum:rm_0|w_data[12] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.614      ;
+; 0.470 ; mult_op:u_op|running_sum:rm_0|w_data[14] ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.622      ;
+; 0.480 ; register_pp:reg_A|q[7]                   ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.632      ;
+; 0.538 ; mult_op:u_op|running_sum:rm_0|w_data[13] ; mult_op:u_op|running_sum:rm_0|w_data[14] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.690      ;
+; 0.540 ; mult_control:u_control|state.start       ; mult_control:u_control|state.s0          ; i_CLK        ; i_CLK       ; 0.000        ; -0.004     ; 0.688      ;
+; 0.552 ; mult_op:u_op|running_sum:rm_0|w_data[15] ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.704      ;
+; 0.557 ; mult_control:u_control|state.s16         ; mult_control:u_control|state.idle        ; i_CLK        ; i_CLK       ; 0.000        ; 0.003      ; 0.712      ;
+; 0.557 ; register_pp:reg_A|q[0]                   ; mult_op:u_op|running_sum:rm_0|w_data[8]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.709      ;
+; 0.558 ; mult_op:u_op|running_sum:rm_0|w_data[15] ; mult_op:u_op|running_sum:rm_0|w_data[16] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.710      ;
+; 0.562 ; register_pp:reg_A|q[0]                   ; mult_op:u_op|running_sum:rm_0|w_data[9]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.714      ;
+; 0.585 ; register_pp:reg_A|q[2]                   ; mult_op:u_op|running_sum:rm_0|w_data[11] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.737      ;
+; 0.599 ; register_pp:reg_A|q[4]                   ; mult_op:u_op|running_sum:rm_0|w_data[13] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.751      ;
+; 0.619 ; register_pp:reg_A|q[7]                   ; mult_op:u_op|running_sum:rm_0|w_data[16] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.771      ;
+; 0.624 ; register_pp:reg_A|q[5]                   ; mult_op:u_op|running_sum:rm_0|w_data[14] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.776      ;
+; 0.661 ; button:u_button|state.s2                 ; mult_control:u_control|state.start       ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.813      ;
+; 0.669 ; mult_control:u_control|state.s12         ; mult_op:u_op|running_sum:rm_0|w_data[12] ; i_CLK        ; i_CLK       ; 0.000        ; 0.003      ; 0.824      ;
+; 0.670 ; mult_control:u_control|state.s12         ; mult_op:u_op|running_sum:rm_0|w_data[10] ; i_CLK        ; i_CLK       ; 0.000        ; 0.003      ; 0.825      ;
+; 0.695 ; mult_control:u_control|state.start       ; register_pp:reg_A|q[0]                   ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.847      ;
+; 0.695 ; mult_control:u_control|state.start       ; register_pp:reg_A|q[1]                   ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.847      ;
+; 0.695 ; mult_control:u_control|state.start       ; register_pp:reg_A|q[3]                   ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.847      ;
+; 0.695 ; mult_control:u_control|state.start       ; register_pp:reg_A|q[2]                   ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.847      ;
+; 0.695 ; mult_control:u_control|state.start       ; register_pp:reg_A|q[4]                   ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.847      ;
+; 0.695 ; mult_control:u_control|state.start       ; register_pp:reg_A|q[5]                   ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.847      ;
+; 0.695 ; mult_control:u_control|state.start       ; register_pp:reg_A|q[6]                   ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.847      ;
+; 0.695 ; mult_control:u_control|state.start       ; register_pp:reg_A|q[7]                   ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.847      ;
+; 0.703 ; mult_control:u_control|state.s8          ; mult_op:u_op|running_sum:rm_0|w_data[10] ; i_CLK        ; i_CLK       ; 0.000        ; 0.004      ; 0.859      ;
+; 0.705 ; mult_op:u_op|running_sum:rm_0|w_data[13] ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.857      ;
+; 0.705 ; mult_control:u_control|state.s16         ; mult_op:u_op|running_sum:rm_0|w_data[12] ; i_CLK        ; i_CLK       ; 0.000        ; 0.003      ; 0.860      ;
+; 0.706 ; mult_control:u_control|state.s16         ; mult_op:u_op|running_sum:rm_0|w_data[10] ; i_CLK        ; i_CLK       ; 0.000        ; 0.003      ; 0.861      ;
+; 0.707 ; mult_op:u_op|running_sum:rm_0|w_data[12] ; mult_op:u_op|running_sum:rm_0|w_data[12] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.859      ;
+; 0.708 ; mult_control:u_control|state.idle        ; mult_control:u_control|state.start       ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.860      ;
+; 0.719 ; mult_op:u_op|running_sum:rm_0|w_data[13] ; mult_op:u_op|running_sum:rm_0|w_data[13] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.871      ;
+; 0.722 ; register_pp:reg_A|q[1]                   ; mult_op:u_op|running_sum:rm_0|w_data[9]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.874      ;
+; 0.723 ; register_pp:reg_A|q[6]                   ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.875      ;
+; 0.723 ; mult_op:u_op|running_sum:rm_0|w_data[14] ; mult_op:u_op|running_sum:rm_0|w_data[16] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.875      ;
+; 0.725 ; register_pp:reg_A|q[5]                   ; mult_op:u_op|running_sum:rm_0|w_data[16] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.877      ;
+; 0.749 ; mult_control:u_control|state.s12         ; mult_op:u_op|running_sum:rm_0|w_data[9]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.003      ; 0.904      ;
++-------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Recovery: 'i_CLK'                                                                                                                                ;
++-------+------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                          ; To Node                                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.048 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[16] ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 0.984      ;
+; 0.056 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[7]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.001      ; 0.977      ;
+; 0.056 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[6]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.001      ; 0.977      ;
+; 0.056 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[5]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.001      ; 0.977      ;
+; 0.056 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[4]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.001      ; 0.977      ;
+; 0.056 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[3]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.001      ; 0.977      ;
+; 0.056 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[2]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.001      ; 0.977      ;
+; 0.056 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[1]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.001      ; 0.977      ;
+; 0.056 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[0]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.001      ; 0.977      ;
+; 0.120 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 0.912      ;
+; 0.120 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[14] ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 0.912      ;
+; 0.120 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[13] ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 0.912      ;
+; 0.120 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[12] ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 0.912      ;
+; 0.120 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[11] ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 0.912      ;
+; 0.120 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[10] ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 0.912      ;
+; 0.120 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[9]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 0.912      ;
+; 0.120 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[8]  ; i_CLK        ; i_CLK       ; 1.000        ; 0.000      ; 0.912      ;
++-------+------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Removal: 'i_CLK'                                                                                                                                 ;
++-------+------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; Slack ; From Node                          ; To Node                                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+; 0.760 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[15] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.912      ;
+; 0.760 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[14] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.912      ;
+; 0.760 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[13] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.912      ;
+; 0.760 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[12] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.912      ;
+; 0.760 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[11] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.912      ;
+; 0.760 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[10] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.912      ;
+; 0.760 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[9]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.912      ;
+; 0.760 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[8]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.912      ;
+; 0.824 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[7]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.001      ; 0.977      ;
+; 0.824 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[6]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.001      ; 0.977      ;
+; 0.824 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[5]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.001      ; 0.977      ;
+; 0.824 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[4]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.001      ; 0.977      ;
+; 0.824 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[3]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.001      ; 0.977      ;
+; 0.824 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[2]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.001      ; 0.977      ;
+; 0.824 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[1]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.001      ; 0.977      ;
+; 0.824 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[0]  ; i_CLK        ; i_CLK       ; 0.000        ; 0.001      ; 0.977      ;
+; 0.832 ; mult_control:u_control|state.start ; mult_op:u_op|running_sum:rm_0|w_data[16] ; i_CLK        ; i_CLK       ; 0.000        ; 0.000      ; 0.984      ;
++-------+------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'i_CLK'                                                                                   ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock ; Clock Edge ; Target                                   ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; i_CLK ; Rise       ; i_CLK                                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; button:u_button|state.s1                 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; button:u_button|state.s1                 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; button:u_button|state.s2                 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; button:u_button|state.s2                 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.idle        ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.idle        ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.s0          ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.s0          ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.s1          ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.s1          ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.s10         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.s10         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.s11         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.s11         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.s12         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.s12         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.s13         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.s13         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.s14         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.s14         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.s15         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.s15         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.s16         ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.s16         ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.s2          ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.s2          ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.s3          ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.s3          ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.s4          ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.s4          ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.s5          ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.s5          ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.s6          ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.s6          ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.s7          ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.s7          ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.s8          ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.s8          ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.s9          ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.s9          ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_control:u_control|state.start       ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_control:u_control|state.start       ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[0]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[0]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[10] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[10] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[11] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[11] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[12] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[12] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[13] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[13] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[14] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[14] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[15] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[15] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[16] ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[16] ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[1]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[1]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[2]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[2]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[3]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[3]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[4]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[4]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[5]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[5]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[6]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[6]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[7]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[7]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[8]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[8]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[9]  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; mult_op:u_op|running_sum:rm_0|w_data[9]  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; register_pp:reg_A|q[0]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; register_pp:reg_A|q[0]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; register_pp:reg_A|q[1]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; register_pp:reg_A|q[1]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; register_pp:reg_A|q[2]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; register_pp:reg_A|q[2]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; register_pp:reg_A|q[3]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; register_pp:reg_A|q[3]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; register_pp:reg_A|q[4]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; register_pp:reg_A|q[4]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; register_pp:reg_A|q[5]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; register_pp:reg_A|q[5]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; register_pp:reg_A|q[6]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; register_pp:reg_A|q[6]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; register_pp:reg_A|q[7]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; register_pp:reg_A|q[7]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; register_pp:reg_B|q[0]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; register_pp:reg_B|q[0]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; register_pp:reg_B|q[1]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; register_pp:reg_B|q[1]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; register_pp:reg_B|q[2]                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; i_CLK ; Rise       ; register_pp:reg_B|q[2]                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; i_CLK ; Rise       ; register_pp:reg_B|q[3]                   ;
++--------+--------------+----------------+------------------+-------+------------+------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Setup Times                                                              ;
++------------+------------+--------+--------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++------------+------------+--------+--------+------------+-----------------+
+; i_DINa[*]  ; i_CLK      ; 0.337  ; 0.337  ; Rise       ; i_CLK           ;
+;  i_DINa[0] ; i_CLK      ; -0.097 ; -0.097 ; Rise       ; i_CLK           ;
+;  i_DINa[1] ; i_CLK      ; -0.208 ; -0.208 ; Rise       ; i_CLK           ;
+;  i_DINa[2] ; i_CLK      ; -0.208 ; -0.208 ; Rise       ; i_CLK           ;
+;  i_DINa[3] ; i_CLK      ; -0.112 ; -0.112 ; Rise       ; i_CLK           ;
+;  i_DINa[4] ; i_CLK      ; -0.067 ; -0.067 ; Rise       ; i_CLK           ;
+;  i_DINa[5] ; i_CLK      ; -0.115 ; -0.115 ; Rise       ; i_CLK           ;
+;  i_DINa[6] ; i_CLK      ; -0.173 ; -0.173 ; Rise       ; i_CLK           ;
+;  i_DINa[7] ; i_CLK      ; 0.337  ; 0.337  ; Rise       ; i_CLK           ;
+; i_DINb[*]  ; i_CLK      ; 2.691  ; 2.691  ; Rise       ; i_CLK           ;
+;  i_DINb[0] ; i_CLK      ; 0.339  ; 0.339  ; Rise       ; i_CLK           ;
+;  i_DINb[1] ; i_CLK      ; 0.232  ; 0.232  ; Rise       ; i_CLK           ;
+;  i_DINb[2] ; i_CLK      ; 0.223  ; 0.223  ; Rise       ; i_CLK           ;
+;  i_DINb[3] ; i_CLK      ; 2.593  ; 2.593  ; Rise       ; i_CLK           ;
+;  i_DINb[4] ; i_CLK      ; 2.691  ; 2.691  ; Rise       ; i_CLK           ;
+;  i_DINb[5] ; i_CLK      ; 2.615  ; 2.615  ; Rise       ; i_CLK           ;
+;  i_DINb[6] ; i_CLK      ; 2.625  ; 2.625  ; Rise       ; i_CLK           ;
+;  i_DINb[7] ; i_CLK      ; 2.639  ; 2.639  ; Rise       ; i_CLK           ;
+; i_start    ; i_CLK      ; 2.066  ; 2.066  ; Rise       ; i_CLK           ;
++------------+------------+--------+--------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Hold Times                                                               ;
++------------+------------+--------+--------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++------------+------------+--------+--------+------------+-----------------+
+; i_DINa[*]  ; i_CLK      ; 0.328  ; 0.328  ; Rise       ; i_CLK           ;
+;  i_DINa[0] ; i_CLK      ; 0.217  ; 0.217  ; Rise       ; i_CLK           ;
+;  i_DINa[1] ; i_CLK      ; 0.328  ; 0.328  ; Rise       ; i_CLK           ;
+;  i_DINa[2] ; i_CLK      ; 0.328  ; 0.328  ; Rise       ; i_CLK           ;
+;  i_DINa[3] ; i_CLK      ; 0.232  ; 0.232  ; Rise       ; i_CLK           ;
+;  i_DINa[4] ; i_CLK      ; 0.187  ; 0.187  ; Rise       ; i_CLK           ;
+;  i_DINa[5] ; i_CLK      ; 0.235  ; 0.235  ; Rise       ; i_CLK           ;
+;  i_DINa[6] ; i_CLK      ; 0.293  ; 0.293  ; Rise       ; i_CLK           ;
+;  i_DINa[7] ; i_CLK      ; -0.217 ; -0.217 ; Rise       ; i_CLK           ;
+; i_DINb[*]  ; i_CLK      ; -0.103 ; -0.103 ; Rise       ; i_CLK           ;
+;  i_DINb[0] ; i_CLK      ; -0.219 ; -0.219 ; Rise       ; i_CLK           ;
+;  i_DINb[1] ; i_CLK      ; -0.112 ; -0.112 ; Rise       ; i_CLK           ;
+;  i_DINb[2] ; i_CLK      ; -0.103 ; -0.103 ; Rise       ; i_CLK           ;
+;  i_DINb[3] ; i_CLK      ; -2.473 ; -2.473 ; Rise       ; i_CLK           ;
+;  i_DINb[4] ; i_CLK      ; -2.571 ; -2.571 ; Rise       ; i_CLK           ;
+;  i_DINb[5] ; i_CLK      ; -2.495 ; -2.495 ; Rise       ; i_CLK           ;
+;  i_DINb[6] ; i_CLK      ; -2.505 ; -2.505 ; Rise       ; i_CLK           ;
+;  i_DINb[7] ; i_CLK      ; -2.519 ; -2.519 ; Rise       ; i_CLK           ;
+; i_start    ; i_CLK      ; -1.924 ; -1.924 ; Rise       ; i_CLK           ;
++------------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; o_DOUT[*]   ; i_CLK      ; 4.629 ; 4.629 ; Rise       ; i_CLK           ;
+;  o_DOUT[0]  ; i_CLK      ; 3.813 ; 3.813 ; Rise       ; i_CLK           ;
+;  o_DOUT[1]  ; i_CLK      ; 3.808 ; 3.808 ; Rise       ; i_CLK           ;
+;  o_DOUT[2]  ; i_CLK      ; 3.787 ; 3.787 ; Rise       ; i_CLK           ;
+;  o_DOUT[3]  ; i_CLK      ; 3.793 ; 3.793 ; Rise       ; i_CLK           ;
+;  o_DOUT[4]  ; i_CLK      ; 3.705 ; 3.705 ; Rise       ; i_CLK           ;
+;  o_DOUT[5]  ; i_CLK      ; 3.708 ; 3.708 ; Rise       ; i_CLK           ;
+;  o_DOUT[6]  ; i_CLK      ; 3.695 ; 3.695 ; Rise       ; i_CLK           ;
+;  o_DOUT[7]  ; i_CLK      ; 3.694 ; 3.694 ; Rise       ; i_CLK           ;
+;  o_DOUT[8]  ; i_CLK      ; 4.288 ; 4.288 ; Rise       ; i_CLK           ;
+;  o_DOUT[9]  ; i_CLK      ; 4.316 ; 4.316 ; Rise       ; i_CLK           ;
+;  o_DOUT[10] ; i_CLK      ; 4.285 ; 4.285 ; Rise       ; i_CLK           ;
+;  o_DOUT[11] ; i_CLK      ; 4.270 ; 4.270 ; Rise       ; i_CLK           ;
+;  o_DOUT[12] ; i_CLK      ; 4.321 ; 4.321 ; Rise       ; i_CLK           ;
+;  o_DOUT[13] ; i_CLK      ; 4.330 ; 4.330 ; Rise       ; i_CLK           ;
+;  o_DOUT[14] ; i_CLK      ; 4.170 ; 4.170 ; Rise       ; i_CLK           ;
+;  o_DOUT[15] ; i_CLK      ; 4.629 ; 4.629 ; Rise       ; i_CLK           ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; o_DOUT[*]   ; i_CLK      ; 3.694 ; 3.694 ; Rise       ; i_CLK           ;
+;  o_DOUT[0]  ; i_CLK      ; 3.813 ; 3.813 ; Rise       ; i_CLK           ;
+;  o_DOUT[1]  ; i_CLK      ; 3.808 ; 3.808 ; Rise       ; i_CLK           ;
+;  o_DOUT[2]  ; i_CLK      ; 3.787 ; 3.787 ; Rise       ; i_CLK           ;
+;  o_DOUT[3]  ; i_CLK      ; 3.793 ; 3.793 ; Rise       ; i_CLK           ;
+;  o_DOUT[4]  ; i_CLK      ; 3.705 ; 3.705 ; Rise       ; i_CLK           ;
+;  o_DOUT[5]  ; i_CLK      ; 3.708 ; 3.708 ; Rise       ; i_CLK           ;
+;  o_DOUT[6]  ; i_CLK      ; 3.695 ; 3.695 ; Rise       ; i_CLK           ;
+;  o_DOUT[7]  ; i_CLK      ; 3.694 ; 3.694 ; Rise       ; i_CLK           ;
+;  o_DOUT[8]  ; i_CLK      ; 4.288 ; 4.288 ; Rise       ; i_CLK           ;
+;  o_DOUT[9]  ; i_CLK      ; 4.316 ; 4.316 ; Rise       ; i_CLK           ;
+;  o_DOUT[10] ; i_CLK      ; 4.285 ; 4.285 ; Rise       ; i_CLK           ;
+;  o_DOUT[11] ; i_CLK      ; 4.270 ; 4.270 ; Rise       ; i_CLK           ;
+;  o_DOUT[12] ; i_CLK      ; 4.321 ; 4.321 ; Rise       ; i_CLK           ;
+;  o_DOUT[13] ; i_CLK      ; 4.330 ; 4.330 ; Rise       ; i_CLK           ;
+;  o_DOUT[14] ; i_CLK      ; 4.170 ; 4.170 ; Rise       ; i_CLK           ;
+;  o_DOUT[15] ; i_CLK      ; 4.629 ; 4.629 ; Rise       ; i_CLK           ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                           ;
++------------------+---------+-------+----------+---------+---------------------+
+; Clock            ; Setup   ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++------------------+---------+-------+----------+---------+---------------------+
+; Worst-case Slack ; -2.675  ; 0.215 ; -0.837   ; 0.760   ; -1.380              ;
+;  i_CLK           ; -2.675  ; 0.215 ; -0.837   ; 0.760   ; -1.380              ;
+; Design-wide TNS  ; -51.441 ; 0.0   ; -12.861  ; 0.0     ; -55.38              ;
+;  i_CLK           ; -51.441 ; 0.000 ; -12.861  ; 0.000   ; -55.380             ;
++------------------+---------+-------+----------+---------+---------------------+
+
+
++------------------------------------------------------------------------+
+; Setup Times                                                            ;
++------------+------------+-------+-------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++------------+------------+-------+-------+------------+-----------------+
+; i_DINa[*]  ; i_CLK      ; 1.087 ; 1.087 ; Rise       ; i_CLK           ;
+;  i_DINa[0] ; i_CLK      ; 0.353 ; 0.353 ; Rise       ; i_CLK           ;
+;  i_DINa[1] ; i_CLK      ; 0.106 ; 0.106 ; Rise       ; i_CLK           ;
+;  i_DINa[2] ; i_CLK      ; 0.121 ; 0.121 ; Rise       ; i_CLK           ;
+;  i_DINa[3] ; i_CLK      ; 0.352 ; 0.352 ; Rise       ; i_CLK           ;
+;  i_DINa[4] ; i_CLK      ; 0.413 ; 0.413 ; Rise       ; i_CLK           ;
+;  i_DINa[5] ; i_CLK      ; 0.340 ; 0.340 ; Rise       ; i_CLK           ;
+;  i_DINa[6] ; i_CLK      ; 0.253 ; 0.253 ; Rise       ; i_CLK           ;
+;  i_DINa[7] ; i_CLK      ; 1.087 ; 1.087 ; Rise       ; i_CLK           ;
+; i_DINb[*]  ; i_CLK      ; 5.023 ; 5.023 ; Rise       ; i_CLK           ;
+;  i_DINb[0] ; i_CLK      ; 1.098 ; 1.098 ; Rise       ; i_CLK           ;
+;  i_DINb[1] ; i_CLK      ; 0.949 ; 0.949 ; Rise       ; i_CLK           ;
+;  i_DINb[2] ; i_CLK      ; 0.938 ; 0.938 ; Rise       ; i_CLK           ;
+;  i_DINb[3] ; i_CLK      ; 4.761 ; 4.761 ; Rise       ; i_CLK           ;
+;  i_DINb[4] ; i_CLK      ; 5.023 ; 5.023 ; Rise       ; i_CLK           ;
+;  i_DINb[5] ; i_CLK      ; 4.845 ; 4.845 ; Rise       ; i_CLK           ;
+;  i_DINb[6] ; i_CLK      ; 4.851 ; 4.851 ; Rise       ; i_CLK           ;
+;  i_DINb[7] ; i_CLK      ; 4.855 ; 4.855 ; Rise       ; i_CLK           ;
+; i_start    ; i_CLK      ; 3.819 ; 3.819 ; Rise       ; i_CLK           ;
++------------+------------+-------+-------+------------+-----------------+
+
+
++--------------------------------------------------------------------------+
+; Hold Times                                                               ;
++------------+------------+--------+--------+------------+-----------------+
+; Data Port  ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
++------------+------------+--------+--------+------------+-----------------+
+; i_DINa[*]  ; i_CLK      ; 0.328  ; 0.328  ; Rise       ; i_CLK           ;
+;  i_DINa[0] ; i_CLK      ; 0.217  ; 0.217  ; Rise       ; i_CLK           ;
+;  i_DINa[1] ; i_CLK      ; 0.328  ; 0.328  ; Rise       ; i_CLK           ;
+;  i_DINa[2] ; i_CLK      ; 0.328  ; 0.328  ; Rise       ; i_CLK           ;
+;  i_DINa[3] ; i_CLK      ; 0.232  ; 0.232  ; Rise       ; i_CLK           ;
+;  i_DINa[4] ; i_CLK      ; 0.187  ; 0.187  ; Rise       ; i_CLK           ;
+;  i_DINa[5] ; i_CLK      ; 0.235  ; 0.235  ; Rise       ; i_CLK           ;
+;  i_DINa[6] ; i_CLK      ; 0.293  ; 0.293  ; Rise       ; i_CLK           ;
+;  i_DINa[7] ; i_CLK      ; -0.217 ; -0.217 ; Rise       ; i_CLK           ;
+; i_DINb[*]  ; i_CLK      ; -0.103 ; -0.103 ; Rise       ; i_CLK           ;
+;  i_DINb[0] ; i_CLK      ; -0.219 ; -0.219 ; Rise       ; i_CLK           ;
+;  i_DINb[1] ; i_CLK      ; -0.112 ; -0.112 ; Rise       ; i_CLK           ;
+;  i_DINb[2] ; i_CLK      ; -0.103 ; -0.103 ; Rise       ; i_CLK           ;
+;  i_DINb[3] ; i_CLK      ; -2.473 ; -2.473 ; Rise       ; i_CLK           ;
+;  i_DINb[4] ; i_CLK      ; -2.571 ; -2.571 ; Rise       ; i_CLK           ;
+;  i_DINb[5] ; i_CLK      ; -2.495 ; -2.495 ; Rise       ; i_CLK           ;
+;  i_DINb[6] ; i_CLK      ; -2.505 ; -2.505 ; Rise       ; i_CLK           ;
+;  i_DINb[7] ; i_CLK      ; -2.519 ; -2.519 ; Rise       ; i_CLK           ;
+; i_start    ; i_CLK      ; -1.924 ; -1.924 ; Rise       ; i_CLK           ;
++------------+------------+--------+--------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Clock to Output Times                                                   ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; o_DOUT[*]   ; i_CLK      ; 8.366 ; 8.366 ; Rise       ; i_CLK           ;
+;  o_DOUT[0]  ; i_CLK      ; 6.671 ; 6.671 ; Rise       ; i_CLK           ;
+;  o_DOUT[1]  ; i_CLK      ; 6.660 ; 6.660 ; Rise       ; i_CLK           ;
+;  o_DOUT[2]  ; i_CLK      ; 6.644 ; 6.644 ; Rise       ; i_CLK           ;
+;  o_DOUT[3]  ; i_CLK      ; 6.660 ; 6.660 ; Rise       ; i_CLK           ;
+;  o_DOUT[4]  ; i_CLK      ; 6.439 ; 6.439 ; Rise       ; i_CLK           ;
+;  o_DOUT[5]  ; i_CLK      ; 6.443 ; 6.443 ; Rise       ; i_CLK           ;
+;  o_DOUT[6]  ; i_CLK      ; 6.430 ; 6.430 ; Rise       ; i_CLK           ;
+;  o_DOUT[7]  ; i_CLK      ; 6.428 ; 6.428 ; Rise       ; i_CLK           ;
+;  o_DOUT[8]  ; i_CLK      ; 7.781 ; 7.781 ; Rise       ; i_CLK           ;
+;  o_DOUT[9]  ; i_CLK      ; 7.821 ; 7.821 ; Rise       ; i_CLK           ;
+;  o_DOUT[10] ; i_CLK      ; 7.774 ; 7.774 ; Rise       ; i_CLK           ;
+;  o_DOUT[11] ; i_CLK      ; 7.632 ; 7.632 ; Rise       ; i_CLK           ;
+;  o_DOUT[12] ; i_CLK      ; 7.820 ; 7.820 ; Rise       ; i_CLK           ;
+;  o_DOUT[13] ; i_CLK      ; 7.841 ; 7.841 ; Rise       ; i_CLK           ;
+;  o_DOUT[14] ; i_CLK      ; 7.386 ; 7.386 ; Rise       ; i_CLK           ;
+;  o_DOUT[15] ; i_CLK      ; 8.366 ; 8.366 ; Rise       ; i_CLK           ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                           ;
++-------------+------------+-------+-------+------------+-----------------+
+; Data Port   ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++-------------+------------+-------+-------+------------+-----------------+
+; o_DOUT[*]   ; i_CLK      ; 3.694 ; 3.694 ; Rise       ; i_CLK           ;
+;  o_DOUT[0]  ; i_CLK      ; 3.813 ; 3.813 ; Rise       ; i_CLK           ;
+;  o_DOUT[1]  ; i_CLK      ; 3.808 ; 3.808 ; Rise       ; i_CLK           ;
+;  o_DOUT[2]  ; i_CLK      ; 3.787 ; 3.787 ; Rise       ; i_CLK           ;
+;  o_DOUT[3]  ; i_CLK      ; 3.793 ; 3.793 ; Rise       ; i_CLK           ;
+;  o_DOUT[4]  ; i_CLK      ; 3.705 ; 3.705 ; Rise       ; i_CLK           ;
+;  o_DOUT[5]  ; i_CLK      ; 3.708 ; 3.708 ; Rise       ; i_CLK           ;
+;  o_DOUT[6]  ; i_CLK      ; 3.695 ; 3.695 ; Rise       ; i_CLK           ;
+;  o_DOUT[7]  ; i_CLK      ; 3.694 ; 3.694 ; Rise       ; i_CLK           ;
+;  o_DOUT[8]  ; i_CLK      ; 4.288 ; 4.288 ; Rise       ; i_CLK           ;
+;  o_DOUT[9]  ; i_CLK      ; 4.316 ; 4.316 ; Rise       ; i_CLK           ;
+;  o_DOUT[10] ; i_CLK      ; 4.285 ; 4.285 ; Rise       ; i_CLK           ;
+;  o_DOUT[11] ; i_CLK      ; 4.270 ; 4.270 ; Rise       ; i_CLK           ;
+;  o_DOUT[12] ; i_CLK      ; 4.321 ; 4.321 ; Rise       ; i_CLK           ;
+;  o_DOUT[13] ; i_CLK      ; 4.330 ; 4.330 ; Rise       ; i_CLK           ;
+;  o_DOUT[14] ; i_CLK      ; 4.170 ; 4.170 ; Rise       ; i_CLK           ;
+;  o_DOUT[15] ; i_CLK      ; 4.629 ; 4.629 ; Rise       ; i_CLK           ;
++-------------+------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------------------------------+
+; Setup Transfers                                                   ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; i_CLK      ; i_CLK    ; 467      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Hold Transfers                                                    ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; i_CLK      ; i_CLK    ; 467      ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Recovery Transfers                                                ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; i_CLK      ; i_CLK    ; 17       ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------+
+; Removal Transfers                                                 ;
++------------+----------+----------+----------+----------+----------+
+; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------+----------+----------+----------+----------+----------+
+; i_CLK      ; i_CLK    ; 17       ; 0        ; 0        ; 0        ;
++------------+----------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 18    ; 18   ;
+; Unconstrained Input Port Paths  ; 72    ; 72   ;
+; Unconstrained Output Ports      ; 16    ; 16   ;
+; Unconstrained Output Port Paths ; 16    ; 16   ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 32-bit TimeQuest Timing Analyzer
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu Jun 16 10:38:19 2016
+Info: Command: quartus_sta multiplier_seq -c multiplier_seq
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'multiplier_seq.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name i_CLK i_CLK
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -2.675
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -2.675       -51.441 i_CLK 
+Info (332146): Worst-case hold slack is 0.391
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.391         0.000 i_CLK 
+Info (332146): Worst-case recovery slack is -0.837
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.837       -12.861 i_CLK 
+Info (332146): Worst-case removal slack is 1.454
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     1.454         0.000 i_CLK 
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380       -55.380 i_CLK 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -0.602
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.602        -8.501 i_CLK 
+Info (332146): Worst-case hold slack is 0.215
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.215         0.000 i_CLK 
+Info (332146): Worst-case recovery slack is 0.048
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.048         0.000 i_CLK 
+Info (332146): Worst-case removal slack is 0.760
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):     0.760         0.000 i_CLK 
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380       -55.380 i_CLK 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 32-bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 313 megabytes
+    Info: Processing ended: Thu Jun 16 10:38:21 2016
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

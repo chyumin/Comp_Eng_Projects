@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable>
+  <columns>
+   <connections preferredWidth="47" />
+   <irq preferredWidth="34" />
+  </columns>
+ </systemtable>
+ <clocktable>
+  <columns>
+   <clockname preferredWidth="362" />
+   <clocksource preferredWidth="362" />
+   <frequency preferredWidth="342" />
+  </columns>
+ </clocktable>
+ <library
+   expandedCategories="Library/Peripherals/Display,Library,Project,Library/Peripherals" />
+ <window width="1374" height="732" x="-4" y="-4" />
+</preferences>

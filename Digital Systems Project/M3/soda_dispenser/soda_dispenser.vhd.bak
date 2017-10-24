@@ -1,0 +1,17 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+
+ENTITY soda_dispenser IS
+
+
+
+END soda_dispenser;
+
+
+ARCHITECTURE arch OF soda_dispenser IS
+
+BEGIN
+
+
+END arch;

@@ -1,0 +1,87 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do MIPS_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {E:/Projeto de Sistemas Digitais/M1/MIPS_restored/lpm_add_sub0.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity lpm_add_sub0
+# -- Compiling architecture SYN of lpm_add_sub0
+# vcom -93 -work work {E:/Projeto de Sistemas Digitais/M1/MIPS_restored/rom.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity rom
+# -- Compiling architecture SYN of rom
+# vcom -93 -work work {E:/Projeto de Sistemas Digitais/M1/MIPS_restored/lpm_add_sub1.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity lpm_add_sub1
+# -- Compiling architecture SYN of lpm_add_sub1
+# vcom -93 -work work {E:/Projeto de Sistemas Digitais/M1/MIPS_restored/ram.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ram
+# -- Compiling architecture SYN of ram
+# 
+vsim -voptargs=+acc work.lpm_add_sub0
+# vsim -voptargs=+acc work.lpm_add_sub0 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.lpm_add_sub0(syn)
+# Loading lpm.lpm_components
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading lpm.lpm_add_sub(lpm_syn)
+# Loading lpm.lpm_add_sub_unsigned(lpm_syn)
+add wave -position insertpoint  \
+sim:/lpm_add_sub0/dataa \
+sim:/lpm_add_sub0/result \
+sim:/lpm_add_sub0/sub_wire0 \
+sim:/lpm_add_sub0/sub_wire1_bv \
+sim:/lpm_add_sub0/sub_wire1
+force -freeze sim:/lpm_add_sub0/dataa 00000000000000000000000000000011 0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /lpm_add_sub0/lpm_add_sub_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /lpm_add_sub0/lpm_add_sub_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /lpm_add_sub0/lpm_add_sub_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /lpm_add_sub0/lpm_add_sub_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /lpm_add_sub0/lpm_add_sub_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /lpm_add_sub0/lpm_add_sub_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /lpm_add_sub0/lpm_add_sub_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /lpm_add_sub0/lpm_add_sub_component/L1/U
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 1  Instance: /lpm_add_sub0/lpm_add_sub_component/L1/U
+run
+run
+run
+run
+run
+run
+run
+run

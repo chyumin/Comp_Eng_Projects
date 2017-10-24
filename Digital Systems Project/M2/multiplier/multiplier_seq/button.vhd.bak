@@ -1,0 +1,35 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL
+
+ENTITY button IS
+	PORT(	i_CLK  : IN  std_logic; 
+			i_clrn : IN  std_logic;
+			i_Din  : IN  std_logic;
+			o_Dout : OUT std_logic;
+	);
+END button;
+
+ARCHITECTURE arch OF button IS
+
+-- state declaration
+TYPE state_type IS (idle, start, s0, s1, s2, s3, s4, s5, s6, s7, 
+						  s8, s9, s10, s11, s12, s13, s14, s15, s16);
+SIGNAL state      : state_type;
+SIGNAL next_state : state_type;
+
+
+BEGIN
+
+	p_state_reg: 
+	PROCESS(clk, clrn)
+	BEGIN
+		IF(clrn='0') THEN
+			state <= idle;
+		ELSIF (clk'EVENT AND clk='1') THEN
+			state <= next_state;
+		END IF;
+	END PROCESS;
+	
+	
+	
+END arch;

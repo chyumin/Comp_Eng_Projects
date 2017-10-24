@@ -1,0 +1,185 @@
+|soda_dispenser
+i_clk => sd_control:u_0.clk
+i_clk => data_path:u_1.i_CLK
+i_clrn => sd_control:u_0.clrn
+i_c => sd_control:u_0.c
+i_s[0] => data_path:u_1.i_S[0]
+i_s[1] => data_path:u_1.i_S[1]
+i_s[2] => data_path:u_1.i_S[2]
+i_s[3] => data_path:u_1.i_S[3]
+i_s[4] => data_path:u_1.i_S[4]
+i_s[5] => data_path:u_1.i_S[5]
+i_s[6] => data_path:u_1.i_S[6]
+i_s[7] => data_path:u_1.i_S[7]
+i_a[0] => data_path:u_1.i_A[0]
+i_a[1] => data_path:u_1.i_A[1]
+i_a[2] => data_path:u_1.i_A[2]
+i_a[3] => data_path:u_1.i_A[3]
+i_a[4] => data_path:u_1.i_A[4]
+i_a[5] => data_path:u_1.i_A[5]
+i_a[6] => data_path:u_1.i_A[6]
+i_a[7] => data_path:u_1.i_A[7]
+o_d <= sd_control:u_0.d
+
+
+|soda_dispenser|sd_control:u_0
+clk => state~1.DATAIN
+clrn => state~3.DATAIN
+i_tot_lt_s => p_next_state.IN0
+c => next_state.OUTPUTSELECT
+c => next_state.OUTPUTSELECT
+c => next_state.s_add.DATAB
+c => p_next_state.IN1
+d <= d.DB_MAX_OUTPUT_PORT_TYPE
+o_tot_ld <= o_tot_ld.DB_MAX_OUTPUT_PORT_TYPE
+o_tot_clrn <= o_tot_clrn.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|soda_dispenser|data_path:u_1
+i_S[0] => comparator_Wbits:u_0.i_DIN1[0]
+i_S[1] => comparator_Wbits:u_0.i_DIN1[1]
+i_S[2] => comparator_Wbits:u_0.i_DIN1[2]
+i_S[3] => comparator_Wbits:u_0.i_DIN1[3]
+i_S[4] => comparator_Wbits:u_0.i_DIN1[4]
+i_S[5] => comparator_Wbits:u_0.i_DIN1[5]
+i_S[6] => comparator_Wbits:u_0.i_DIN1[6]
+i_S[7] => comparator_Wbits:u_0.i_DIN1[7]
+i_A[0] => adder:u_1.i_DIN1[0]
+i_A[1] => adder:u_1.i_DIN1[1]
+i_A[2] => adder:u_1.i_DIN1[2]
+i_A[3] => adder:u_1.i_DIN1[3]
+i_A[4] => adder:u_1.i_DIN1[4]
+i_A[5] => adder:u_1.i_DIN1[5]
+i_A[6] => adder:u_1.i_DIN1[6]
+i_A[7] => adder:u_1.i_DIN1[7]
+i_TOT_LD => reg_pp_Wbits:u_2.i_ENA
+i_TOT_CLR => reg_pp_Wbits:u_2.i_CLRn
+i_CLK => reg_pp_Wbits:u_2.i_CLK
+o_TOT_LT_S <= comparator_Wbits:u_0.o_LT
+
+
+|soda_dispenser|data_path:u_1|comparator_Wbits:u_0
+i_DIN0[0] => LessThan0.IN8
+i_DIN0[0] => Equal0.IN7
+i_DIN0[0] => LessThan1.IN8
+i_DIN0[1] => LessThan0.IN7
+i_DIN0[1] => Equal0.IN6
+i_DIN0[1] => LessThan1.IN7
+i_DIN0[2] => LessThan0.IN6
+i_DIN0[2] => Equal0.IN5
+i_DIN0[2] => LessThan1.IN6
+i_DIN0[3] => LessThan0.IN5
+i_DIN0[3] => Equal0.IN4
+i_DIN0[3] => LessThan1.IN5
+i_DIN0[4] => LessThan0.IN4
+i_DIN0[4] => Equal0.IN3
+i_DIN0[4] => LessThan1.IN4
+i_DIN0[5] => LessThan0.IN3
+i_DIN0[5] => Equal0.IN2
+i_DIN0[5] => LessThan1.IN3
+i_DIN0[6] => LessThan0.IN2
+i_DIN0[6] => Equal0.IN1
+i_DIN0[6] => LessThan1.IN2
+i_DIN0[7] => LessThan0.IN1
+i_DIN0[7] => Equal0.IN0
+i_DIN0[7] => LessThan1.IN1
+i_DIN1[0] => LessThan0.IN16
+i_DIN1[0] => Equal0.IN15
+i_DIN1[0] => LessThan1.IN16
+i_DIN1[1] => LessThan0.IN15
+i_DIN1[1] => Equal0.IN14
+i_DIN1[1] => LessThan1.IN15
+i_DIN1[2] => LessThan0.IN14
+i_DIN1[2] => Equal0.IN13
+i_DIN1[2] => LessThan1.IN14
+i_DIN1[3] => LessThan0.IN13
+i_DIN1[3] => Equal0.IN12
+i_DIN1[3] => LessThan1.IN13
+i_DIN1[4] => LessThan0.IN12
+i_DIN1[4] => Equal0.IN11
+i_DIN1[4] => LessThan1.IN12
+i_DIN1[5] => LessThan0.IN11
+i_DIN1[5] => Equal0.IN10
+i_DIN1[5] => LessThan1.IN11
+i_DIN1[6] => LessThan0.IN10
+i_DIN1[6] => Equal0.IN9
+i_DIN1[6] => LessThan1.IN10
+i_DIN1[7] => LessThan0.IN9
+i_DIN1[7] => Equal0.IN8
+i_DIN1[7] => LessThan1.IN9
+o_EQ <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+o_GT <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
+o_LT <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|soda_dispenser|data_path:u_1|adder:u_1
+i_DIN0[0] => Add0.IN8
+i_DIN0[1] => Add0.IN7
+i_DIN0[2] => Add0.IN6
+i_DIN0[3] => Add0.IN5
+i_DIN0[4] => Add0.IN4
+i_DIN0[5] => Add0.IN3
+i_DIN0[6] => Add0.IN2
+i_DIN0[7] => Add0.IN1
+i_DIN1[0] => Add0.IN16
+i_DIN1[1] => Add0.IN15
+i_DIN1[2] => Add0.IN14
+i_DIN1[3] => Add0.IN13
+i_DIN1[4] => Add0.IN12
+i_DIN1[5] => Add0.IN11
+i_DIN1[6] => Add0.IN10
+i_DIN1[7] => Add0.IN9
+o_DOUT[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+o_DOUT[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+o_DOUT[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+o_DOUT[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+o_DOUT[4] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+o_DOUT[5] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+o_DOUT[6] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+o_DOUT[7] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|soda_dispenser|data_path:u_1|reg_pp_Wbits:u_2
+i_D[0] => o_Q[0]~reg0.DATAIN
+i_D[1] => o_Q[1]~reg0.DATAIN
+i_D[2] => o_Q[2]~reg0.DATAIN
+i_D[3] => o_Q[3]~reg0.DATAIN
+i_D[4] => o_Q[4]~reg0.DATAIN
+i_D[5] => o_Q[5]~reg0.DATAIN
+i_D[6] => o_Q[6]~reg0.DATAIN
+i_D[7] => o_Q[7]~reg0.DATAIN
+i_CLK => o_Q[0]~reg0.CLK
+i_CLK => o_Q[1]~reg0.CLK
+i_CLK => o_Q[2]~reg0.CLK
+i_CLK => o_Q[3]~reg0.CLK
+i_CLK => o_Q[4]~reg0.CLK
+i_CLK => o_Q[5]~reg0.CLK
+i_CLK => o_Q[6]~reg0.CLK
+i_CLK => o_Q[7]~reg0.CLK
+i_CLRn => o_Q[0]~reg0.ACLR
+i_CLRn => o_Q[1]~reg0.ACLR
+i_CLRn => o_Q[2]~reg0.ACLR
+i_CLRn => o_Q[3]~reg0.ACLR
+i_CLRn => o_Q[4]~reg0.ACLR
+i_CLRn => o_Q[5]~reg0.ACLR
+i_CLRn => o_Q[6]~reg0.ACLR
+i_CLRn => o_Q[7]~reg0.ACLR
+i_ENA => o_Q[7]~reg0.ENA
+i_ENA => o_Q[6]~reg0.ENA
+i_ENA => o_Q[5]~reg0.ENA
+i_ENA => o_Q[4]~reg0.ENA
+i_ENA => o_Q[3]~reg0.ENA
+i_ENA => o_Q[2]~reg0.ENA
+i_ENA => o_Q[1]~reg0.ENA
+i_ENA => o_Q[0]~reg0.ENA
+o_Q[0] <= o_Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_Q[1] <= o_Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_Q[2] <= o_Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_Q[3] <= o_Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_Q[4] <= o_Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_Q[5] <= o_Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_Q[6] <= o_Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_Q[7] <= o_Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

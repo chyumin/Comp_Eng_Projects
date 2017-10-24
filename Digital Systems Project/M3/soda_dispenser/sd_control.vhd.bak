@@ -1,0 +1,27 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+	
+	
+ENTITY sd_control IS
+		PORT(
+				i_CLK      : IN  std_logic;
+				i_clrn     : IN  std_logic;
+				i_tot_lt_s : IN  std_logic;
+				d          : OUT std_logic;
+				o_tot_ld   : OUT std_logic;
+				o_tot_clr  : OUT std_logic);
+END sd_control;
+	
+	
+ARCHITECTURE arch OF sd_control IS
+	
+-- state declaration
+TYPE state_type IS (s_init, s_wait, s_add, s_disp);
+SIGNAL state      : state_type;
+SIGNAL next_state : state_type;
+	
+BEGIN
+	
+	
+	
+END arch;

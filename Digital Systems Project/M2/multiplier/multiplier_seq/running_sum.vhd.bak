@@ -1,0 +1,29 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+ENTITY running_sum IS
+PORT(
+		clk     : IN  std_logic;
+		clr     : IN  std_logic;
+		shift_r : IN  std_logic;
+		load    : IN  std_logic;
+		i_DinA  : IN  std_logic_vector(7 DOWNTO 0);
+		o_Dout  : OUT std_logic_vector(15 DOWNTO 0));
+END running_sum;
+	
+ARCHITECTURE arch OF running_sum IS
+
+
+BEGIN	
+	PROCESS(clk,clrn)
+	BEGIN
+		IF (clr='1') THEN
+			o_Dout <= (OTHERS => '0');
+		ELSIF (clk'EVENT AND clk='1') THEN
+			IF (='1') THEN
+				o_Dout <= d;
+			END IF;
+		END IF;
+	END PROCESS;
+
+END arch;

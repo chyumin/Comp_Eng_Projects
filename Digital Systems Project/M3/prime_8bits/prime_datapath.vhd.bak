@@ -1,0 +1,11 @@
+LIBRARY ieee;
+USE ieee.std_logic.ALL;
+
+ENTITY prime_datapath IS
+	PORT();
+END prime_datapath;
+
+ARCHITECTURE arch OF prime_datapath IS
+
+
+END arch;

@@ -1,0 +1,1286 @@
+|converter
+i_DIN[0] => left_shifter_ovf:u_ls1b.D[0]
+i_DIN[0] => left_shifter_ovf:u_ls1a.D[0]
+i_DIN[0] => left_shifter_ovf:u_ls3.D[0]
+i_DIN[0] => left_shifter_ovf:u_ls4.D[0]
+i_DIN[1] => left_shifter_ovf:u_ls1b.D[1]
+i_DIN[1] => left_shifter_ovf:u_ls1a.D[1]
+i_DIN[1] => left_shifter_ovf:u_ls3.D[1]
+i_DIN[1] => left_shifter_ovf:u_ls4.D[1]
+i_DIN[2] => left_shifter_ovf:u_ls1b.D[2]
+i_DIN[2] => left_shifter_ovf:u_ls1a.D[2]
+i_DIN[2] => left_shifter_ovf:u_ls3.D[2]
+i_DIN[2] => left_shifter_ovf:u_ls4.D[2]
+i_DIN[3] => left_shifter_ovf:u_ls1b.D[3]
+i_DIN[3] => left_shifter_ovf:u_ls1a.D[3]
+i_DIN[3] => left_shifter_ovf:u_ls3.D[3]
+i_DIN[3] => left_shifter_ovf:u_ls4.D[3]
+i_DIN[4] => left_shifter_ovf:u_ls1b.D[4]
+i_DIN[4] => left_shifter_ovf:u_ls1a.D[4]
+i_DIN[4] => left_shifter_ovf:u_ls3.D[4]
+i_DIN[4] => left_shifter_ovf:u_ls4.D[4]
+i_DIN[5] => left_shifter_ovf:u_ls1b.D[5]
+i_DIN[5] => left_shifter_ovf:u_ls1a.D[5]
+i_DIN[5] => left_shifter_ovf:u_ls3.D[5]
+i_DIN[5] => left_shifter_ovf:u_ls4.D[5]
+i_DIN[6] => left_shifter_ovf:u_ls1b.D[6]
+i_DIN[6] => left_shifter_ovf:u_ls1a.D[6]
+i_DIN[6] => left_shifter_ovf:u_ls3.D[6]
+i_DIN[6] => left_shifter_ovf:u_ls4.D[6]
+i_DIN[7] => left_shifter_ovf:u_ls1b.D[7]
+i_DIN[7] => left_shifter_ovf:u_ls1a.D[7]
+i_DIN[7] => left_shifter_ovf:u_ls3.D[7]
+i_DIN[7] => left_shifter_ovf:u_ls4.D[7]
+i_DIN[8] => left_shifter_ovf:u_ls1b.D[8]
+i_DIN[8] => left_shifter_ovf:u_ls1a.D[8]
+i_DIN[8] => left_shifter_ovf:u_ls3.D[8]
+i_DIN[8] => left_shifter_ovf:u_ls4.D[8]
+i_DIN[9] => left_shifter_ovf:u_ls1b.D[9]
+i_DIN[9] => left_shifter_ovf:u_ls1a.D[9]
+i_DIN[9] => left_shifter_ovf:u_ls3.D[9]
+i_DIN[9] => left_shifter_ovf:u_ls4.D[9]
+i_DIN[10] => left_shifter_ovf:u_ls1b.D[10]
+i_DIN[10] => left_shifter_ovf:u_ls1a.D[10]
+i_DIN[10] => left_shifter_ovf:u_ls3.D[10]
+i_DIN[10] => left_shifter_ovf:u_ls4.D[10]
+i_DIN[11] => left_shifter_ovf:u_ls1b.D[11]
+i_DIN[11] => left_shifter_ovf:u_ls1a.D[11]
+i_DIN[11] => left_shifter_ovf:u_ls3.D[11]
+i_DIN[11] => left_shifter_ovf:u_ls4.D[11]
+i_DIN[12] => left_shifter_ovf:u_ls1b.D[12]
+i_DIN[12] => left_shifter_ovf:u_ls1a.D[12]
+i_DIN[12] => left_shifter_ovf:u_ls3.D[12]
+i_DIN[12] => left_shifter_ovf:u_ls4.D[12]
+i_DIN[13] => left_shifter_ovf:u_ls1b.D[13]
+i_DIN[13] => left_shifter_ovf:u_ls1a.D[13]
+i_DIN[13] => left_shifter_ovf:u_ls3.D[13]
+i_DIN[13] => left_shifter_ovf:u_ls4.D[13]
+i_DIN[14] => left_shifter_ovf:u_ls1b.D[14]
+i_DIN[14] => left_shifter_ovf:u_ls1a.D[14]
+i_DIN[14] => left_shifter_ovf:u_ls3.D[14]
+i_DIN[14] => left_shifter_ovf:u_ls4.D[14]
+i_DIN[15] => left_shifter_ovf:u_ls1b.D[15]
+i_DIN[15] => left_shifter_ovf:u_ls1a.D[15]
+i_DIN[15] => left_shifter_ovf:u_ls3.D[15]
+i_DIN[15] => left_shifter_ovf:u_ls4.D[15]
+o_DOUT[0] <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_DOUT[1] <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_DOUT[2] <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_DOUT[3] <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_DOUT[4] <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_DOUT[5] <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_DOUT[6] <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_DOUT[7] <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_DOUT[8] <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_DOUT[9] <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_DOUT[10] <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_DOUT[11] <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_DOUT[12] <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_DOUT[13] <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_DOUT[14] <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_DOUT[15] <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= w_TopOverflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|left_shifter_ovf:u_ls1a
+D[0] => Q[1].DATAIN
+D[1] => Q[2].DATAIN
+D[2] => Q[3].DATAIN
+D[3] => Q[4].DATAIN
+D[4] => Q[5].DATAIN
+D[5] => Q[6].DATAIN
+D[6] => Q[7].DATAIN
+D[7] => Q[8].DATAIN
+D[8] => Q[9].DATAIN
+D[9] => Q[10].DATAIN
+D[10] => Q[11].DATAIN
+D[11] => Q[12].DATAIN
+D[12] => Q[13].DATAIN
+D[13] => Q[14].DATAIN
+D[14] => Q[15].DATAIN
+D[15] => Q[16].DATAIN
+D[16] => Q[17].DATAIN
+D[17] => Q[18].DATAIN
+D[18] => Q[19].DATAIN
+D[19] => Q[20].DATAIN
+D[20] => Ovf.DATAIN
+Q[0] <= <GND>
+Q[1] <= D[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= D[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= D[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= D[3].DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= D[4].DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= D[5].DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= D[6].DB_MAX_OUTPUT_PORT_TYPE
+Q[8] <= D[7].DB_MAX_OUTPUT_PORT_TYPE
+Q[9] <= D[8].DB_MAX_OUTPUT_PORT_TYPE
+Q[10] <= D[9].DB_MAX_OUTPUT_PORT_TYPE
+Q[11] <= D[10].DB_MAX_OUTPUT_PORT_TYPE
+Q[12] <= D[11].DB_MAX_OUTPUT_PORT_TYPE
+Q[13] <= D[12].DB_MAX_OUTPUT_PORT_TYPE
+Q[14] <= D[13].DB_MAX_OUTPUT_PORT_TYPE
+Q[15] <= D[14].DB_MAX_OUTPUT_PORT_TYPE
+Q[16] <= D[15].DB_MAX_OUTPUT_PORT_TYPE
+Q[17] <= D[16].DB_MAX_OUTPUT_PORT_TYPE
+Q[18] <= D[17].DB_MAX_OUTPUT_PORT_TYPE
+Q[19] <= D[18].DB_MAX_OUTPUT_PORT_TYPE
+Q[20] <= D[19].DB_MAX_OUTPUT_PORT_TYPE
+Ovf <= D[20].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|left_shifter_ovf:u_ls3
+D[0] => Q[3].DATAIN
+D[1] => Q[4].DATAIN
+D[2] => Q[5].DATAIN
+D[3] => Q[6].DATAIN
+D[4] => Q[7].DATAIN
+D[5] => Q[8].DATAIN
+D[6] => Q[9].DATAIN
+D[7] => Q[10].DATAIN
+D[8] => Q[11].DATAIN
+D[9] => Q[12].DATAIN
+D[10] => Q[13].DATAIN
+D[11] => Q[14].DATAIN
+D[12] => Q[15].DATAIN
+D[13] => Q[16].DATAIN
+D[14] => Q[17].DATAIN
+D[15] => Q[18].DATAIN
+D[16] => Q[19].DATAIN
+D[17] => Q[20].DATAIN
+D[18] => v_ovf.IN0
+D[19] => v_ovf.IN1
+D[20] => v_ovf.IN1
+Q[0] <= <GND>
+Q[1] <= <GND>
+Q[2] <= <GND>
+Q[3] <= D[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= D[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= D[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= D[3].DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= D[4].DB_MAX_OUTPUT_PORT_TYPE
+Q[8] <= D[5].DB_MAX_OUTPUT_PORT_TYPE
+Q[9] <= D[6].DB_MAX_OUTPUT_PORT_TYPE
+Q[10] <= D[7].DB_MAX_OUTPUT_PORT_TYPE
+Q[11] <= D[8].DB_MAX_OUTPUT_PORT_TYPE
+Q[12] <= D[9].DB_MAX_OUTPUT_PORT_TYPE
+Q[13] <= D[10].DB_MAX_OUTPUT_PORT_TYPE
+Q[14] <= D[11].DB_MAX_OUTPUT_PORT_TYPE
+Q[15] <= D[12].DB_MAX_OUTPUT_PORT_TYPE
+Q[16] <= D[13].DB_MAX_OUTPUT_PORT_TYPE
+Q[17] <= D[14].DB_MAX_OUTPUT_PORT_TYPE
+Q[18] <= D[15].DB_MAX_OUTPUT_PORT_TYPE
+Q[19] <= D[16].DB_MAX_OUTPUT_PORT_TYPE
+Q[20] <= D[17].DB_MAX_OUTPUT_PORT_TYPE
+Ovf <= v_ovf.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|left_shifter_ovf:u_ls4
+D[0] => Q[4].DATAIN
+D[1] => Q[5].DATAIN
+D[2] => Q[6].DATAIN
+D[3] => Q[7].DATAIN
+D[4] => Q[8].DATAIN
+D[5] => Q[9].DATAIN
+D[6] => Q[10].DATAIN
+D[7] => Q[11].DATAIN
+D[8] => Q[12].DATAIN
+D[9] => Q[13].DATAIN
+D[10] => Q[14].DATAIN
+D[11] => Q[15].DATAIN
+D[12] => Q[16].DATAIN
+D[13] => Q[17].DATAIN
+D[14] => Q[18].DATAIN
+D[15] => Q[19].DATAIN
+D[16] => Q[20].DATAIN
+D[17] => v_ovf.IN0
+D[18] => v_ovf.IN1
+D[19] => v_ovf.IN1
+D[20] => v_ovf.IN1
+Q[0] <= <GND>
+Q[1] <= <GND>
+Q[2] <= <GND>
+Q[3] <= <GND>
+Q[4] <= D[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= D[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= D[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= D[3].DB_MAX_OUTPUT_PORT_TYPE
+Q[8] <= D[4].DB_MAX_OUTPUT_PORT_TYPE
+Q[9] <= D[5].DB_MAX_OUTPUT_PORT_TYPE
+Q[10] <= D[6].DB_MAX_OUTPUT_PORT_TYPE
+Q[11] <= D[7].DB_MAX_OUTPUT_PORT_TYPE
+Q[12] <= D[8].DB_MAX_OUTPUT_PORT_TYPE
+Q[13] <= D[9].DB_MAX_OUTPUT_PORT_TYPE
+Q[14] <= D[10].DB_MAX_OUTPUT_PORT_TYPE
+Q[15] <= D[11].DB_MAX_OUTPUT_PORT_TYPE
+Q[16] <= D[12].DB_MAX_OUTPUT_PORT_TYPE
+Q[17] <= D[13].DB_MAX_OUTPUT_PORT_TYPE
+Q[18] <= D[14].DB_MAX_OUTPUT_PORT_TYPE
+Q[19] <= D[15].DB_MAX_OUTPUT_PORT_TYPE
+Q[20] <= D[16].DB_MAX_OUTPUT_PORT_TYPE
+Ovf <= v_ovf.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add1
+i_DIN0[0] => halfadder:u_0.i_DIN0
+i_DIN0[1] => fulladder:f_0:1:u_1.i_DIN0
+i_DIN0[2] => fulladder:f_0:2:u_1.i_DIN0
+i_DIN0[3] => fulladder:f_0:3:u_1.i_DIN0
+i_DIN0[4] => fulladder:f_0:4:u_1.i_DIN0
+i_DIN0[5] => fulladder:f_0:5:u_1.i_DIN0
+i_DIN0[6] => fulladder:f_0:6:u_1.i_DIN0
+i_DIN0[7] => fulladder:f_0:7:u_1.i_DIN0
+i_DIN0[8] => fulladder:f_0:8:u_1.i_DIN0
+i_DIN0[9] => fulladder:f_0:9:u_1.i_DIN0
+i_DIN0[10] => fulladder:f_0:10:u_1.i_DIN0
+i_DIN0[11] => fulladder:f_0:11:u_1.i_DIN0
+i_DIN0[12] => fulladder:f_0:12:u_1.i_DIN0
+i_DIN0[13] => fulladder:f_0:13:u_1.i_DIN0
+i_DIN0[14] => fulladder:f_0:14:u_1.i_DIN0
+i_DIN0[15] => fulladder:f_0:15:u_1.i_DIN0
+i_DIN0[16] => fulladder:f_0:16:u_1.i_DIN0
+i_DIN0[17] => fulladder:f_0:17:u_1.i_DIN0
+i_DIN0[18] => fulladder:f_0:18:u_1.i_DIN0
+i_DIN0[19] => fulladder:f_0:19:u_1.i_DIN0
+i_DIN0[20] => fulladder:f_0:20:u_1.i_DIN0
+i_DIN1[0] => halfadder:u_0.i_DIN1
+i_DIN1[1] => fulladder:f_0:1:u_1.i_DIN1
+i_DIN1[2] => fulladder:f_0:2:u_1.i_DIN1
+i_DIN1[3] => fulladder:f_0:3:u_1.i_DIN1
+i_DIN1[4] => fulladder:f_0:4:u_1.i_DIN1
+i_DIN1[5] => fulladder:f_0:5:u_1.i_DIN1
+i_DIN1[6] => fulladder:f_0:6:u_1.i_DIN1
+i_DIN1[7] => fulladder:f_0:7:u_1.i_DIN1
+i_DIN1[8] => fulladder:f_0:8:u_1.i_DIN1
+i_DIN1[9] => fulladder:f_0:9:u_1.i_DIN1
+i_DIN1[10] => fulladder:f_0:10:u_1.i_DIN1
+i_DIN1[11] => fulladder:f_0:11:u_1.i_DIN1
+i_DIN1[12] => fulladder:f_0:12:u_1.i_DIN1
+i_DIN1[13] => fulladder:f_0:13:u_1.i_DIN1
+i_DIN1[14] => fulladder:f_0:14:u_1.i_DIN1
+i_DIN1[15] => fulladder:f_0:15:u_1.i_DIN1
+i_DIN1[16] => fulladder:f_0:16:u_1.i_DIN1
+i_DIN1[17] => fulladder:f_0:17:u_1.i_DIN1
+i_DIN1[18] => fulladder:f_0:18:u_1.i_DIN1
+i_DIN1[19] => fulladder:f_0:19:u_1.i_DIN1
+i_DIN1[20] => fulladder:f_0:20:u_1.i_DIN1
+o_DOUT[0] <= halfadder:u_0.o_DOUT
+o_DOUT[1] <= fulladder:f_0:1:u_1.o_DOUT
+o_DOUT[2] <= fulladder:f_0:2:u_1.o_DOUT
+o_DOUT[3] <= fulladder:f_0:3:u_1.o_DOUT
+o_DOUT[4] <= fulladder:f_0:4:u_1.o_DOUT
+o_DOUT[5] <= fulladder:f_0:5:u_1.o_DOUT
+o_DOUT[6] <= fulladder:f_0:6:u_1.o_DOUT
+o_DOUT[7] <= fulladder:f_0:7:u_1.o_DOUT
+o_DOUT[8] <= fulladder:f_0:8:u_1.o_DOUT
+o_DOUT[9] <= fulladder:f_0:9:u_1.o_DOUT
+o_DOUT[10] <= fulladder:f_0:10:u_1.o_DOUT
+o_DOUT[11] <= fulladder:f_0:11:u_1.o_DOUT
+o_DOUT[12] <= fulladder:f_0:12:u_1.o_DOUT
+o_DOUT[13] <= fulladder:f_0:13:u_1.o_DOUT
+o_DOUT[14] <= fulladder:f_0:14:u_1.o_DOUT
+o_DOUT[15] <= fulladder:f_0:15:u_1.o_DOUT
+o_DOUT[16] <= fulladder:f_0:16:u_1.o_DOUT
+o_DOUT[17] <= fulladder:f_0:17:u_1.o_DOUT
+o_DOUT[18] <= fulladder:f_0:18:u_1.o_DOUT
+o_DOUT[19] <= fulladder:f_0:19:u_1.o_DOUT
+o_DOUT[20] <= fulladder:f_0:20:u_1.o_DOUT
+o_COUT <= fulladder:f_0:20:u_1.o_COUT
+
+
+|converter|adder:u_add1|halfadder:u_0
+i_DIN0 => o_DOUT.IN0
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add1|fulladder:\f_0:1:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add1|fulladder:\f_0:2:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add1|fulladder:\f_0:3:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add1|fulladder:\f_0:4:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add1|fulladder:\f_0:5:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add1|fulladder:\f_0:6:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add1|fulladder:\f_0:7:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add1|fulladder:\f_0:8:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add1|fulladder:\f_0:9:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add1|fulladder:\f_0:10:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add1|fulladder:\f_0:11:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add1|fulladder:\f_0:12:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add1|fulladder:\f_0:13:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add1|fulladder:\f_0:14:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add1|fulladder:\f_0:15:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add1|fulladder:\f_0:16:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add1|fulladder:\f_0:17:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add1|fulladder:\f_0:18:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add1|fulladder:\f_0:19:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add1|fulladder:\f_0:20:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add2
+i_DIN0[0] => halfadder:u_0.i_DIN0
+i_DIN0[1] => fulladder:f_0:1:u_1.i_DIN0
+i_DIN0[2] => fulladder:f_0:2:u_1.i_DIN0
+i_DIN0[3] => fulladder:f_0:3:u_1.i_DIN0
+i_DIN0[4] => fulladder:f_0:4:u_1.i_DIN0
+i_DIN0[5] => fulladder:f_0:5:u_1.i_DIN0
+i_DIN0[6] => fulladder:f_0:6:u_1.i_DIN0
+i_DIN0[7] => fulladder:f_0:7:u_1.i_DIN0
+i_DIN0[8] => fulladder:f_0:8:u_1.i_DIN0
+i_DIN0[9] => fulladder:f_0:9:u_1.i_DIN0
+i_DIN0[10] => fulladder:f_0:10:u_1.i_DIN0
+i_DIN0[11] => fulladder:f_0:11:u_1.i_DIN0
+i_DIN0[12] => fulladder:f_0:12:u_1.i_DIN0
+i_DIN0[13] => fulladder:f_0:13:u_1.i_DIN0
+i_DIN0[14] => fulladder:f_0:14:u_1.i_DIN0
+i_DIN0[15] => fulladder:f_0:15:u_1.i_DIN0
+i_DIN0[16] => fulladder:f_0:16:u_1.i_DIN0
+i_DIN0[17] => fulladder:f_0:17:u_1.i_DIN0
+i_DIN0[18] => fulladder:f_0:18:u_1.i_DIN0
+i_DIN0[19] => fulladder:f_0:19:u_1.i_DIN0
+i_DIN0[20] => fulladder:f_0:20:u_1.i_DIN0
+i_DIN1[0] => halfadder:u_0.i_DIN1
+i_DIN1[1] => fulladder:f_0:1:u_1.i_DIN1
+i_DIN1[2] => fulladder:f_0:2:u_1.i_DIN1
+i_DIN1[3] => fulladder:f_0:3:u_1.i_DIN1
+i_DIN1[4] => fulladder:f_0:4:u_1.i_DIN1
+i_DIN1[5] => fulladder:f_0:5:u_1.i_DIN1
+i_DIN1[6] => fulladder:f_0:6:u_1.i_DIN1
+i_DIN1[7] => fulladder:f_0:7:u_1.i_DIN1
+i_DIN1[8] => fulladder:f_0:8:u_1.i_DIN1
+i_DIN1[9] => fulladder:f_0:9:u_1.i_DIN1
+i_DIN1[10] => fulladder:f_0:10:u_1.i_DIN1
+i_DIN1[11] => fulladder:f_0:11:u_1.i_DIN1
+i_DIN1[12] => fulladder:f_0:12:u_1.i_DIN1
+i_DIN1[13] => fulladder:f_0:13:u_1.i_DIN1
+i_DIN1[14] => fulladder:f_0:14:u_1.i_DIN1
+i_DIN1[15] => fulladder:f_0:15:u_1.i_DIN1
+i_DIN1[16] => fulladder:f_0:16:u_1.i_DIN1
+i_DIN1[17] => fulladder:f_0:17:u_1.i_DIN1
+i_DIN1[18] => fulladder:f_0:18:u_1.i_DIN1
+i_DIN1[19] => fulladder:f_0:19:u_1.i_DIN1
+i_DIN1[20] => fulladder:f_0:20:u_1.i_DIN1
+o_DOUT[0] <= halfadder:u_0.o_DOUT
+o_DOUT[1] <= fulladder:f_0:1:u_1.o_DOUT
+o_DOUT[2] <= fulladder:f_0:2:u_1.o_DOUT
+o_DOUT[3] <= fulladder:f_0:3:u_1.o_DOUT
+o_DOUT[4] <= fulladder:f_0:4:u_1.o_DOUT
+o_DOUT[5] <= fulladder:f_0:5:u_1.o_DOUT
+o_DOUT[6] <= fulladder:f_0:6:u_1.o_DOUT
+o_DOUT[7] <= fulladder:f_0:7:u_1.o_DOUT
+o_DOUT[8] <= fulladder:f_0:8:u_1.o_DOUT
+o_DOUT[9] <= fulladder:f_0:9:u_1.o_DOUT
+o_DOUT[10] <= fulladder:f_0:10:u_1.o_DOUT
+o_DOUT[11] <= fulladder:f_0:11:u_1.o_DOUT
+o_DOUT[12] <= fulladder:f_0:12:u_1.o_DOUT
+o_DOUT[13] <= fulladder:f_0:13:u_1.o_DOUT
+o_DOUT[14] <= fulladder:f_0:14:u_1.o_DOUT
+o_DOUT[15] <= fulladder:f_0:15:u_1.o_DOUT
+o_DOUT[16] <= fulladder:f_0:16:u_1.o_DOUT
+o_DOUT[17] <= fulladder:f_0:17:u_1.o_DOUT
+o_DOUT[18] <= fulladder:f_0:18:u_1.o_DOUT
+o_DOUT[19] <= fulladder:f_0:19:u_1.o_DOUT
+o_DOUT[20] <= fulladder:f_0:20:u_1.o_DOUT
+o_COUT <= fulladder:f_0:20:u_1.o_COUT
+
+
+|converter|adder:u_add2|halfadder:u_0
+i_DIN0 => o_DOUT.IN0
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add2|fulladder:\f_0:1:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add2|fulladder:\f_0:2:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add2|fulladder:\f_0:3:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add2|fulladder:\f_0:4:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add2|fulladder:\f_0:5:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add2|fulladder:\f_0:6:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add2|fulladder:\f_0:7:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add2|fulladder:\f_0:8:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add2|fulladder:\f_0:9:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add2|fulladder:\f_0:10:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add2|fulladder:\f_0:11:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add2|fulladder:\f_0:12:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add2|fulladder:\f_0:13:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add2|fulladder:\f_0:14:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add2|fulladder:\f_0:15:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add2|fulladder:\f_0:16:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add2|fulladder:\f_0:17:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add2|fulladder:\f_0:18:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add2|fulladder:\f_0:19:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add2|fulladder:\f_0:20:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|right_shifter:u_rs7
+D[0] => ~NO_FANOUT~
+D[1] => ~NO_FANOUT~
+D[2] => ~NO_FANOUT~
+D[3] => ~NO_FANOUT~
+D[4] => ~NO_FANOUT~
+D[5] => ~NO_FANOUT~
+D[6] => ~NO_FANOUT~
+D[7] => Q[0].DATAIN
+D[8] => Q[1].DATAIN
+D[9] => Q[2].DATAIN
+D[10] => Q[3].DATAIN
+D[11] => Q[4].DATAIN
+D[12] => Q[5].DATAIN
+D[13] => Q[6].DATAIN
+D[14] => Q[7].DATAIN
+D[15] => Q[8].DATAIN
+D[16] => Q[9].DATAIN
+D[17] => Q[10].DATAIN
+D[18] => Q[11].DATAIN
+D[19] => Q[12].DATAIN
+D[20] => Q[13].DATAIN
+Q[0] <= D[7].DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= D[8].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= D[9].DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= D[10].DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= D[11].DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= D[12].DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= D[13].DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= D[14].DB_MAX_OUTPUT_PORT_TYPE
+Q[8] <= D[15].DB_MAX_OUTPUT_PORT_TYPE
+Q[9] <= D[16].DB_MAX_OUTPUT_PORT_TYPE
+Q[10] <= D[17].DB_MAX_OUTPUT_PORT_TYPE
+Q[11] <= D[18].DB_MAX_OUTPUT_PORT_TYPE
+Q[12] <= D[19].DB_MAX_OUTPUT_PORT_TYPE
+Q[13] <= D[20].DB_MAX_OUTPUT_PORT_TYPE
+Q[14] <= <GND>
+Q[15] <= <GND>
+Q[16] <= <GND>
+Q[17] <= <GND>
+Q[18] <= <GND>
+Q[19] <= <GND>
+Q[20] <= <GND>
+
+
+|converter|left_shifter_ovf:u_ls1b
+D[0] => Q[1].DATAIN
+D[1] => Q[2].DATAIN
+D[2] => Q[3].DATAIN
+D[3] => Q[4].DATAIN
+D[4] => Q[5].DATAIN
+D[5] => Q[6].DATAIN
+D[6] => Q[7].DATAIN
+D[7] => Q[8].DATAIN
+D[8] => Q[9].DATAIN
+D[9] => Q[10].DATAIN
+D[10] => Q[11].DATAIN
+D[11] => Q[12].DATAIN
+D[12] => Q[13].DATAIN
+D[13] => Q[14].DATAIN
+D[14] => Q[15].DATAIN
+D[15] => Ovf.DATAIN
+Q[0] <= <GND>
+Q[1] <= D[0].DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= D[1].DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= D[2].DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= D[3].DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= D[4].DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= D[5].DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= D[6].DB_MAX_OUTPUT_PORT_TYPE
+Q[8] <= D[7].DB_MAX_OUTPUT_PORT_TYPE
+Q[9] <= D[8].DB_MAX_OUTPUT_PORT_TYPE
+Q[10] <= D[9].DB_MAX_OUTPUT_PORT_TYPE
+Q[11] <= D[10].DB_MAX_OUTPUT_PORT_TYPE
+Q[12] <= D[11].DB_MAX_OUTPUT_PORT_TYPE
+Q[13] <= D[12].DB_MAX_OUTPUT_PORT_TYPE
+Q[14] <= D[13].DB_MAX_OUTPUT_PORT_TYPE
+Q[15] <= D[14].DB_MAX_OUTPUT_PORT_TYPE
+Ovf <= D[15].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add3
+i_DIN0[0] => halfadder:u_0.i_DIN0
+i_DIN0[1] => fulladder:f_0:1:u_1.i_DIN0
+i_DIN0[2] => fulladder:f_0:2:u_1.i_DIN0
+i_DIN0[3] => fulladder:f_0:3:u_1.i_DIN0
+i_DIN0[4] => fulladder:f_0:4:u_1.i_DIN0
+i_DIN0[5] => fulladder:f_0:5:u_1.i_DIN0
+i_DIN0[6] => fulladder:f_0:6:u_1.i_DIN0
+i_DIN0[7] => fulladder:f_0:7:u_1.i_DIN0
+i_DIN0[8] => fulladder:f_0:8:u_1.i_DIN0
+i_DIN0[9] => fulladder:f_0:9:u_1.i_DIN0
+i_DIN0[10] => fulladder:f_0:10:u_1.i_DIN0
+i_DIN0[11] => fulladder:f_0:11:u_1.i_DIN0
+i_DIN0[12] => fulladder:f_0:12:u_1.i_DIN0
+i_DIN0[13] => fulladder:f_0:13:u_1.i_DIN0
+i_DIN0[14] => fulladder:f_0:14:u_1.i_DIN0
+i_DIN0[15] => fulladder:f_0:15:u_1.i_DIN0
+i_DIN1[0] => halfadder:u_0.i_DIN1
+i_DIN1[1] => fulladder:f_0:1:u_1.i_DIN1
+i_DIN1[2] => fulladder:f_0:2:u_1.i_DIN1
+i_DIN1[3] => fulladder:f_0:3:u_1.i_DIN1
+i_DIN1[4] => fulladder:f_0:4:u_1.i_DIN1
+i_DIN1[5] => fulladder:f_0:5:u_1.i_DIN1
+i_DIN1[6] => fulladder:f_0:6:u_1.i_DIN1
+i_DIN1[7] => fulladder:f_0:7:u_1.i_DIN1
+i_DIN1[8] => fulladder:f_0:8:u_1.i_DIN1
+i_DIN1[9] => fulladder:f_0:9:u_1.i_DIN1
+i_DIN1[10] => fulladder:f_0:10:u_1.i_DIN1
+i_DIN1[11] => fulladder:f_0:11:u_1.i_DIN1
+i_DIN1[12] => fulladder:f_0:12:u_1.i_DIN1
+i_DIN1[13] => fulladder:f_0:13:u_1.i_DIN1
+i_DIN1[14] => fulladder:f_0:14:u_1.i_DIN1
+i_DIN1[15] => fulladder:f_0:15:u_1.i_DIN1
+o_DOUT[0] <= halfadder:u_0.o_DOUT
+o_DOUT[1] <= fulladder:f_0:1:u_1.o_DOUT
+o_DOUT[2] <= fulladder:f_0:2:u_1.o_DOUT
+o_DOUT[3] <= fulladder:f_0:3:u_1.o_DOUT
+o_DOUT[4] <= fulladder:f_0:4:u_1.o_DOUT
+o_DOUT[5] <= fulladder:f_0:5:u_1.o_DOUT
+o_DOUT[6] <= fulladder:f_0:6:u_1.o_DOUT
+o_DOUT[7] <= fulladder:f_0:7:u_1.o_DOUT
+o_DOUT[8] <= fulladder:f_0:8:u_1.o_DOUT
+o_DOUT[9] <= fulladder:f_0:9:u_1.o_DOUT
+o_DOUT[10] <= fulladder:f_0:10:u_1.o_DOUT
+o_DOUT[11] <= fulladder:f_0:11:u_1.o_DOUT
+o_DOUT[12] <= fulladder:f_0:12:u_1.o_DOUT
+o_DOUT[13] <= fulladder:f_0:13:u_1.o_DOUT
+o_DOUT[14] <= fulladder:f_0:14:u_1.o_DOUT
+o_DOUT[15] <= fulladder:f_0:15:u_1.o_DOUT
+o_COUT <= fulladder:f_0:15:u_1.o_COUT
+
+
+|converter|adder:u_add3|halfadder:u_0
+i_DIN0 => o_DOUT.IN0
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add3|fulladder:\f_0:1:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add3|fulladder:\f_0:2:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add3|fulladder:\f_0:3:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add3|fulladder:\f_0:4:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add3|fulladder:\f_0:5:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add3|fulladder:\f_0:6:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add3|fulladder:\f_0:7:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add3|fulladder:\f_0:8:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add3|fulladder:\f_0:9:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add3|fulladder:\f_0:10:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add3|fulladder:\f_0:11:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add3|fulladder:\f_0:12:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add3|fulladder:\f_0:13:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add3|fulladder:\f_0:14:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|converter|adder:u_add3|fulladder:\f_0:15:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+

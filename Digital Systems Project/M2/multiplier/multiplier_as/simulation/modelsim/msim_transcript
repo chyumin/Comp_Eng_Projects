@@ -1,0 +1,167 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do multiplier_as_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_as/halfadder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity halfadder
+# -- Compiling architecture arch of halfadder
+# vcom -93 -work work {E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_as/fulladder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fulladder
+# -- Compiling architecture arch of fulladder
+# vcom -93 -work work {E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_as/adder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity adder
+# -- Compiling architecture arch of adder
+# vcom -93 -work work {E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_as/multiplier_as.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity multiplier_as
+# -- Compiling architecture arch of multiplier_as
+# 
+vsim -voptargs=+acc work.multiplier_as
+# vsim -voptargs=+acc work.multiplier_as 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.multiplier_as(arch)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.adder(arch)
+# Loading work.halfadder(arch)
+# Loading work.fulladder(arch)
+add wave -position insertpoint  \
+sim:/multiplier_as/i_DINa \
+sim:/multiplier_as/i_DINb \
+sim:/multiplier_as/o_DOUT
+force -freeze sim:/multiplier_as/i_DINa(0) 0 0, 1 {12 ps} -r 25
+force -freeze sim:/multiplier_as/i_DINa(1) 0 0, 1 {25 ps} -r 50
+force -freeze sim:/multiplier_as/i_DINa(2) 0 0, 1 {50 ps} -r 100
+force -freeze sim:/multiplier_as/i_DINa(3) 0 0, 1 {100 ps} -r 200
+force -freeze sim:/multiplier_as/i_DINa(4) 0 0, 1 {200 ps} -r 400
+force -freeze sim:/multiplier_as/i_DINa(5) 0 0, 1 {400 ps} -r 800
+force -freeze sim:/multiplier_as/i_DINa(6) 0 0, 1 {800 ps} -r 1600
+force -freeze sim:/multiplier_as/i_DINa(7) 0 0, 1 {1600 ps} -r 3200
+force -freeze sim:/multiplier_as/i_DINb 00000001 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/multiplier_as/i_DINb 00000010 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/multiplier_as/i_DINb 10000010 0
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/multiplier_as/i_DINb 11111111 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run

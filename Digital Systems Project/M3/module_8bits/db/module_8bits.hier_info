@@ -1,0 +1,1892 @@
+|module_8bits
+i_clk => module_control:u_control.clk
+i_clk => module_datapath:u_datapath.i_clk
+i_clrn => module_control:u_control.clrn
+i_clrn => module_datapath:u_datapath.i_clrn
+i_startn => module_control:u_control.i_startn
+i_A[0] => module_datapath:u_datapath.i_A[0]
+i_A[1] => module_datapath:u_datapath.i_A[1]
+i_A[2] => module_datapath:u_datapath.i_A[2]
+i_A[3] => module_datapath:u_datapath.i_A[3]
+i_A[4] => module_datapath:u_datapath.i_A[4]
+i_A[5] => module_datapath:u_datapath.i_A[5]
+i_A[6] => module_datapath:u_datapath.i_A[6]
+i_A[7] => module_datapath:u_datapath.i_A[7]
+i_B[0] => module_datapath:u_datapath.i_B[0]
+i_B[1] => module_datapath:u_datapath.i_B[1]
+i_B[2] => module_datapath:u_datapath.i_B[2]
+i_B[3] => module_datapath:u_datapath.i_B[3]
+i_B[4] => module_datapath:u_datapath.i_B[4]
+i_B[5] => module_datapath:u_datapath.i_B[5]
+i_B[6] => module_datapath:u_datapath.i_B[6]
+i_B[7] => module_datapath:u_datapath.i_B[7]
+o_rdy <= module_control:u_control.o_rdy
+o_S[0] <= module_datapath:u_datapath.o_S[0]
+o_S[1] <= module_datapath:u_datapath.o_S[1]
+o_S[2] <= module_datapath:u_datapath.o_S[2]
+o_S[3] <= module_datapath:u_datapath.o_S[3]
+o_S[4] <= module_datapath:u_datapath.o_S[4]
+o_S[5] <= module_datapath:u_datapath.o_S[5]
+o_S[6] <= module_datapath:u_datapath.o_S[6]
+o_S[7] <= module_datapath:u_datapath.o_S[7]
+
+
+|module_8bits|module_control:u_control
+clk => state~1.DATAIN
+clrn => state~3.DATAIN
+i_startn => Selector0.IN3
+i_startn => next_state.s0.DATAB
+i_startn => o_ena_regI.DATAIN
+i_s_lt_b => next_state.s3.DATAB
+i_s_lt_b => next_state.s2.DATAB
+o_ena_regI <= i_startn.DB_MAX_OUTPUT_PORT_TYPE
+o_ena_regO <= o_ena_regO.DB_MAX_OUTPUT_PORT_TYPE
+o_ena_contK <= o_ena_contK.DB_MAX_OUTPUT_PORT_TYPE
+o_clearn <= o_clearn.DB_MAX_OUTPUT_PORT_TYPE
+o_rdy <= o_rdy.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath
+i_clk => reg_pp_Wbits:u_i_A.i_CLK
+i_clk => reg_pp_Wbits:u_i_B.i_CLK
+i_clk => counter_Wbits:u_contK.clk
+i_clk => reg_pp_Wbits:u_regOut.i_CLK
+i_clrn => w_clrnK.IN0
+i_clrn => reg_pp_Wbits:u_i_A.i_CLRn
+i_clrn => reg_pp_Wbits:u_i_B.i_CLRn
+i_clrn => reg_pp_Wbits:u_regOut.i_CLRn
+i_clrnK => w_clrnK.IN1
+i_ena_contK => counter_Wbits:u_contK.ena
+i_ena_regI => reg_pp_Wbits:u_i_A.i_ENA
+i_ena_regI => reg_pp_Wbits:u_i_B.i_ENA
+i_ena_regO => reg_pp_Wbits:u_regOut.i_ENA
+i_A[0] => reg_pp_Wbits:u_i_A.i_D[0]
+i_A[1] => reg_pp_Wbits:u_i_A.i_D[1]
+i_A[2] => reg_pp_Wbits:u_i_A.i_D[2]
+i_A[3] => reg_pp_Wbits:u_i_A.i_D[3]
+i_A[4] => reg_pp_Wbits:u_i_A.i_D[4]
+i_A[5] => reg_pp_Wbits:u_i_A.i_D[5]
+i_A[6] => reg_pp_Wbits:u_i_A.i_D[6]
+i_A[7] => reg_pp_Wbits:u_i_A.i_D[7]
+i_B[0] => reg_pp_Wbits:u_i_B.i_D[0]
+i_B[1] => reg_pp_Wbits:u_i_B.i_D[1]
+i_B[2] => reg_pp_Wbits:u_i_B.i_D[2]
+i_B[3] => reg_pp_Wbits:u_i_B.i_D[3]
+i_B[4] => reg_pp_Wbits:u_i_B.i_D[4]
+i_B[5] => reg_pp_Wbits:u_i_B.i_D[5]
+i_B[6] => reg_pp_Wbits:u_i_B.i_D[6]
+i_B[7] => reg_pp_Wbits:u_i_B.i_D[7]
+o_s_lt_b <= less_than:u_less_than.lt
+o_S[0] <= reg_pp_Wbits:u_regOut.o_Q[0]
+o_S[1] <= reg_pp_Wbits:u_regOut.o_Q[1]
+o_S[2] <= reg_pp_Wbits:u_regOut.o_Q[2]
+o_S[3] <= reg_pp_Wbits:u_regOut.o_Q[3]
+o_S[4] <= reg_pp_Wbits:u_regOut.o_Q[4]
+o_S[5] <= reg_pp_Wbits:u_regOut.o_Q[5]
+o_S[6] <= reg_pp_Wbits:u_regOut.o_Q[6]
+o_S[7] <= reg_pp_Wbits:u_regOut.o_Q[7]
+
+
+|module_8bits|module_datapath:u_datapath|reg_pp_Wbits:u_i_A
+i_D[0] => o_Q[0]~reg0.DATAIN
+i_D[1] => o_Q[1]~reg0.DATAIN
+i_D[2] => o_Q[2]~reg0.DATAIN
+i_D[3] => o_Q[3]~reg0.DATAIN
+i_D[4] => o_Q[4]~reg0.DATAIN
+i_D[5] => o_Q[5]~reg0.DATAIN
+i_D[6] => o_Q[6]~reg0.DATAIN
+i_D[7] => o_Q[7]~reg0.DATAIN
+i_CLK => o_Q[0]~reg0.CLK
+i_CLK => o_Q[1]~reg0.CLK
+i_CLK => o_Q[2]~reg0.CLK
+i_CLK => o_Q[3]~reg0.CLK
+i_CLK => o_Q[4]~reg0.CLK
+i_CLK => o_Q[5]~reg0.CLK
+i_CLK => o_Q[6]~reg0.CLK
+i_CLK => o_Q[7]~reg0.CLK
+i_CLRn => o_Q[0]~reg0.ACLR
+i_CLRn => o_Q[1]~reg0.ACLR
+i_CLRn => o_Q[2]~reg0.ACLR
+i_CLRn => o_Q[3]~reg0.ACLR
+i_CLRn => o_Q[4]~reg0.ACLR
+i_CLRn => o_Q[5]~reg0.ACLR
+i_CLRn => o_Q[6]~reg0.ACLR
+i_CLRn => o_Q[7]~reg0.ACLR
+i_ENA => o_Q[7]~reg0.ENA
+i_ENA => o_Q[6]~reg0.ENA
+i_ENA => o_Q[5]~reg0.ENA
+i_ENA => o_Q[4]~reg0.ENA
+i_ENA => o_Q[3]~reg0.ENA
+i_ENA => o_Q[2]~reg0.ENA
+i_ENA => o_Q[1]~reg0.ENA
+i_ENA => o_Q[0]~reg0.ENA
+o_Q[0] <= o_Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_Q[1] <= o_Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_Q[2] <= o_Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_Q[3] <= o_Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_Q[4] <= o_Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_Q[5] <= o_Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_Q[6] <= o_Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_Q[7] <= o_Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|reg_pp_Wbits:u_i_B
+i_D[0] => o_Q[0]~reg0.DATAIN
+i_D[1] => o_Q[1]~reg0.DATAIN
+i_D[2] => o_Q[2]~reg0.DATAIN
+i_D[3] => o_Q[3]~reg0.DATAIN
+i_D[4] => o_Q[4]~reg0.DATAIN
+i_D[5] => o_Q[5]~reg0.DATAIN
+i_D[6] => o_Q[6]~reg0.DATAIN
+i_D[7] => o_Q[7]~reg0.DATAIN
+i_CLK => o_Q[0]~reg0.CLK
+i_CLK => o_Q[1]~reg0.CLK
+i_CLK => o_Q[2]~reg0.CLK
+i_CLK => o_Q[3]~reg0.CLK
+i_CLK => o_Q[4]~reg0.CLK
+i_CLK => o_Q[5]~reg0.CLK
+i_CLK => o_Q[6]~reg0.CLK
+i_CLK => o_Q[7]~reg0.CLK
+i_CLRn => o_Q[0]~reg0.ACLR
+i_CLRn => o_Q[1]~reg0.ACLR
+i_CLRn => o_Q[2]~reg0.ACLR
+i_CLRn => o_Q[3]~reg0.ACLR
+i_CLRn => o_Q[4]~reg0.ACLR
+i_CLRn => o_Q[5]~reg0.ACLR
+i_CLRn => o_Q[6]~reg0.ACLR
+i_CLRn => o_Q[7]~reg0.ACLR
+i_ENA => o_Q[7]~reg0.ENA
+i_ENA => o_Q[6]~reg0.ENA
+i_ENA => o_Q[5]~reg0.ENA
+i_ENA => o_Q[4]~reg0.ENA
+i_ENA => o_Q[3]~reg0.ENA
+i_ENA => o_Q[2]~reg0.ENA
+i_ENA => o_Q[1]~reg0.ENA
+i_ENA => o_Q[0]~reg0.ENA
+o_Q[0] <= o_Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_Q[1] <= o_Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_Q[2] <= o_Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_Q[3] <= o_Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_Q[4] <= o_Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_Q[5] <= o_Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_Q[6] <= o_Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_Q[7] <= o_Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|counter_Wbits:u_contK
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+clk => q[4]~reg0.CLK
+clk => q[5]~reg0.CLK
+clk => q[6]~reg0.CLK
+clk => q[7]~reg0.CLK
+clrn => q[0]~reg0.ACLR
+clrn => q[1]~reg0.ACLR
+clrn => q[2]~reg0.ACLR
+clrn => q[3]~reg0.ACLR
+clrn => q[4]~reg0.ACLR
+clrn => q[5]~reg0.ACLR
+clrn => q[6]~reg0.ACLR
+clrn => q[7]~reg0.ACLR
+ena => q[7]~reg0.ENA
+ena => q[6]~reg0.ENA
+ena => q[5]~reg0.ENA
+ena => q[4]~reg0.ENA
+ena => q[3]~reg0.ENA
+ena => q[2]~reg0.ENA
+ena => q[1]~reg0.ENA
+ena => q[0]~reg0.ENA
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB
+i_DINa[0] => w_add1inA[0].IN0
+i_DINa[0] => w_add1inB[1].IN0
+i_DINa[0] => w_add2inB[2].IN0
+i_DINa[0] => w_add3inB[3].IN0
+i_DINa[0] => w_add4inB[4].IN0
+i_DINa[0] => w_add5inB[5].IN0
+i_DINa[0] => w_add6inB[6].IN0
+i_DINa[0] => w_add7inB[7].IN0
+i_DINa[1] => w_add1inA[1].IN0
+i_DINa[1] => w_add1inB[2].IN0
+i_DINa[1] => w_add2inB[3].IN0
+i_DINa[1] => w_add3inB[4].IN0
+i_DINa[1] => w_add4inB[5].IN0
+i_DINa[1] => w_add5inB[6].IN0
+i_DINa[1] => w_add6inB[7].IN0
+i_DINa[1] => w_add7inB[8].IN0
+i_DINa[2] => w_add1inA[2].IN0
+i_DINa[2] => w_add1inB[3].IN0
+i_DINa[2] => w_add2inB[4].IN0
+i_DINa[2] => w_add3inB[5].IN0
+i_DINa[2] => w_add4inB[6].IN0
+i_DINa[2] => w_add5inB[7].IN0
+i_DINa[2] => w_add6inB[8].IN0
+i_DINa[2] => w_add7inB[9].IN0
+i_DINa[3] => w_add1inA[3].IN0
+i_DINa[3] => w_add1inB[4].IN0
+i_DINa[3] => w_add2inB[5].IN0
+i_DINa[3] => w_add3inB[6].IN0
+i_DINa[3] => w_add4inB[7].IN0
+i_DINa[3] => w_add5inB[8].IN0
+i_DINa[3] => w_add6inB[9].IN0
+i_DINa[3] => w_add7inB[10].IN0
+i_DINa[4] => w_add1inA[4].IN0
+i_DINa[4] => w_add1inB[5].IN0
+i_DINa[4] => w_add2inB[6].IN0
+i_DINa[4] => w_add3inB[7].IN0
+i_DINa[4] => w_add4inB[8].IN0
+i_DINa[4] => w_add5inB[9].IN0
+i_DINa[4] => w_add6inB[10].IN0
+i_DINa[4] => w_add7inB[11].IN0
+i_DINa[5] => w_add1inA[5].IN0
+i_DINa[5] => w_add1inB[6].IN0
+i_DINa[5] => w_add2inB[7].IN0
+i_DINa[5] => w_add3inB[8].IN0
+i_DINa[5] => w_add4inB[9].IN0
+i_DINa[5] => w_add5inB[10].IN0
+i_DINa[5] => w_add6inB[11].IN0
+i_DINa[5] => w_add7inB[12].IN0
+i_DINa[6] => w_add1inA[6].IN0
+i_DINa[6] => w_add1inB[7].IN0
+i_DINa[6] => w_add2inB[8].IN0
+i_DINa[6] => w_add3inB[9].IN0
+i_DINa[6] => w_add4inB[10].IN0
+i_DINa[6] => w_add5inB[11].IN0
+i_DINa[6] => w_add6inB[12].IN0
+i_DINa[6] => w_add7inB[13].IN0
+i_DINa[7] => w_add1inA[7].IN0
+i_DINa[7] => w_add1inB[8].IN0
+i_DINa[7] => w_add2inB[9].IN0
+i_DINa[7] => w_add3inB[10].IN0
+i_DINa[7] => w_add4inB[11].IN0
+i_DINa[7] => w_add5inB[12].IN0
+i_DINa[7] => w_add6inB[13].IN0
+i_DINa[7] => w_add7inB[14].IN0
+i_DINb[0] => w_add1inA[7].IN1
+i_DINb[0] => w_add1inA[6].IN1
+i_DINb[0] => w_add1inA[5].IN1
+i_DINb[0] => w_add1inA[4].IN1
+i_DINb[0] => w_add1inA[3].IN1
+i_DINb[0] => w_add1inA[2].IN1
+i_DINb[0] => w_add1inA[1].IN1
+i_DINb[0] => w_add1inA[0].IN1
+i_DINb[1] => w_add1inB[8].IN1
+i_DINb[1] => w_add1inB[7].IN1
+i_DINb[1] => w_add1inB[6].IN1
+i_DINb[1] => w_add1inB[5].IN1
+i_DINb[1] => w_add1inB[4].IN1
+i_DINb[1] => w_add1inB[3].IN1
+i_DINb[1] => w_add1inB[2].IN1
+i_DINb[1] => w_add1inB[1].IN1
+i_DINb[2] => w_add2inB[9].IN1
+i_DINb[2] => w_add2inB[8].IN1
+i_DINb[2] => w_add2inB[7].IN1
+i_DINb[2] => w_add2inB[6].IN1
+i_DINb[2] => w_add2inB[5].IN1
+i_DINb[2] => w_add2inB[4].IN1
+i_DINb[2] => w_add2inB[3].IN1
+i_DINb[2] => w_add2inB[2].IN1
+i_DINb[3] => w_add3inB[10].IN1
+i_DINb[3] => w_add3inB[9].IN1
+i_DINb[3] => w_add3inB[8].IN1
+i_DINb[3] => w_add3inB[7].IN1
+i_DINb[3] => w_add3inB[6].IN1
+i_DINb[3] => w_add3inB[5].IN1
+i_DINb[3] => w_add3inB[4].IN1
+i_DINb[3] => w_add3inB[3].IN1
+i_DINb[4] => w_add4inB[11].IN1
+i_DINb[4] => w_add4inB[10].IN1
+i_DINb[4] => w_add4inB[9].IN1
+i_DINb[4] => w_add4inB[8].IN1
+i_DINb[4] => w_add4inB[7].IN1
+i_DINb[4] => w_add4inB[6].IN1
+i_DINb[4] => w_add4inB[5].IN1
+i_DINb[4] => w_add4inB[4].IN1
+i_DINb[5] => w_add5inB[12].IN1
+i_DINb[5] => w_add5inB[11].IN1
+i_DINb[5] => w_add5inB[10].IN1
+i_DINb[5] => w_add5inB[9].IN1
+i_DINb[5] => w_add5inB[8].IN1
+i_DINb[5] => w_add5inB[7].IN1
+i_DINb[5] => w_add5inB[6].IN1
+i_DINb[5] => w_add5inB[5].IN1
+i_DINb[6] => w_add6inB[13].IN1
+i_DINb[6] => w_add6inB[12].IN1
+i_DINb[6] => w_add6inB[11].IN1
+i_DINb[6] => w_add6inB[10].IN1
+i_DINb[6] => w_add6inB[9].IN1
+i_DINb[6] => w_add6inB[8].IN1
+i_DINb[6] => w_add6inB[7].IN1
+i_DINb[6] => w_add6inB[6].IN1
+i_DINb[7] => w_add7inB[14].IN1
+i_DINb[7] => w_add7inB[13].IN1
+i_DINb[7] => w_add7inB[12].IN1
+i_DINb[7] => w_add7inB[11].IN1
+i_DINb[7] => w_add7inB[10].IN1
+i_DINb[7] => w_add7inB[9].IN1
+i_DINb[7] => w_add7inB[8].IN1
+i_DINb[7] => w_add7inB[7].IN1
+o_DOUT[0] <= adder:u_7.o_DOUT[0]
+o_DOUT[1] <= adder:u_7.o_DOUT[1]
+o_DOUT[2] <= adder:u_7.o_DOUT[2]
+o_DOUT[3] <= adder:u_7.o_DOUT[3]
+o_DOUT[4] <= adder:u_7.o_DOUT[4]
+o_DOUT[5] <= adder:u_7.o_DOUT[5]
+o_DOUT[6] <= adder:u_7.o_DOUT[6]
+o_DOUT[7] <= adder:u_7.o_DOUT[7]
+o_DOUT[8] <= adder:u_7.o_DOUT[8]
+o_DOUT[9] <= adder:u_7.o_DOUT[9]
+o_DOUT[10] <= adder:u_7.o_DOUT[10]
+o_DOUT[11] <= adder:u_7.o_DOUT[11]
+o_DOUT[12] <= adder:u_7.o_DOUT[12]
+o_DOUT[13] <= adder:u_7.o_DOUT[13]
+o_DOUT[14] <= adder:u_7.o_DOUT[14]
+o_DOUT[15] <= adder:u_7.o_COUT
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_0
+i_DIN0[0] => halfadder:u_0.i_DIN0
+i_DIN0[1] => fulladder:f_0:1:u_1.i_DIN0
+i_DIN0[2] => fulladder:f_0:2:u_1.i_DIN0
+i_DIN0[3] => fulladder:f_0:3:u_1.i_DIN0
+i_DIN0[4] => fulladder:f_0:4:u_1.i_DIN0
+i_DIN0[5] => fulladder:f_0:5:u_1.i_DIN0
+i_DIN0[6] => fulladder:f_0:6:u_1.i_DIN0
+i_DIN0[7] => fulladder:f_0:7:u_1.i_DIN0
+i_DIN0[8] => fulladder:f_0:8:u_1.i_DIN0
+i_DIN1[0] => halfadder:u_0.i_DIN1
+i_DIN1[1] => fulladder:f_0:1:u_1.i_DIN1
+i_DIN1[2] => fulladder:f_0:2:u_1.i_DIN1
+i_DIN1[3] => fulladder:f_0:3:u_1.i_DIN1
+i_DIN1[4] => fulladder:f_0:4:u_1.i_DIN1
+i_DIN1[5] => fulladder:f_0:5:u_1.i_DIN1
+i_DIN1[6] => fulladder:f_0:6:u_1.i_DIN1
+i_DIN1[7] => fulladder:f_0:7:u_1.i_DIN1
+i_DIN1[8] => fulladder:f_0:8:u_1.i_DIN1
+o_DOUT[0] <= halfadder:u_0.o_DOUT
+o_DOUT[1] <= fulladder:f_0:1:u_1.o_DOUT
+o_DOUT[2] <= fulladder:f_0:2:u_1.o_DOUT
+o_DOUT[3] <= fulladder:f_0:3:u_1.o_DOUT
+o_DOUT[4] <= fulladder:f_0:4:u_1.o_DOUT
+o_DOUT[5] <= fulladder:f_0:5:u_1.o_DOUT
+o_DOUT[6] <= fulladder:f_0:6:u_1.o_DOUT
+o_DOUT[7] <= fulladder:f_0:7:u_1.o_DOUT
+o_DOUT[8] <= fulladder:f_0:8:u_1.o_DOUT
+o_COUT <= fulladder:f_0:8:u_1.o_COUT
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_0|halfadder:u_0
+i_DIN0 => o_DOUT.IN0
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_0|fulladder:\f_0:1:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_0|fulladder:\f_0:2:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_0|fulladder:\f_0:3:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_0|fulladder:\f_0:4:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_0|fulladder:\f_0:5:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_0|fulladder:\f_0:6:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_0|fulladder:\f_0:7:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_0|fulladder:\f_0:8:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_2
+i_DIN0[0] => halfadder:u_0.i_DIN0
+i_DIN0[1] => fulladder:f_0:1:u_1.i_DIN0
+i_DIN0[2] => fulladder:f_0:2:u_1.i_DIN0
+i_DIN0[3] => fulladder:f_0:3:u_1.i_DIN0
+i_DIN0[4] => fulladder:f_0:4:u_1.i_DIN0
+i_DIN0[5] => fulladder:f_0:5:u_1.i_DIN0
+i_DIN0[6] => fulladder:f_0:6:u_1.i_DIN0
+i_DIN0[7] => fulladder:f_0:7:u_1.i_DIN0
+i_DIN0[8] => fulladder:f_0:8:u_1.i_DIN0
+i_DIN0[9] => fulladder:f_0:9:u_1.i_DIN0
+i_DIN1[0] => halfadder:u_0.i_DIN1
+i_DIN1[1] => fulladder:f_0:1:u_1.i_DIN1
+i_DIN1[2] => fulladder:f_0:2:u_1.i_DIN1
+i_DIN1[3] => fulladder:f_0:3:u_1.i_DIN1
+i_DIN1[4] => fulladder:f_0:4:u_1.i_DIN1
+i_DIN1[5] => fulladder:f_0:5:u_1.i_DIN1
+i_DIN1[6] => fulladder:f_0:6:u_1.i_DIN1
+i_DIN1[7] => fulladder:f_0:7:u_1.i_DIN1
+i_DIN1[8] => fulladder:f_0:8:u_1.i_DIN1
+i_DIN1[9] => fulladder:f_0:9:u_1.i_DIN1
+o_DOUT[0] <= halfadder:u_0.o_DOUT
+o_DOUT[1] <= fulladder:f_0:1:u_1.o_DOUT
+o_DOUT[2] <= fulladder:f_0:2:u_1.o_DOUT
+o_DOUT[3] <= fulladder:f_0:3:u_1.o_DOUT
+o_DOUT[4] <= fulladder:f_0:4:u_1.o_DOUT
+o_DOUT[5] <= fulladder:f_0:5:u_1.o_DOUT
+o_DOUT[6] <= fulladder:f_0:6:u_1.o_DOUT
+o_DOUT[7] <= fulladder:f_0:7:u_1.o_DOUT
+o_DOUT[8] <= fulladder:f_0:8:u_1.o_DOUT
+o_DOUT[9] <= fulladder:f_0:9:u_1.o_DOUT
+o_COUT <= fulladder:f_0:9:u_1.o_COUT
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_2|halfadder:u_0
+i_DIN0 => o_DOUT.IN0
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_2|fulladder:\f_0:1:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_2|fulladder:\f_0:2:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_2|fulladder:\f_0:3:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_2|fulladder:\f_0:4:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_2|fulladder:\f_0:5:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_2|fulladder:\f_0:6:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_2|fulladder:\f_0:7:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_2|fulladder:\f_0:8:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_2|fulladder:\f_0:9:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_3
+i_DIN0[0] => halfadder:u_0.i_DIN0
+i_DIN0[1] => fulladder:f_0:1:u_1.i_DIN0
+i_DIN0[2] => fulladder:f_0:2:u_1.i_DIN0
+i_DIN0[3] => fulladder:f_0:3:u_1.i_DIN0
+i_DIN0[4] => fulladder:f_0:4:u_1.i_DIN0
+i_DIN0[5] => fulladder:f_0:5:u_1.i_DIN0
+i_DIN0[6] => fulladder:f_0:6:u_1.i_DIN0
+i_DIN0[7] => fulladder:f_0:7:u_1.i_DIN0
+i_DIN0[8] => fulladder:f_0:8:u_1.i_DIN0
+i_DIN0[9] => fulladder:f_0:9:u_1.i_DIN0
+i_DIN0[10] => fulladder:f_0:10:u_1.i_DIN0
+i_DIN1[0] => halfadder:u_0.i_DIN1
+i_DIN1[1] => fulladder:f_0:1:u_1.i_DIN1
+i_DIN1[2] => fulladder:f_0:2:u_1.i_DIN1
+i_DIN1[3] => fulladder:f_0:3:u_1.i_DIN1
+i_DIN1[4] => fulladder:f_0:4:u_1.i_DIN1
+i_DIN1[5] => fulladder:f_0:5:u_1.i_DIN1
+i_DIN1[6] => fulladder:f_0:6:u_1.i_DIN1
+i_DIN1[7] => fulladder:f_0:7:u_1.i_DIN1
+i_DIN1[8] => fulladder:f_0:8:u_1.i_DIN1
+i_DIN1[9] => fulladder:f_0:9:u_1.i_DIN1
+i_DIN1[10] => fulladder:f_0:10:u_1.i_DIN1
+o_DOUT[0] <= halfadder:u_0.o_DOUT
+o_DOUT[1] <= fulladder:f_0:1:u_1.o_DOUT
+o_DOUT[2] <= fulladder:f_0:2:u_1.o_DOUT
+o_DOUT[3] <= fulladder:f_0:3:u_1.o_DOUT
+o_DOUT[4] <= fulladder:f_0:4:u_1.o_DOUT
+o_DOUT[5] <= fulladder:f_0:5:u_1.o_DOUT
+o_DOUT[6] <= fulladder:f_0:6:u_1.o_DOUT
+o_DOUT[7] <= fulladder:f_0:7:u_1.o_DOUT
+o_DOUT[8] <= fulladder:f_0:8:u_1.o_DOUT
+o_DOUT[9] <= fulladder:f_0:9:u_1.o_DOUT
+o_DOUT[10] <= fulladder:f_0:10:u_1.o_DOUT
+o_COUT <= fulladder:f_0:10:u_1.o_COUT
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_3|halfadder:u_0
+i_DIN0 => o_DOUT.IN0
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_3|fulladder:\f_0:1:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_3|fulladder:\f_0:2:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_3|fulladder:\f_0:3:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_3|fulladder:\f_0:4:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_3|fulladder:\f_0:5:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_3|fulladder:\f_0:6:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_3|fulladder:\f_0:7:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_3|fulladder:\f_0:8:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_3|fulladder:\f_0:9:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_3|fulladder:\f_0:10:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_4
+i_DIN0[0] => halfadder:u_0.i_DIN0
+i_DIN0[1] => fulladder:f_0:1:u_1.i_DIN0
+i_DIN0[2] => fulladder:f_0:2:u_1.i_DIN0
+i_DIN0[3] => fulladder:f_0:3:u_1.i_DIN0
+i_DIN0[4] => fulladder:f_0:4:u_1.i_DIN0
+i_DIN0[5] => fulladder:f_0:5:u_1.i_DIN0
+i_DIN0[6] => fulladder:f_0:6:u_1.i_DIN0
+i_DIN0[7] => fulladder:f_0:7:u_1.i_DIN0
+i_DIN0[8] => fulladder:f_0:8:u_1.i_DIN0
+i_DIN0[9] => fulladder:f_0:9:u_1.i_DIN0
+i_DIN0[10] => fulladder:f_0:10:u_1.i_DIN0
+i_DIN0[11] => fulladder:f_0:11:u_1.i_DIN0
+i_DIN1[0] => halfadder:u_0.i_DIN1
+i_DIN1[1] => fulladder:f_0:1:u_1.i_DIN1
+i_DIN1[2] => fulladder:f_0:2:u_1.i_DIN1
+i_DIN1[3] => fulladder:f_0:3:u_1.i_DIN1
+i_DIN1[4] => fulladder:f_0:4:u_1.i_DIN1
+i_DIN1[5] => fulladder:f_0:5:u_1.i_DIN1
+i_DIN1[6] => fulladder:f_0:6:u_1.i_DIN1
+i_DIN1[7] => fulladder:f_0:7:u_1.i_DIN1
+i_DIN1[8] => fulladder:f_0:8:u_1.i_DIN1
+i_DIN1[9] => fulladder:f_0:9:u_1.i_DIN1
+i_DIN1[10] => fulladder:f_0:10:u_1.i_DIN1
+i_DIN1[11] => fulladder:f_0:11:u_1.i_DIN1
+o_DOUT[0] <= halfadder:u_0.o_DOUT
+o_DOUT[1] <= fulladder:f_0:1:u_1.o_DOUT
+o_DOUT[2] <= fulladder:f_0:2:u_1.o_DOUT
+o_DOUT[3] <= fulladder:f_0:3:u_1.o_DOUT
+o_DOUT[4] <= fulladder:f_0:4:u_1.o_DOUT
+o_DOUT[5] <= fulladder:f_0:5:u_1.o_DOUT
+o_DOUT[6] <= fulladder:f_0:6:u_1.o_DOUT
+o_DOUT[7] <= fulladder:f_0:7:u_1.o_DOUT
+o_DOUT[8] <= fulladder:f_0:8:u_1.o_DOUT
+o_DOUT[9] <= fulladder:f_0:9:u_1.o_DOUT
+o_DOUT[10] <= fulladder:f_0:10:u_1.o_DOUT
+o_DOUT[11] <= fulladder:f_0:11:u_1.o_DOUT
+o_COUT <= fulladder:f_0:11:u_1.o_COUT
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_4|halfadder:u_0
+i_DIN0 => o_DOUT.IN0
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_4|fulladder:\f_0:1:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_4|fulladder:\f_0:2:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_4|fulladder:\f_0:3:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_4|fulladder:\f_0:4:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_4|fulladder:\f_0:5:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_4|fulladder:\f_0:6:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_4|fulladder:\f_0:7:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_4|fulladder:\f_0:8:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_4|fulladder:\f_0:9:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_4|fulladder:\f_0:10:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_4|fulladder:\f_0:11:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_5
+i_DIN0[0] => halfadder:u_0.i_DIN0
+i_DIN0[1] => fulladder:f_0:1:u_1.i_DIN0
+i_DIN0[2] => fulladder:f_0:2:u_1.i_DIN0
+i_DIN0[3] => fulladder:f_0:3:u_1.i_DIN0
+i_DIN0[4] => fulladder:f_0:4:u_1.i_DIN0
+i_DIN0[5] => fulladder:f_0:5:u_1.i_DIN0
+i_DIN0[6] => fulladder:f_0:6:u_1.i_DIN0
+i_DIN0[7] => fulladder:f_0:7:u_1.i_DIN0
+i_DIN0[8] => fulladder:f_0:8:u_1.i_DIN0
+i_DIN0[9] => fulladder:f_0:9:u_1.i_DIN0
+i_DIN0[10] => fulladder:f_0:10:u_1.i_DIN0
+i_DIN0[11] => fulladder:f_0:11:u_1.i_DIN0
+i_DIN0[12] => fulladder:f_0:12:u_1.i_DIN0
+i_DIN1[0] => halfadder:u_0.i_DIN1
+i_DIN1[1] => fulladder:f_0:1:u_1.i_DIN1
+i_DIN1[2] => fulladder:f_0:2:u_1.i_DIN1
+i_DIN1[3] => fulladder:f_0:3:u_1.i_DIN1
+i_DIN1[4] => fulladder:f_0:4:u_1.i_DIN1
+i_DIN1[5] => fulladder:f_0:5:u_1.i_DIN1
+i_DIN1[6] => fulladder:f_0:6:u_1.i_DIN1
+i_DIN1[7] => fulladder:f_0:7:u_1.i_DIN1
+i_DIN1[8] => fulladder:f_0:8:u_1.i_DIN1
+i_DIN1[9] => fulladder:f_0:9:u_1.i_DIN1
+i_DIN1[10] => fulladder:f_0:10:u_1.i_DIN1
+i_DIN1[11] => fulladder:f_0:11:u_1.i_DIN1
+i_DIN1[12] => fulladder:f_0:12:u_1.i_DIN1
+o_DOUT[0] <= halfadder:u_0.o_DOUT
+o_DOUT[1] <= fulladder:f_0:1:u_1.o_DOUT
+o_DOUT[2] <= fulladder:f_0:2:u_1.o_DOUT
+o_DOUT[3] <= fulladder:f_0:3:u_1.o_DOUT
+o_DOUT[4] <= fulladder:f_0:4:u_1.o_DOUT
+o_DOUT[5] <= fulladder:f_0:5:u_1.o_DOUT
+o_DOUT[6] <= fulladder:f_0:6:u_1.o_DOUT
+o_DOUT[7] <= fulladder:f_0:7:u_1.o_DOUT
+o_DOUT[8] <= fulladder:f_0:8:u_1.o_DOUT
+o_DOUT[9] <= fulladder:f_0:9:u_1.o_DOUT
+o_DOUT[10] <= fulladder:f_0:10:u_1.o_DOUT
+o_DOUT[11] <= fulladder:f_0:11:u_1.o_DOUT
+o_DOUT[12] <= fulladder:f_0:12:u_1.o_DOUT
+o_COUT <= fulladder:f_0:12:u_1.o_COUT
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_5|halfadder:u_0
+i_DIN0 => o_DOUT.IN0
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_5|fulladder:\f_0:1:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_5|fulladder:\f_0:2:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_5|fulladder:\f_0:3:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_5|fulladder:\f_0:4:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_5|fulladder:\f_0:5:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_5|fulladder:\f_0:6:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_5|fulladder:\f_0:7:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_5|fulladder:\f_0:8:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_5|fulladder:\f_0:9:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_5|fulladder:\f_0:10:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_5|fulladder:\f_0:11:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_5|fulladder:\f_0:12:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_6
+i_DIN0[0] => halfadder:u_0.i_DIN0
+i_DIN0[1] => fulladder:f_0:1:u_1.i_DIN0
+i_DIN0[2] => fulladder:f_0:2:u_1.i_DIN0
+i_DIN0[3] => fulladder:f_0:3:u_1.i_DIN0
+i_DIN0[4] => fulladder:f_0:4:u_1.i_DIN0
+i_DIN0[5] => fulladder:f_0:5:u_1.i_DIN0
+i_DIN0[6] => fulladder:f_0:6:u_1.i_DIN0
+i_DIN0[7] => fulladder:f_0:7:u_1.i_DIN0
+i_DIN0[8] => fulladder:f_0:8:u_1.i_DIN0
+i_DIN0[9] => fulladder:f_0:9:u_1.i_DIN0
+i_DIN0[10] => fulladder:f_0:10:u_1.i_DIN0
+i_DIN0[11] => fulladder:f_0:11:u_1.i_DIN0
+i_DIN0[12] => fulladder:f_0:12:u_1.i_DIN0
+i_DIN0[13] => fulladder:f_0:13:u_1.i_DIN0
+i_DIN1[0] => halfadder:u_0.i_DIN1
+i_DIN1[1] => fulladder:f_0:1:u_1.i_DIN1
+i_DIN1[2] => fulladder:f_0:2:u_1.i_DIN1
+i_DIN1[3] => fulladder:f_0:3:u_1.i_DIN1
+i_DIN1[4] => fulladder:f_0:4:u_1.i_DIN1
+i_DIN1[5] => fulladder:f_0:5:u_1.i_DIN1
+i_DIN1[6] => fulladder:f_0:6:u_1.i_DIN1
+i_DIN1[7] => fulladder:f_0:7:u_1.i_DIN1
+i_DIN1[8] => fulladder:f_0:8:u_1.i_DIN1
+i_DIN1[9] => fulladder:f_0:9:u_1.i_DIN1
+i_DIN1[10] => fulladder:f_0:10:u_1.i_DIN1
+i_DIN1[11] => fulladder:f_0:11:u_1.i_DIN1
+i_DIN1[12] => fulladder:f_0:12:u_1.i_DIN1
+i_DIN1[13] => fulladder:f_0:13:u_1.i_DIN1
+o_DOUT[0] <= halfadder:u_0.o_DOUT
+o_DOUT[1] <= fulladder:f_0:1:u_1.o_DOUT
+o_DOUT[2] <= fulladder:f_0:2:u_1.o_DOUT
+o_DOUT[3] <= fulladder:f_0:3:u_1.o_DOUT
+o_DOUT[4] <= fulladder:f_0:4:u_1.o_DOUT
+o_DOUT[5] <= fulladder:f_0:5:u_1.o_DOUT
+o_DOUT[6] <= fulladder:f_0:6:u_1.o_DOUT
+o_DOUT[7] <= fulladder:f_0:7:u_1.o_DOUT
+o_DOUT[8] <= fulladder:f_0:8:u_1.o_DOUT
+o_DOUT[9] <= fulladder:f_0:9:u_1.o_DOUT
+o_DOUT[10] <= fulladder:f_0:10:u_1.o_DOUT
+o_DOUT[11] <= fulladder:f_0:11:u_1.o_DOUT
+o_DOUT[12] <= fulladder:f_0:12:u_1.o_DOUT
+o_DOUT[13] <= fulladder:f_0:13:u_1.o_DOUT
+o_COUT <= fulladder:f_0:13:u_1.o_COUT
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_6|halfadder:u_0
+i_DIN0 => o_DOUT.IN0
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_6|fulladder:\f_0:1:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_6|fulladder:\f_0:2:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_6|fulladder:\f_0:3:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_6|fulladder:\f_0:4:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_6|fulladder:\f_0:5:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_6|fulladder:\f_0:6:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_6|fulladder:\f_0:7:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_6|fulladder:\f_0:8:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_6|fulladder:\f_0:9:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_6|fulladder:\f_0:10:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_6|fulladder:\f_0:11:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_6|fulladder:\f_0:12:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_6|fulladder:\f_0:13:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_7
+i_DIN0[0] => halfadder:u_0.i_DIN0
+i_DIN0[1] => fulladder:f_0:1:u_1.i_DIN0
+i_DIN0[2] => fulladder:f_0:2:u_1.i_DIN0
+i_DIN0[3] => fulladder:f_0:3:u_1.i_DIN0
+i_DIN0[4] => fulladder:f_0:4:u_1.i_DIN0
+i_DIN0[5] => fulladder:f_0:5:u_1.i_DIN0
+i_DIN0[6] => fulladder:f_0:6:u_1.i_DIN0
+i_DIN0[7] => fulladder:f_0:7:u_1.i_DIN0
+i_DIN0[8] => fulladder:f_0:8:u_1.i_DIN0
+i_DIN0[9] => fulladder:f_0:9:u_1.i_DIN0
+i_DIN0[10] => fulladder:f_0:10:u_1.i_DIN0
+i_DIN0[11] => fulladder:f_0:11:u_1.i_DIN0
+i_DIN0[12] => fulladder:f_0:12:u_1.i_DIN0
+i_DIN0[13] => fulladder:f_0:13:u_1.i_DIN0
+i_DIN0[14] => fulladder:f_0:14:u_1.i_DIN0
+i_DIN1[0] => halfadder:u_0.i_DIN1
+i_DIN1[1] => fulladder:f_0:1:u_1.i_DIN1
+i_DIN1[2] => fulladder:f_0:2:u_1.i_DIN1
+i_DIN1[3] => fulladder:f_0:3:u_1.i_DIN1
+i_DIN1[4] => fulladder:f_0:4:u_1.i_DIN1
+i_DIN1[5] => fulladder:f_0:5:u_1.i_DIN1
+i_DIN1[6] => fulladder:f_0:6:u_1.i_DIN1
+i_DIN1[7] => fulladder:f_0:7:u_1.i_DIN1
+i_DIN1[8] => fulladder:f_0:8:u_1.i_DIN1
+i_DIN1[9] => fulladder:f_0:9:u_1.i_DIN1
+i_DIN1[10] => fulladder:f_0:10:u_1.i_DIN1
+i_DIN1[11] => fulladder:f_0:11:u_1.i_DIN1
+i_DIN1[12] => fulladder:f_0:12:u_1.i_DIN1
+i_DIN1[13] => fulladder:f_0:13:u_1.i_DIN1
+i_DIN1[14] => fulladder:f_0:14:u_1.i_DIN1
+o_DOUT[0] <= halfadder:u_0.o_DOUT
+o_DOUT[1] <= fulladder:f_0:1:u_1.o_DOUT
+o_DOUT[2] <= fulladder:f_0:2:u_1.o_DOUT
+o_DOUT[3] <= fulladder:f_0:3:u_1.o_DOUT
+o_DOUT[4] <= fulladder:f_0:4:u_1.o_DOUT
+o_DOUT[5] <= fulladder:f_0:5:u_1.o_DOUT
+o_DOUT[6] <= fulladder:f_0:6:u_1.o_DOUT
+o_DOUT[7] <= fulladder:f_0:7:u_1.o_DOUT
+o_DOUT[8] <= fulladder:f_0:8:u_1.o_DOUT
+o_DOUT[9] <= fulladder:f_0:9:u_1.o_DOUT
+o_DOUT[10] <= fulladder:f_0:10:u_1.o_DOUT
+o_DOUT[11] <= fulladder:f_0:11:u_1.o_DOUT
+o_DOUT[12] <= fulladder:f_0:12:u_1.o_DOUT
+o_DOUT[13] <= fulladder:f_0:13:u_1.o_DOUT
+o_DOUT[14] <= fulladder:f_0:14:u_1.o_DOUT
+o_COUT <= fulladder:f_0:14:u_1.o_COUT
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_7|halfadder:u_0
+i_DIN0 => o_DOUT.IN0
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_7|fulladder:\f_0:1:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_7|fulladder:\f_0:2:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_7|fulladder:\f_0:3:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_7|fulladder:\f_0:4:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_7|fulladder:\f_0:5:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_7|fulladder:\f_0:6:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_7|fulladder:\f_0:7:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_7|fulladder:\f_0:8:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_7|fulladder:\f_0:9:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_7|fulladder:\f_0:10:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_7|fulladder:\f_0:11:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_7|fulladder:\f_0:12:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_7|fulladder:\f_0:13:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|multiplier_as:u_KmultB|adder:u_7|fulladder:\f_0:14:u_1
+i_CIN => o_DOUT.IN0
+i_CIN => o_COUT.IN0
+i_CIN => o_COUT.IN0
+i_DIN0 => o_DOUT.IN1
+i_DIN0 => o_COUT.IN1
+i_DIN0 => o_COUT.IN0
+i_DIN1 => o_DOUT.IN1
+i_DIN1 => o_COUT.IN1
+i_DIN1 => o_COUT.IN1
+o_DOUT <= o_DOUT.DB_MAX_OUTPUT_PORT_TYPE
+o_COUT <= o_COUT.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|sub_Wbits:u_AsubMultRes
+i_A[0] => Add0.IN32
+i_A[1] => Add0.IN31
+i_A[2] => Add0.IN30
+i_A[3] => Add0.IN29
+i_A[4] => Add0.IN28
+i_A[5] => Add0.IN27
+i_A[6] => Add0.IN26
+i_A[7] => Add0.IN25
+i_A[8] => Add0.IN24
+i_A[9] => Add0.IN23
+i_A[10] => Add0.IN22
+i_A[11] => Add0.IN21
+i_A[12] => Add0.IN20
+i_A[13] => Add0.IN19
+i_A[14] => Add0.IN18
+i_A[15] => Add0.IN17
+i_B[0] => Add0.IN16
+i_B[1] => Add0.IN15
+i_B[2] => Add0.IN14
+i_B[3] => Add0.IN13
+i_B[4] => Add0.IN12
+i_B[5] => Add0.IN11
+i_B[6] => Add0.IN10
+i_B[7] => Add0.IN9
+i_B[8] => Add0.IN8
+i_B[9] => Add0.IN7
+i_B[10] => Add0.IN6
+i_B[11] => Add0.IN5
+i_B[12] => Add0.IN4
+i_B[13] => Add0.IN3
+i_B[14] => Add0.IN2
+i_B[15] => Add0.IN1
+o_O[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+o_O[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+o_O[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+o_O[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+o_O[4] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+o_O[5] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+o_O[6] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+o_O[7] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+o_O[8] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+o_O[9] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+o_O[10] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+o_O[11] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+o_O[12] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+o_O[13] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+o_O[14] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+o_O[15] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|less_than:u_less_than
+a[0] => LessThan0.IN8
+a[1] => LessThan0.IN7
+a[2] => LessThan0.IN6
+a[3] => LessThan0.IN5
+a[4] => LessThan0.IN4
+a[5] => LessThan0.IN3
+a[6] => LessThan0.IN2
+a[7] => LessThan0.IN1
+b[0] => LessThan0.IN16
+b[1] => LessThan0.IN15
+b[2] => LessThan0.IN14
+b[3] => LessThan0.IN13
+b[4] => LessThan0.IN12
+b[5] => LessThan0.IN11
+b[6] => LessThan0.IN10
+b[7] => LessThan0.IN9
+lt <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|module_8bits|module_datapath:u_datapath|reg_pp_Wbits:u_regOut
+i_D[0] => o_Q[0]~reg0.DATAIN
+i_D[1] => o_Q[1]~reg0.DATAIN
+i_D[2] => o_Q[2]~reg0.DATAIN
+i_D[3] => o_Q[3]~reg0.DATAIN
+i_D[4] => o_Q[4]~reg0.DATAIN
+i_D[5] => o_Q[5]~reg0.DATAIN
+i_D[6] => o_Q[6]~reg0.DATAIN
+i_D[7] => o_Q[7]~reg0.DATAIN
+i_CLK => o_Q[0]~reg0.CLK
+i_CLK => o_Q[1]~reg0.CLK
+i_CLK => o_Q[2]~reg0.CLK
+i_CLK => o_Q[3]~reg0.CLK
+i_CLK => o_Q[4]~reg0.CLK
+i_CLK => o_Q[5]~reg0.CLK
+i_CLK => o_Q[6]~reg0.CLK
+i_CLK => o_Q[7]~reg0.CLK
+i_CLRn => o_Q[0]~reg0.ACLR
+i_CLRn => o_Q[1]~reg0.ACLR
+i_CLRn => o_Q[2]~reg0.ACLR
+i_CLRn => o_Q[3]~reg0.ACLR
+i_CLRn => o_Q[4]~reg0.ACLR
+i_CLRn => o_Q[5]~reg0.ACLR
+i_CLRn => o_Q[6]~reg0.ACLR
+i_CLRn => o_Q[7]~reg0.ACLR
+i_ENA => o_Q[7]~reg0.ENA
+i_ENA => o_Q[6]~reg0.ENA
+i_ENA => o_Q[5]~reg0.ENA
+i_ENA => o_Q[4]~reg0.ENA
+i_ENA => o_Q[3]~reg0.ENA
+i_ENA => o_Q[2]~reg0.ENA
+i_ENA => o_Q[1]~reg0.ENA
+i_ENA => o_Q[0]~reg0.ENA
+o_Q[0] <= o_Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_Q[1] <= o_Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_Q[2] <= o_Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_Q[3] <= o_Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_Q[4] <= o_Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_Q[5] <= o_Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_Q[6] <= o_Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+o_Q[7] <= o_Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

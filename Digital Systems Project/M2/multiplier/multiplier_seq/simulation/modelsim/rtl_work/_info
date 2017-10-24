@@ -1,0 +1,324 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Projeto de Sistemas Digitais\M2\multiplier\multiplier_seq\simulation\modelsim
+Eadder
+Z1 w1465263987
+Z2 DPx4 ieee 16 std_logic_signed 0 22 E>OLoMaBGQ?hbGgOoNXM^1
+Z3 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z6 dE:\Projeto de Sistemas Digitais\M2\multiplier\multiplier_seq\simulation\modelsim
+Z7 8E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/adder.vhd
+Z8 FE:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/adder.vhd
+l0
+L6
+V26F_UKI`XW`BAY5H`64hO3
+Z9 OV;C;10.1d;51
+31
+Z10 !s108 1466085091.365000
+Z11 !s90 -reportprogress|300|-93|-work|work|E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/adder.vhd|
+Z12 !s107 E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/adder.vhd|
+Z13 o-93 -work work -O0
+Z14 tExplicit 1
+!s100 NXUGDBaDRG@1E98I`UJ_52
+!i10b 1
+Aarch
+R2
+R3
+R4
+R5
+DEx4 work 5 adder 0 22 26F_UKI`XW`BAY5H`64hO3
+l37
+L16
+V=mPil=T8HOgDTLa=k?<z92
+R9
+31
+R10
+R11
+R12
+R13
+R14
+!s100 hzY[dYL@ULMfn2LAQT0Vo3
+!i10b 1
+Ebutton
+Z15 w1465946157
+R4
+R5
+R6
+Z16 8E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/button.vhd
+Z17 FE:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/button.vhd
+l0
+L4
+V7Yj1gR3`OJc@?Z==3=NE:3
+R9
+31
+Z18 !s108 1466085095.271000
+Z19 !s90 -reportprogress|300|-93|-work|work|E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/button.vhd|
+Z20 !s107 E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/button.vhd|
+R13
+R14
+!s100 :NI`35^>iZzgSZK<5nTn03
+!i10b 1
+Aarch
+R4
+R5
+DEx4 work 6 button 0 22 7Yj1gR3`OJc@?Z==3=NE:3
+l18
+L11
+Vm_fN9JHQl>gI=dPnCJ5<K0
+R9
+31
+R18
+R19
+R20
+R13
+R14
+!s100 [h<115ioOn]T]<Wz;Q;6f2
+!i10b 1
+Efulladder
+Z21 w1459448202
+R4
+R5
+R6
+Z22 8E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/fulladder.vhd
+Z23 FE:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/fulladder.vhd
+l0
+L4
+V;DLZL5eJcZ43GD6g_CXJW0
+R9
+31
+Z24 !s108 1466085090.568000
+Z25 !s90 -reportprogress|300|-93|-work|work|E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/fulladder.vhd|
+Z26 !s107 E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/fulladder.vhd|
+R13
+R14
+!s100 SVgC7AXXXh^:5gM_V8bXn3
+!i10b 1
+Aarch
+R4
+R5
+DEx4 work 9 fulladder 0 22 ;DLZL5eJcZ43GD6g_CXJW0
+l15
+L13
+V]86nbH9:Nl4f[8Fz_;XF:2
+R9
+31
+R24
+R25
+R26
+R13
+R14
+!s100 KhjSCBF0OYD?X`c_8zcDU0
+!i10b 1
+Ehalfadder
+Z27 w1460604576
+R4
+R5
+R6
+Z28 8E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/halfadder.vhd
+Z29 FE:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/halfadder.vhd
+l0
+L4
+V;^T]F=;MDWLFje9X2TY=33
+R9
+31
+Z30 !s108 1466085089.490000
+Z31 !s90 -reportprogress|300|-93|-work|work|E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/halfadder.vhd|
+Z32 !s107 E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/halfadder.vhd|
+R13
+R14
+!s100 9bzUQES_l`lD5GL8_jb780
+!i10b 1
+Aarch
+R4
+R5
+DEx4 work 9 halfadder 0 22 ;^T]F=;MDWLFje9X2TY=33
+l12
+L11
+VfFE]RGTaj01^I3<:mJMmb1
+R9
+31
+R30
+R31
+R32
+R13
+R14
+!s100 BUmlRRe;LN_;zNdJjRLlc1
+!i10b 1
+Emult_control
+Z33 w1465943602
+R4
+R5
+R6
+Z34 8E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/mult_control.vhd
+Z35 FE:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/mult_control.vhd
+l0
+L4
+Vb@OJRN41KfIM=F59z9OUY0
+R9
+31
+Z36 !s108 1466085092.881000
+Z37 !s90 -reportprogress|300|-93|-work|work|E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/mult_control.vhd|
+Z38 !s107 E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/mult_control.vhd|
+R13
+R14
+!s100 fGIdIhR^`>2^h]]I`G0@h3
+!i10b 1
+Aarch
+R4
+R5
+DEx4 work 12 mult_control 0 22 b@OJRN41KfIM=F59z9OUY0
+l24
+L16
+VBHaZo30zSDD]<c_;3>nVe0
+R9
+31
+R36
+R37
+R38
+R13
+R14
+!s100 [NjD53nO4<ljgHNT[l`XJ1
+!i10b 1
+Emult_op
+Z39 w1466083827
+R4
+R5
+R6
+Z40 8E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/mult_op.vhd
+Z41 FE:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/mult_op.vhd
+l0
+L4
+VTLNZdTIcaolhoMbjo6]eG2
+R9
+31
+Z42 !s108 1466085093.740000
+Z43 !s90 -reportprogress|300|-93|-work|work|E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/mult_op.vhd|
+Z44 !s107 E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/mult_op.vhd|
+R13
+R14
+!s100 WJ@kAEoH4[mmfKFB0aXkC0
+!i10b 1
+Aarch
+R4
+R5
+DEx4 work 7 mult_op 0 22 TLNZdTIcaolhoMbjo6]eG2
+l40
+L13
+VjMV0c]K]FfGA]m_15SAZE0
+R9
+31
+R42
+R43
+R44
+R13
+R14
+!s100 <bNJZ[Q02Ig@1JM>G1PN`1
+!i10b 1
+Emultiplier_seq
+Z45 w1466084091
+R4
+R5
+R6
+Z46 8E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/multiplier_seq.vhd
+Z47 FE:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/multiplier_seq.vhd
+l0
+L7
+VmNgAJ8H<3390<`@ESmICG0
+R9
+31
+Z48 !s108 1466085092.131000
+Z49 !s90 -reportprogress|300|-93|-work|work|E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/multiplier_seq.vhd|
+Z50 !s107 E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/multiplier_seq.vhd|
+R13
+R14
+!s100 aJMfPg1QMhB1^W5c0f^7D0
+!i10b 1
+Aarch
+R4
+R5
+DEx4 work 14 multiplier_seq 0 22 mNgAJ8H<3390<`@ESmICG0
+l74
+L18
+VfK@V?[eTBAP?f03Mk9B^S2
+R9
+31
+R48
+R49
+R50
+R13
+R14
+!s100 I0K:O:_<IA7IW97LFJ_Ql2
+!i10b 1
+Eregister_pp
+Z51 w1465926014
+R4
+R5
+R6
+Z52 8E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/register_pp.vhd
+Z53 FE:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/register_pp.vhd
+l0
+L4
+VClCIG?Vi1P`F_6@j4QE:e3
+R9
+31
+Z54 !s108 1466085094.490000
+Z55 !s90 -reportprogress|300|-93|-work|work|E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/register_pp.vhd|
+Z56 !s107 E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/register_pp.vhd|
+R13
+R14
+!s100 DKF]b]:R<Lk^Kk3HLEo5R3
+!i10b 1
+Aarch
+R4
+R5
+DEx4 work 11 register_pp 0 22 ClCIG?Vi1P`F_6@j4QE:e3
+l14
+L13
+VC^ZhAfo8cPYl_i9`m@_6`0
+R9
+31
+R54
+R55
+R56
+R13
+R14
+!s100 P]m8emO6]]REeI_f>l4>a0
+!i10b 1
+Erunning_sum
+Z57 w1466042255
+R4
+R5
+R6
+Z58 8E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/running_sum.vhd
+Z59 FE:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/running_sum.vhd
+l0
+L4
+V=IZZ>JH]XWSZ^f6aajYi;3
+!s100 YlVH_lE`PY^EOFkojzMz;1
+R9
+31
+!i10b 1
+Z60 !s108 1466085096.109000
+Z61 !s90 -reportprogress|300|-93|-work|work|E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/running_sum.vhd|
+Z62 !s107 E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/running_sum.vhd|
+R13
+R14
+Aarch
+R4
+R5
+DEx4 work 11 running_sum 0 22 =IZZ>JH]XWSZ^f6aajYi;3
+l17
+L14
+V=iCnjABIo0]bY7CDLbL>T0
+!s100 4@JPM?7S<kYdo4>77<EfG0
+R9
+31
+!i10b 1
+R60
+R61
+R62
+R13
+R14

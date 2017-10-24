@@ -1,0 +1,19 @@
+-- Left Shifter Parameterizable
+-- n = number of bits
+-- ns = number of left shitf
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY left_shifter IS
+	GENERIC	(n  : INTEGER := 32;
+				 ns : INTEGER := 1);
+	PORT		(D : IN  std_logic_vector(n-1 DOWNTO 0);
+				 Q : OUT std_logic_vector(n-1 DOWNTO 0));
+END left_shifter;
+
+ARCHITECTURE arch OF left_shifter IS
+BEGIN
+	Q(n-1 DOWNTO ns) <= D(n-ns-1 DOWNTO 0);
+	Q(ns-1  DOWNTO 0) <= (OTHERS=>'0');
+END;

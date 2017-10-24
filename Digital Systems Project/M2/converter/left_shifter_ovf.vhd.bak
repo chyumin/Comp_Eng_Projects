@@ -1,0 +1,34 @@
+-- Left Shifter with Overflow Parameterizable
+-- n = number of bits
+-- ns = number of left shitf
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY left_shifter)ovf IS
+	GENERIC	(n  : INTEGER := 8; -- number of bits
+				 ns : INTEGER := 2); -- number of shifts
+	PORT		(D   : IN  std_logic_vector(n-1 DOWNTO 0);
+				 Q   : OUT std_logic_vector(n-1 DOWNTO 0);
+				 Ovf : BUFFER std_logic); -- if 'overflow'
+END left_shifter_ovf;
+
+ARCHITECTURE arch OF left_shifter_ovf IS
+SIGNAL w_Ovf : std_logic:= '0';
+BEGIN
+	-- Left Shift ns bits
+	Q(n-1 DOWNTO ns) <= D(n-ns-1 DOWNTO 0);
+	Q(ns-1  DOWNTO 0) <= (OTHERS=>'0');
+	
+	-- Test Overflow
+	PROCESS(D)
+	VARIABLE v_ovf : std_logic;
+	BEGIN
+		v_ovf := '0';
+		FOR I IN n-ns TO n-1 LOOP
+			v_ovf := v_ovf OR D(I);
+		END LOOP;
+	Ovf <= v_ovf;
+	END PROCESS;
+	
+END;

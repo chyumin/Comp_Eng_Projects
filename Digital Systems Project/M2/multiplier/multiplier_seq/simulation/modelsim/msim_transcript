@@ -1,0 +1,127 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do multiplier_seq_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/halfadder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity halfadder
+# -- Compiling architecture arch of halfadder
+# vcom -93 -work work {E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/fulladder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fulladder
+# -- Compiling architecture arch of fulladder
+# vcom -93 -work work {E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/adder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity adder
+# -- Compiling architecture arch of adder
+# vcom -93 -work work {E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/multiplier_seq.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity multiplier_seq
+# -- Compiling architecture arch of multiplier_seq
+# vcom -93 -work work {E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/mult_control.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mult_control
+# -- Compiling architecture arch of mult_control
+# vcom -93 -work work {E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/mult_op.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mult_op
+# -- Compiling architecture arch of mult_op
+# vcom -93 -work work {E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/register_pp.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity register_pp
+# -- Compiling architecture arch of register_pp
+# vcom -93 -work work {E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/button.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity button
+# -- Compiling architecture arch of button
+# vcom -93 -work work {E:/Projeto de Sistemas Digitais/M2/multiplier/multiplier_seq/running_sum.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity running_sum
+# -- Compiling architecture arch of running_sum
+# 
+vsim -voptargs=+acc work.multiplier_seq
+# vsim -voptargs=+acc work.multiplier_seq 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.multiplier_seq(arch)
+# Loading work.button(arch)
+# Loading work.mult_control(arch)
+# Loading work.register_pp(arch)
+# Loading work.mult_op(arch)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.adder(arch)
+# Loading work.halfadder(arch)
+# Loading work.fulladder(arch)
+# Loading work.running_sum(arch)
+add wave -position insertpoint  \
+sim:/multiplier_seq/i_CLK \
+sim:/multiplier_seq/i_DINa \
+sim:/multiplier_seq/i_DINb \
+sim:/multiplier_seq/i_clrn \
+sim:/multiplier_seq/i_start
+force -freeze sim:/multiplier_seq/i_CLK 1 0, 0 {50 ps} -r 100
+force -freeze sim:/multiplier_seq/i_CLK 1 0, 0 {25 ps} -r 50
+force -freeze sim:/multiplier_seq/i_DINa 11111111 0
+force -freeze sim:/multiplier_seq/i_DINb 11111111 0
+force -freeze sim:/multiplier_seq/i_clrn 1 0
+force -freeze sim:/multiplier_seq/i_start 1 0
+run
+add wave -position insertpoint  \
+sim:/multiplier_seq/o_DOUT
+run
+force -freeze sim:/multiplier_seq/i_start 0 0
+run
+force -freeze sim:/multiplier_seq/i_start 1 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run

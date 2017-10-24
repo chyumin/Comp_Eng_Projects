@@ -1,0 +1,13 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+ENTITY mult_control IS
+	PORT (
+	
+	);
+END mult_control;
+
+ARCHITECTURE arch OF mult_control IS
+
+
+END arch;

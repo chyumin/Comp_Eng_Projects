@@ -1,0 +1,122 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do soda_dispenser_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {Z:/Projeto de Sistemas Digitais/M2/soda_dispenser/reg_pp_Wbits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity reg_pp_Wbits
+# -- Compiling architecture arch_1 of reg_pp_Wbits
+# vcom -93 -work work {Z:/Projeto de Sistemas Digitais/M2/soda_dispenser/data_path.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity data_path
+# -- Compiling architecture behavior of data_path
+# vcom -93 -work work {Z:/Projeto de Sistemas Digitais/M2/soda_dispenser/comparator_Wbits.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity comparator_Wbits
+# -- Compiling architecture behavior of comparator_Wbits
+# vcom -93 -work work {Z:/Projeto de Sistemas Digitais/M2/soda_dispenser/adder.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Compiling entity adder
+# -- Compiling architecture arch_1 of adder
+# vcom -93 -work work {Z:/Projeto de Sistemas Digitais/M2/soda_dispenser/soda_dispenser.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity soda_dispenser
+# -- Compiling architecture arch of soda_dispenser
+# vcom -93 -work work {Z:/Projeto de Sistemas Digitais/M2/soda_dispenser/sd_control.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity sd_control
+# -- Compiling architecture arch of sd_control
+# 
+vsim -voptargs=+acc work.soda_dispenser
+# vsim -voptargs=+acc work.soda_dispenser 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.soda_dispenser(arch)
+# Loading work.sd_control(arch)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.data_path(behavior)
+# Loading work.comparator_wbits(behavior)
+# Loading ieee.std_logic_signed(body)
+# Loading work.adder(arch_1)
+# Loading work.reg_pp_wbits(arch_1)
+add wave -position insertpoint  \
+sim:/soda_dispenser/i_a \
+sim:/soda_dispenser/i_c \
+sim:/soda_dispenser/i_clk \
+sim:/soda_dispenser/i_clrn \
+sim:/soda_dispenser/i_s \
+sim:/soda_dispenser/o_d \
+sim:/soda_dispenser/w_tot_clrn_out \
+sim:/soda_dispenser/w_tot_ld_out \
+sim:/soda_dispenser/w_tot_lt_s_out
+force -freeze sim:/soda_dispenser/i_a 00000001 0
+force -freeze sim:/soda_dispenser/i_clrn 1 0
+force -freeze sim:/soda_dispenser/i_clk 1 0, 0 {50 ps} -r 100
+force -freeze sim:/soda_dispenser/i_c 0 0
+force -freeze sim:/soda_dispenser/i_a 00000001 0
+force -freeze sim:/soda_dispenser/i_s 00000100 0
+force -freeze sim:/soda_dispenser/i_s 00000100 0
+run
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /soda_dispenser/u_1/u_1
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /soda_dispenser/u_1/u_0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /soda_dispenser/u_1/u_0
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /soda_dispenser/u_1/u_0
+force -freeze sim:/soda_dispenser/i_c 1 0
+run
+force -freeze sim:/soda_dispenser/i_c 0 0
+run
+run
+run
+run
+force -freeze sim:/soda_dispenser/i_a 00000011 0
+force -freeze sim:/soda_dispenser/i_c 1 0
+run
+force -freeze sim:/soda_dispenser/i_c 0 0
+run
+run
+run
+run
+run
+run
+run
+run

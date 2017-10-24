@@ -1,0 +1,30 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+ENTITY converter IS
+	PORT(
+		i_DIN  :  IN  std_logic_vector(7 DOWNTO 0);
+		o_DOUT :  OUT std_logic_vector(7 DOWNTO 0);
+		o_COUT :  OUT std_logic);
+END converter;
+
+ARCHITECTURE arch OF converter IS
+	SIGNAL w_signal : std_logic_vector(7 DOWNTO 0) := "00000001";
+	
+-- component declaration
+	COMPONENT adder IS
+	GENERIC (
+		p_WIDTH : natural := 16); -- data width
+	PORT(
+		i_DIN0 : in  std_logic_vector(p_WIDTH-1 DOWNTO 0); -- data input
+		i_DIN1 : in  std_logic_vector(p_WIDTH-1 DOWNTO 0);
+		o_DOUT : out std_logic_vector(p_WIDTH-1 DOWNTO 0);
+		o_COUT : out std_logic);
+	END COMPONENT;
+	
+	
+BEGIN
+	
+	u0: adder GENERIC MAP (8) PORT MAP(i_DIN, w_signal, o_DOUT, o_COUT);
+	
+END arch;
