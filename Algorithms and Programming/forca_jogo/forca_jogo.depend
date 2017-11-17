@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1445642070 source:/home/yumin/Documents/forca_jogo/main.cpp
+	<iostream>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+
+1445907679 source:c:\users\yu min\documents\trabalhos academicos\alg\forca_jogo\main.cpp
+	<windows.h>
+	<string.h>
+	<stdio.h>
+	<stdlib.h>
+

@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1386659927 source:c:\users\yumin\desktop\trabalho_m3\main.c
+	<stdio.h>
+	<conio.h>
+	<stdlib.h>
+	<string.h>
+	<malloc.h>
+
